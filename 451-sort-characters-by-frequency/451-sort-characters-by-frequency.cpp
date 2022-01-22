@@ -10,14 +10,16 @@ public:
                 str+=s[i];
                 len=str.length();
             }else{
-                if(len>=1){
                 str+=s[i];
                 m.insert(pair<int,string>(len,str));
-                }
-                else{
-                    str+=s[i];
-                    m.insert(pair<int,string>(0,str));
-                }
+                // if(len>=1){
+                // str+=s[i];
+                // m.insert(pair<int,string>(len,str));
+                // }
+                // else{
+                //     str+=s[i];
+                //     m.insert(pair<int,string>(0,str));
+                // }
                 len=0;
                 str="";
             }
@@ -30,7 +32,6 @@ public:
         m.insert(pair<int,string>(0,str));
         str="";
         for(auto it=m.rbegin();it!=m.rend();it++){
-            cout<<it->first<<" "<<it->second<<"\n";
             str+=it->second;
         }
         return str;
