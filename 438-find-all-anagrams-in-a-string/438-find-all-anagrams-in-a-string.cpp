@@ -8,11 +8,9 @@ public:
             return v;
         for(int i=0;i<p.length();++i){
             phash[p[i]-'a']+=1;
-        }
-        int size=p.length();
-        for(int i=0;i<size;++i){
             hash[s[i]-'a']+=1;
         }
+        int size=p.length();
         if(hash==phash)
             v.push_back(0);
         for(int i=0;i<s.length()-size;++i){
