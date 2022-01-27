@@ -19,13 +19,12 @@ public:
             head=head->next;
         }
         head=res;
-        int d=(right-left)/2,i=0;
+        int i=0;
         while(left<right){
             swap(v[left-1],v[right-1]);
             left++;
             right--;
         }
-        i=0;
         while(head!=NULL){
             head->val=v[i];
             head=head->next;
