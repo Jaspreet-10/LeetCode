@@ -17,13 +17,7 @@ public:
             v.push_back(head->val);
             head=head->next;
         }
-        for(int i=0;i<v.size();++i){
-            for(int j=0;j<v.size();++j){
-                if(v[j]>v[i]){
-                    swap(v[i],v[j]);
-                }
-            }
-        }
+        sort(v.begin(),v.end());
         head=start;
         for(int i=0;i<v.size();++i){
             head->val=v[i];
