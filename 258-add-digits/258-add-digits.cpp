@@ -6,13 +6,9 @@ public:
             int r=num%10;
             sum=sum+r;
             num/=10;
-            if(num==0){
-                if(sum>9){
+            if(num==0 and sum>9){
                 num=sum;
                 sum=0;
-                }
-                else
-                    break;
             }
         }
         return sum;
