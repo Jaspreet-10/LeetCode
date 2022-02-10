@@ -8,7 +8,8 @@ public:
             if(sum==k)
                 count++;
             if(m[sum-k]>0){
-                count+=m[sum-k];
+                count+=m[sum-k];//There must be some elements of sum k which are required
+                                //to make the current sum.                                 
             }
             m[sum]++;
         }
