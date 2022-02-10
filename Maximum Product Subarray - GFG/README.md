@@ -1,5 +1,5 @@
 # Maximum Product Subarray
-##  Medium 
+## Medium 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given an array <strong>Arr[]</strong> that contains <strong>N</strong> integers (may be <strong>positive</strong>, <strong>negative </strong>or <strong>zero</strong>). Find the product of the maximum product subarray.</span></p>
 
