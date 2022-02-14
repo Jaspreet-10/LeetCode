@@ -61,8 +61,8 @@ class Solution
         cur=temp;
         t++;
         }
-        if(temp!=NULL)
-        head->next=reverse(temp,k);
+        if(cur!=NULL)
+        head->next=reverse(cur,k);
         return prev;
     }
 };
