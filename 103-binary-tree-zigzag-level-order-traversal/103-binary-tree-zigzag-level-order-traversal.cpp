@@ -23,12 +23,13 @@ public:
             for(int i=size-1;i>=0;--i){
                 TreeNode* head=q.front();
                 q.pop();
-                if(flag==0){
-                    v.push_back(head->val);
-                }
-                else{
-                    v.push_back(head->val);
-                }
+                v.push_back(head->val);
+                // if(flag==0){
+                //     v.push_back(head->val);
+                // }
+                // else{
+                //     v.push_back(head->val);
+                // }
                 if(head->left!=NULL)
                     q.push(head->left);
                 if(head->right!=NULL)
