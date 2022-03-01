@@ -106,8 +106,7 @@ class Solution
     //from left to right in Binary Tree.
     vector<int> topView(Node *root)
     {
-        unordered_map<int,int>m;
-        map<int,map<int,vector<int>>>nodes;
+        map<int,vector<int>>nodes;
         queue<pair<Node*,pair<int,int>>>todo;
         todo.push({root,{0,0}});
         while(!todo.empty()){
@@ -116,18 +115,15 @@ class Solution
             Node*head=p.first;
             int x=p.second.first;
             int y=p.second.second;
-            if(m[x]==0){
-            nodes[x][y].push_back(head->data);
-            m[x]++;
+            if(nodes[x].size()==0){
+            nodes[x].push_back(head->data);
             }
             if(head->left) todo.push({head->left,{x-1,y+1}});
             if(head->right)todo.push({head->right,{x+1,y+1}});
         }
         vector<int>ans;
         for(auto it:nodes){
-            for(auto z:it.second){
-                ans.insert(ans.end(),z.second.begin(),z.second.end());
-            }
+                ans.insert(ans.end(),it.second.begin(),it.second.end());
         }
         return ans;
     }
