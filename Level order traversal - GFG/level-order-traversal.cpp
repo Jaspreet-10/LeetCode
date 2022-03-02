@@ -48,13 +48,11 @@ class Solution
      q.push(node);
      while(!q.empty()){
          int size=q.size();
-         for(int i=0;i<size;++i){
              Node*head=q.front();
              q.pop();
              if(head->left!=NULL)q.push(head->left);
              if(head->right!=NULL)q.push(head->right);
              v.push_back(head->data);
-             }
          }
          return v;
     }
