@@ -6,29 +6,36 @@ using namespace std;
 class Solution
 {
 	public:
-	    vector<string>v;
-	    string Swap(string s,int l,int i){
-	        swap(s[l],s[i]);
-	        s=s;
-	        return s;
-	    }
-	    void permute(string S,int l,int r){
-	        if(l==r){
-	            v.push_back(S);
+	    void printPermutations(string S,vector<char>ds,vector<string>&res,
+	    bool freq[],int n){
+	        if(n==ds.size()){
+	            string str="";
+	            for(auto it:ds){
+	                str+=it;
+	            }
+	            res.push_back(str);
 	            return ;
 	        }
-	        for(int i=l;i<=r;++i){
-	            S = Swap(S,l,i);
-	            permute(S,l+1,r);
-	            S= Swap(S,l,i);
+	        for(int i=0;i<n;++i){
+	            if(!freq[i]){
+	            freq[i]=1;
+	            ds.push_back(S[i]);
+	            printPermutations(S,ds,res,freq,n);
+	            ds.pop_back();
+	            freq[i]=0;
+	            }
 	        }
+	        return;
 	    }
 		vector<string>find_permutation(string S)
 		{
-		  int l=0,r=S.length()-1;
-		  permute(S,l,r);
-		  sort(v.begin(),v.end());
-		  return v;// Code here there
+		    vector<string>res;
+		    vector<char>ds;
+		    int n=S.length();
+		    bool freq[n-1]={0};
+		    printPermutations(S,ds,res,freq,n);
+		    sort(res.begin(),res.end());
+		    return res;
 		}
 };
 
