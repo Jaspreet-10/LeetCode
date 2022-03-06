@@ -17,14 +17,14 @@ public:
         }
         open=close=0;
         for(int i=s.length()-1;i>=0;--i){
-            if(s[i]=='(')
+            if(s[i]==')')
                 open++;
             else
                 close++;
             if(open==close){
                 len=open+close;
                 maxi=max(len,maxi);
-            }else if(open>close)
+            }else if(close>open)
                 open=close=0;
         }
         return maxi;
