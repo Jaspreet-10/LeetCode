@@ -10,30 +10,38 @@
  */
 class Solution {
 public:
-    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
-        vector<int>v;
-        if(l1==NULL and l2==NULL) return NULL; 
-        if(l1==NULL) return l2;
-        ListNode *start=l1;
-        while(l1!=NULL){
-            v.push_back(l1->val);
-            l1=l1->next;
-        }
-        while(l2!=NULL){
-            v.push_back(l2->val);
-            l2=l2->next;
-        }
-        l1=start;
-        sort(v.begin(),v.end());
-        int i=0;
-        while(i<v.size()){
-            if(l1->next==NULL and i!=v.size()-1){
-                l1->next=new ListNode();
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        ListNode* res=new ListNode(0),*dummy=res;
+        while(list1!=NULL and list2!=NULL){
+            if(list1->val>list2->val){
+                res->next=new ListNode(list2->val);
+                res=res->next;
+                list2=list2->next;
             }
-            l1->val=v[i];
-            l1=l1->next;
-            i++;
+            else if(list1->val<list2->val){
+                res->next=new ListNode(list1->val);
+                res=res->next;
+                list1=list1->next;
+            }
+            else{
+                res->next=new ListNode(list2->val);
+                res=res->next;
+                res->next=new ListNode(list2->val);
+                res=res->next;
+                list1=list1->next;
+                list2=list2->next;
+            }
         }
-        return start;
+        while(list1!=NULL){
+            res->next=new ListNode(list1->val);
+            res=res->next;
+            list1=list1->next;
+        }
+        while(list2!=NULL){
+            res->next=new ListNode(list2->val);
+            res=res->next;
+            list2=list2->next;
+        }
+        return dummy->next;
     }
 };
