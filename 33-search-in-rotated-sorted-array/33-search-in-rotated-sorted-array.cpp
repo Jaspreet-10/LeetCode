@@ -26,7 +26,7 @@ public:
         ans=helper(nums,i,j,target);
         }
         else{
-           ans=helper(nums,0,i,target);
+           ans=helper(nums,0,i-1,target);
         }
         return ans;
     }
