@@ -128,24 +128,22 @@ struct Node
 
 /* The function should print all the paths from root
  to leaf nodes of the binary tree */
- void inorder(vector<vector<int>>&res,Node* root,vector<int>&v){
-     
-     if(root==NULL)
-        return;
-        v.push_back(root->data);
-        inorder(res,root->left,v);
-     if(!root->left and !root->right){
-         res.push_back(v);
-     }
-        inorder(res,root->right,v);
-        v.pop_back();
-        return ;
- }
+    void pathFinder(vector<vector<int>>&res,Node *root,vector<int>&v){
+    if(!root){
+     return ;   
+    }
+    v.push_back(root->data);
+    pathFinder(res,root->left,v);
+    if(!root->left and !root->right)
+        res.push_back(v);
+    pathFinder(res,root->right,v);
+    v.pop_back();
+    return ;
+}
 vector<vector<int>> Paths(Node* root)
 {
     vector<vector<int>>res;
     vector<int>v;
-    unordered_map<Node*,int>m;
-    inorder(res,root,v);
+    pathFinder(res,root,v);
     return res;
 }
