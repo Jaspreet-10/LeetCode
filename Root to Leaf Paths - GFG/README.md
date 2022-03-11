@@ -1,5 +1,5 @@
 # Root to Leaf Paths
-## Easy 
+##  Easy 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given a Binary Tree of size N, you need to find&nbsp;all the possible paths&nbsp;from root node to all the leaf&nbsp;node's of the binary tree.</span></p>
 
