@@ -16,7 +16,6 @@ public:
     }
         result.push_back(path.substr(start, end));
         for(int i=0;i<result.size();++i){
-            // cout<<result[i]<<" ";
             if(!s.empty() and result[i]=="..") s.pop();
             else if(result[i]!="" and result[i]!="." and result[i]!=".."){
                 s.push(result[i]);
@@ -26,7 +25,6 @@ public:
         string str="";
         if(s.empty()) return "/";
         for(int i=0;i<size;++i){
-            // cout<<s.top()<<" ";
             str.insert(0,("/"+s.top()));
             s.pop();
         }
