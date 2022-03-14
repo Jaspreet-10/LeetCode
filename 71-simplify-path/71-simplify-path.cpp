@@ -1,33 +1,32 @@
 class Solution {
 public:
     string simplifyPath(string path) {
-    vector<string> result;
-    stack<string>s;
-    std::string delimiter = "/";
-    size_t pos = 0;
-    std::string token;
-    auto start = 0U;
-    auto end = path.find(delimiter);
-    while (end != std::string::npos)
-    {
-        result.push_back(path.substr(start, end - start));
-        start = end + delimiter.length();
-        end = path.find(delimiter, start);
-    }
-        result.push_back(path.substr(start, end));
-        for(int i=0;i<result.size();++i){
-            if(!s.empty() and result[i]=="..") s.pop();
-            else if(result[i]!="" and result[i]!="." and result[i]!=".."){
-                s.push(result[i]);
+        vector<string> v;
+        string result = "";
+        if(path =="/") return "/";
+        for(int i=0;i<path.size();i++){
+            string str = "";
+            if(path[i] == '/') continue;
+            
+            while(i<path.size() && path[i] !='/'){
+                str += path[i];
+                i++;
+            }
+            
+            if(str == ".." && str != "..."){
+                if(!v.empty()){
+                    v.pop_back();
+                }
+            }
+            else if(str == "." || str == "") continue;
+            else{
+                v.push_back(str);
             }
         }
-        int size=s.size();
-        string str="";
-        if(s.empty()) return "/";
-        for(int i=0;i<size;++i){
-            str.insert(0,("/"+s.top()));
-            s.pop();
+        for(string s:v){
+            result +=  '/' + s;
         }
-        return str;
+        if(v.empty()) return "/";
+        return result;
     }
 };
