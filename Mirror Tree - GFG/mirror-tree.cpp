@@ -111,30 +111,15 @@ class Solution {
   public:
     // Function to convert a binary tree into its mirror tree.
     void mirror(Node* node) {
-        queue<Node*>q;
-        q.push(node);
-        while(!q.empty()){
-            Node*head=q.front();
-            q.pop();
-            if(head->left and head->right){
-                Node*temp=head->left;
-                head->left=head->right;
-                head->right=temp;
-                q.push(head->left);
-                q.push(head->right);
-            }
-            else if(head->left and !head->right){
-                head->right=head->left;
-                head->left=NULL;
-                q.push(head->right);
-            }
-            else if(head->right and !head->left){
-                head->left=head->right;
-                head->right=NULL;
-                q.push(head->left);
-            }
-        }
-        return;
+        if(node==NULL) return;
+        Node*temp=node->left;
+        node->left=node->right;
+        node->right=temp;
+        if(node->left)
+            mirror(node->left);
+        if(node->right)
+            mirror(node->right);
+            return ;
     }
 };
 
