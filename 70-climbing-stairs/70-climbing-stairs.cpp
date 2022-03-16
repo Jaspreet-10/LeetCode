@@ -1,24 +1,28 @@
 class Solution {
 public:
-    int climbStairs(int n) {
-        if(n == 1){
+    int totalWays(int currentStairs,int targetStairs,unordered_map<int,int>&memo){
+        if(currentStairs==targetStairs)
             return 1;
-        }
-        if(n == 2){
-            return 2;
-        }
-         if(n == 3){
-            return 3;
-        }
-        int a = 2 , b = 3;
-        for(int i = 4 ; i <= n ; i++){
-           int sum = a + b;
-            if(i == n){
-                return sum; 
-            }
-            a = b;
-            b = sum;
-        }
-        return 0;
+        
+        if(currentStairs>targetStairs)
+            return 0;
+        
+        int currentKey=currentStairs;
+        
+        if(memo[currentKey]>0)
+            return memo[currentKey];
+        
+        int oneJump=totalWays(currentStairs+1,targetStairs,memo);
+        
+        int twoJumps=totalWays(currentStairs+2,targetStairs,memo);
+        
+        memo[currentKey]=oneJump+twoJumps;
+        
+        return oneJump+twoJumps;
+    }
+        
+    int climbStairs(int n) {
+        unordered_map<int,int>memo;
+        return totalWays(0,n,memo);
     }
 };
