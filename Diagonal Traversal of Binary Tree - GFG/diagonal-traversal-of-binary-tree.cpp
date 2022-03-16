@@ -123,17 +123,20 @@ struct Node
 
 vector<int> diagonal(Node *root)
 {
-   queue<Node*>q;
-   vector<int>v;
-   q.push(root);
-   while(!q.empty()){
-       Node* head=q.front();
-       q.pop();
-       while(head){
-           if(head->left) q.push(head->left);
-           v.push_back(head->data);
-           head=head->right;
-       }
-   }
-   return v;
+    vector<int>v;
+    queue<Node*>q;
+    q.push(root);
+    while(!q.empty()){
+        int size=q.size();
+        for(int i=size-1;i>=0;--i){
+            Node*head=q.front();
+            q.pop();
+            while(head){
+                q.push(head->left);
+                v.push_back(head->data);
+                head=head->right;
+            }
+        }
+    }
+    return v;
 }
