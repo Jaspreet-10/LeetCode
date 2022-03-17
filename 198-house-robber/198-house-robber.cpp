@@ -1,19 +1,19 @@
 class Solution {
 public:
-    int rob(vector<int>& nums) {
-        int n=nums.size();
-        if(n==0)
+    int maxProfit(int index,vector<int>nums,int n,unordered_map<int,int>&memo){
+        if(index>=n) 
             return 0;
-        if(n==1)
-            return nums[0];
-        if(n==2)
-            return max(nums[0],nums[1]);
-        vector<int>v(n);
-        v[0]=nums[0];
-        v[1]=max(nums[0],nums[1]);
-        for(int i=2;i<n;i++){
-            v[i]=max(nums[i]+v[i-2],v[i-1]);
-        }
-        return v[n-1];
+        int currentKey=index;
+        if(memo.find(currentKey)!=memo.end())
+            return memo[currentKey];
+        int oneJump=nums[index]+maxProfit(index+2,nums,n,memo);
+        int twoJumps=maxProfit(index+1,nums,n,memo);
+        
+        memo[currentKey]=max(oneJump,twoJumps);
+        return memo[currentKey];
+    }
+    int rob(vector<int>& nums) {
+        unordered_map<int,int>memo;
+        return maxProfit(0,nums,nums.size(),memo);    
     }
 };
