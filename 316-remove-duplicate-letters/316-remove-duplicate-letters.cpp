@@ -7,6 +7,8 @@ public:
         for(int i=0;i<s.length();++i){
           size_t found= s.find_last_of(s[i]);
           lastIndexOfCharacters[s[i]-'a']=found;
+        }
+        for(int i=0;i<s.length();++i){
             if(st.empty()){
                 st.push(s[i]);
                 charPresent[s[i]-'a']=true;
