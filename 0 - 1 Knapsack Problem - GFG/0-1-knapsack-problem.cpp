@@ -7,31 +7,28 @@ using namespace std;
 class Solution
 {
     public:
-    //Function to return max value that can be put in knapsack of capacity W.
-    int maxProfit(int index,int W,int wt[],int val[],int n,
-    map<pair<int,int>,int>&memo){
-        
-        if(index==n)
+         int knapSack(int W, int wt[], int val[], int n) 
+    { 
+        unordered_map<string, int>m;
+       return maxProfit(W, wt, val, n, 0, m);
+    }
+private:
+    int maxProfit(int capacity, int weights[], int profit[], int n, int CI, unordered_map<string, int>&m){
+        if(CI >= n)
             return 0;
         
-        pair<int,int> currentKey={index,W};
-        if(memo.find(currentKey)!=memo.end())
-            return memo[currentKey];
+        string key = to_string(CI) + "-" + to_string(capacity);
+        if(m.find(key) != m.end())
+            return m[key];
         
-        int profitIncluded=0;
+        int weightConsider = 0;
+        if(capacity >= weights[CI])
+            weightConsider = profit[CI] + maxProfit(capacity-weights[CI], weights, profit, n, CI+1, m);
+            
+        int doNotConsider = maxProfit(capacity, weights, profit, n, CI+1, m);
         
-        if(wt[index]<=W)
-        profitIncluded=val[index]+maxProfit(index+1,W-wt[index],wt,val,n,memo);
-        
-        int profitNotIncluded=maxProfit(index+1,W,wt,val,n,memo);
-        
-        memo[currentKey]=max(profitIncluded,profitNotIncluded);
-        return memo[currentKey];
-    }
-    int knapSack(int W, int wt[], int val[], int n) 
-    { 
-        map<pair<int,int>,int>memo;
-       return maxProfit(0,W,wt,val,n,memo);
+        m[key] = max(weightConsider, doNotConsider);
+        return m[key];
     }
 };
 
