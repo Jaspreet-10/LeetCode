@@ -1,17 +1,30 @@
 class Solution {
 public:
+int maximumPoints(int index,vector<int>freq,int n,unordered_map<int,int>&memo){
+        
+        if(index>=n)
+            return 0;
+        
+        int currentKey=index;
+        
+        if(memo.find(currentKey)!=memo.end())
+            return memo[currentKey];
+        
+        int consider=(index*freq[index])+maximumPoints(index+2,freq,n,memo);
+        
+        int notConsider=maximumPoints(index+1,freq,n,memo);
+        
+        memo[currentKey]=max(consider,notConsider);
+        
+        return memo[currentKey];
+    }
     int deleteAndEarn(vector<int>& nums) {
-        int count[10001]={0};
-        int incl=0,excl=0;
+        sort(nums.begin(),nums.end());
+        vector<int>freq(nums[nums.size()-1]+1,0);
+        unordered_map<int,int>memo;
         for(int i=0;i<nums.size();++i){
-            count[nums[i]]+=1;
+            freq[nums[i]]+=1;
         }
-        for(int i=0;i<10001;++i){
-            int ni=excl+i*count[i];
-            int nex=max(incl,excl);
-            incl=ni;
-            excl=nex;
-        }
-        return max(incl,excl);
+        return maximumPoints(0,freq,nums[nums.size()-1]+1,memo);
     }
 };
