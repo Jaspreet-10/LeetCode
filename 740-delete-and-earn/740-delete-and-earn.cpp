@@ -5,9 +5,9 @@ int maximumPoints(int index,vector<int>freq,int n,unordered_map<int,int>&memo){
         if(index>=n)
             return 0;
         
-        int currentKey=index;
+        int currentKey=index+1;
         
-        if(memo.find(currentKey)!=memo.end())
+        if(memo[currentKey]>0)
             return memo[currentKey];
         
         int consider=(index*freq[index])+maximumPoints(index+2,freq,n,memo);
