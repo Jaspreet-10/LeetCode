@@ -1,5 +1,8 @@
 class Solution {
 public:
+    //This approach is top down approach because we are checking for every possibility
+    // It takes more time as comapre to tbottom up approach i.e, tabulation approach.
+    // But it is easy to understand.
     int maxProfit(int index,vector<int>nums,int n,unordered_map<int,int>&memo){
         
         if(index>=n){
