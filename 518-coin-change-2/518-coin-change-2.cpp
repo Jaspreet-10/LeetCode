@@ -1,11 +1,11 @@
 class Solution {
 public:
-    long long totalWays(int amount,vector<int>& coins,int index,int n,map<pair<int,int>,int>&memo){
+    long long totalWays(int amount,vector<int>& coins,int index,int n,unordered_map<string,int>&memo){
         if(amount==0)
             return 1;
         if(index>=n)
             return 0;
-        pair<int,int>currentKey={index,amount};
+        string currentKey=to_string(index)+"-"+to_string(amount);
         if(memo.find(currentKey)!=memo.end())
             return memo[currentKey];
         int consider=0;
@@ -16,7 +16,7 @@ public:
         return memo[currentKey];
     }
     int change(int amount, vector<int>& coins) {
-        map<pair<int,int>,int>memo;
+        unordered_map<string,int>memo;
         // memset(dp,-1,sizeof(dp));//Time Taken is O(n).
         return totalWays(amount,coins,0,coins.size(),memo);
     }
