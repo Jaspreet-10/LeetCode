@@ -1,25 +1,27 @@
 class Solution {
 public:
-    int binary(vector<int>v,int l, int r, int key)
+    int binary(vector<int>v,int l, int r, int key,int &flag)
     {
 		// till l doesn't exceed r
         if(r >= l)
         {
             int mid = (l+r)/2;
 			
-			// if key equals mid return mid
-            if(key == v[mid])
+            if(key == v[mid]){
+                flag=mid;
                 return mid;
+            }
+            else if(key < v[mid]){
+                binary(v,l,mid-1,key,flag);
+                if(flag!=-1)
+                    return flag;
+            }
 				
-			// if key is less than mid
-			// recursive call for left half
-            else if(key < v[mid])
-                return binary(v,l,mid-1,key);
-				
-			// key is greater than mid
-			// recursive call for right half
-            else
-                return binary(v,mid+1,r,key);
+            else{
+                binary(v,mid+1,r,key,flag);
+                if(flag!=-1)
+                    return flag;
+            }
         }
 		
 		// if key not found
@@ -28,15 +30,8 @@ public:
     
     
     int search(vector<int>& nums, int target) {
-        int result = binary(nums,0,nums.size()-1,target);
-		
-		// if func returns -1 key doesn't exists
-        if (result == -1)
-            return -1;
-		
-		// return index of key
-        else
-            return result;   
+        int flag=-1;
+        return binary(nums,0,nums.size()-1,target,flag);   
     }
 	// for github repository link go to my profile.
 };
