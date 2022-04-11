@@ -20,9 +20,9 @@ public:
         return memo[currentKey];
     }
     int rob(vector<int>& nums) {
-        unordered_map<int,int>memo;
-        unordered_map<int,int>memo1;
-        int n=nums.size();
+        unordered_map<int,int>memo;//I have to use two different map bcz both the maxProfit()
+        unordered_map<int,int>memo1;//had different values of the staring index and n.
+        int n=nums.size();          //so it will calculate seperate for both
         if(n==1)
             return nums[n-1];
         if(n==2)
