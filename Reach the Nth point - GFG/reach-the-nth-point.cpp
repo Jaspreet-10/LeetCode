@@ -23,7 +23,7 @@ class Solution{
         
         memo[currentKey]=(oneJump+twoJumps)%1000000007;
         
-        return ((oneJump+twoJumps)%1000000007);
+        return memo[currentKey];
     }
 
 		int nthPoint(int n){
