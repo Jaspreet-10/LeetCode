@@ -11,8 +11,7 @@ class Solution {
     long long getSubstringWithEqual012(string str) {
         long long zero = 0, one = 0,two = 0,cnt=0;
         unordered_map<string,int>memo;
-        string tmp = "0#0";
-        memo[tmp] = 1;
+        memo["0#0"] = 1;
         for(int i=0;i<str.length();++i){
             if(str[i]=='0')
                 ++zero;
