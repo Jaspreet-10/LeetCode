@@ -14,11 +14,12 @@ public:
         int prefixSum = 0, maxi = 0;
         for(int i = 0 ; i < n ; ++i){
             prefixSum+=nums[i];
-            if(memo.find(((prefixSum%k)+k)%k)!=memo.end()){
-                maxi = max(maxi,i - memo[((prefixSum%k)+k)%k]);
+            int rem = ((prefixSum%k)+k)%k;
+            if(memo.find(rem)!=memo.end()){
+                maxi = max(maxi,i - memo[rem]);
             }
             else
-            memo[((prefixSum%k)+k)%k] = i;
+            memo[rem] = i;
         }
         return maxi;
 	}
