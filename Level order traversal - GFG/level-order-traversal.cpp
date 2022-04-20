@@ -47,7 +47,6 @@ class Solution
      vector<int>v;
      q.push(node);
      while(!q.empty()){
-         int size=q.size();
              Node*head=q.front();
              q.pop();
              if(head->left!=NULL)q.push(head->left);
