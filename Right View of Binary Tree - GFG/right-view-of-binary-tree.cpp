@@ -44,21 +44,23 @@ class Solution
     vector<int> rightView(Node *root)
     {
    queue<Node*>q;
-   stack<int>st;
+//   stack<int>st;
    q.push(root);
    vector<int>v;
+   int level = 0;
    if(root==NULL) return v;
-   int level=0;
    while(!q.empty()){
        int size=q.size();
        for(int i=size-1;i>=0;--i){
            Node*head=q.front();
            q.pop();
-            st.push(head->data);
-            if(head->left) q.push(head->left);
+            // st.push(head->data);
+            if(level == v.size())
+                v.push_back(head->data);
             if(head->right) q.push(head->right);
+            if(head->left) q.push(head->left);
            }
-           v.push_back(st.top());
+           ++level;
        }
    return v;
     }
