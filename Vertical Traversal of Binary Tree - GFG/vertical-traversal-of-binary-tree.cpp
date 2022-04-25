@@ -104,17 +104,16 @@ class Solution
     vector<int> verticalOrder(Node *root)
     {
         map<int,vector<int>>nodes;
-        queue<pair<Node*,pair<int,int>>>todo;
-        todo.push({root,{0,0}});
+        queue<pair<Node*,int>>todo;
+        todo.push({root,0});
         while(!todo.empty()){
             auto p=todo.front();
             todo.pop();
             Node*head=p.first;
-            int x=p.second.first;
-            int y=p.second.second;
+            int x=p.second;
             nodes[x].push_back(head->data);
-            if(head->left) todo.push({head->left,{x-1,y+1}});
-            if(head->right)todo.push({head->right,{x+1,y+1}});
+            if(head->left) todo.push({head->left,x-1});
+            if(head->right)todo.push({head->right,x+1});
         }
         vector<int>ans;
         for(auto it:nodes){
