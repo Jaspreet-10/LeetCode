@@ -118,6 +118,7 @@ public:
             if(cur->left) cur=cur->left;
             else cur=cur->right;
         }
+        return ;
     }
     void rightBoundry(Node* cur,vector<int>&res){
         while(cur){
@@ -127,6 +128,7 @@ public:
         }
         for(int i=v.size()-1;i>=0;--i)
             res.push_back(v[i]);
+        return ;
     }
     
     void leafNodes(Node* cur, vector<int>&res){
