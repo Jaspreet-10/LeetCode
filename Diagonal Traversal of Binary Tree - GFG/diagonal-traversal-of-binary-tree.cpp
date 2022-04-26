@@ -132,6 +132,7 @@ vector<int> diagonal(Node *root)
             Node*head=q.front();
             q.pop();
             while(head){
+                if(head->left)
                 q.push(head->left);
                 v.push_back(head->data);
                 head=head->right;
