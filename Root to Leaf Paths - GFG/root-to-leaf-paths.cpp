@@ -137,7 +137,9 @@ struct Node
     if(!root->left and !root->right)
         res.push_back(v);
     pathFinder(res,root->right,v);
-    // v.pop_back();
+    // v.pop_back if we comment down this line then we are not popping element
+    // by our own. Recursion doijng in it's way and for this we also don't need to
+    // use & in vector v. But if we use & the we need to declare pop_back() fn.
     return ;
 }
 vector<vector<int>> Paths(Node* root)
