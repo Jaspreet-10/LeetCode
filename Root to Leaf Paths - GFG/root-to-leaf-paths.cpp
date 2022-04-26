@@ -128,7 +128,7 @@ struct Node
 
 /* The function should print all the paths from root
  to leaf nodes of the binary tree */
-    void pathFinder(vector<vector<int>>&res,Node *root,vector<int>&v){
+    void pathFinder(vector<vector<int>>&res,Node *root,vector<int>v){
     if(!root){
      return ;   
     }
@@ -137,7 +137,7 @@ struct Node
     if(!root->left and !root->right)
         res.push_back(v);
     pathFinder(res,root->right,v);
-    v.pop_back();
+    // v.pop_back();
     return ;
 }
 vector<vector<int>> Paths(Node* root)
