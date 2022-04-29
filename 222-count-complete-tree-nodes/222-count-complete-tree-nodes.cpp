@@ -11,27 +11,28 @@
  */
 class Solution {
 public:
+    int findLeftHeight(TreeNode* root){
+        if(!root)
+            return 0;
+        int height = findLeftHeight(root->left);
+        return height+1;
+    }
+    int findRightHeight(TreeNode* root){
+        if(!root)
+            return 0;
+        int height = findRightHeight(root->right);
+        return height+1;
+    }
     int countNodes(TreeNode* root) {
         if(!root)
             return 0;
-        queue<TreeNode*>q;
-        q.push(root);
-        int cnt = 1;
-        while(!q.empty()){
-            int size = q.size();
-            for(int i = size-1;i>=0;--i){
-                TreeNode* head = q.front();
-                q.pop();
-                if(head->left){
-                    q.push(head->left);
-                    ++cnt;
-                }
-                if(head->right){
-                    q.push(head->right);
-                    ++cnt;
-                }
-            }
+        
+        int lh = findLeftHeight(root);
+        int rh = findRightHeight(root);
+        // root = root->left;
+        if(lh == rh){
+            return  (1<<lh) - 1;
         }
-        return cnt;
+        return 1+countNodes(root->left)+countNodes(root->right);
     }
 };
