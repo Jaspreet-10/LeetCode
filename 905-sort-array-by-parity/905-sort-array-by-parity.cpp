@@ -6,13 +6,15 @@ public:
         int i = 0 , j = nums.size()-1;
         while(i<=j){
             if(nums[i]%2!=0 and nums[j]%2==0){
-                swap(nums[i++],nums[j--]);
-            }
-            else{ 
-            if(i<nums.size() and nums[i]%2==0)
+                swap(nums[i],nums[j]);
                 ++i;
-            if(j>=0 and nums[j]%2!=0)
                 --j;
+            }
+            if(nums[j]%2!=0){
+                --j;
+            }
+            if(nums[i]%2==0){
+                ++i;
             }
         }
         return nums;
