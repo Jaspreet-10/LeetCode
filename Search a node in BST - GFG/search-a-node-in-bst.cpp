@@ -53,13 +53,16 @@ int main() {
 }
 // } Driver Code Ends
 
+
 // Function to search a node in BST.
-bool search(Node* root, int key) {
-    if(root==NULL)return false; 
-    if(root->data==key)
+// bool flag = false;
+bool search(Node* root, int x) {
+    if(!root)
+        return false;
+    if(root->data == x){
         return true;
-    if(root->data<key)
-    return search(root->right,key);
-    return search(root->left,key);
-    return false;
+    }
+    if(x>root->data)
+        return search(root->right,x);
+        return search(root->left,x);
 }
