@@ -128,15 +128,19 @@ struct Node
 
 /* The function should print all the paths from root
  to leaf nodes of the binary tree */
-    void pathFinder(vector<vector<int>>&res,Node *root,vector<int>v){
+    void pathFinder(vector<vector<int>>&res,Node *root,vector<int>&v){
     if(!root){
      return ;   
     }
     v.push_back(root->data);
-    pathFinder(res,root->left,v);
-    if(!root->left and !root->right)
+    if(!root->left and !root->right){
         res.push_back(v);
+        v.pop_back();
+        return;
+    }
+    pathFinder(res,root->left,v);
     pathFinder(res,root->right,v);
+    v.pop_back();
     // v.pop_back if we comment down this line then we are not popping element
     // by our own. Recursion doing in it's way and for this we also don't need to
     // use & in vector v. But if we use & the we need to declare pop_back() fn.
