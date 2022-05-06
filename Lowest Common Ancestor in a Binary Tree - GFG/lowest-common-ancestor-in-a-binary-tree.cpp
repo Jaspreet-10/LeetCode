@@ -38,31 +38,22 @@ class Solution
 {
     public:
     //Function to return the lowest common ancestor in a Binary Tree.
-    Node* lcaFinder(Node*root,int n1,int n2,Node*head){
-        if(!root || root->data==n1 || root->data==n2)
+    Node* lca(Node* root ,int n1 ,int n2 )
+    {
+       if(!root || root->data==n1 || root->data==n2)
             return root;
         // if(root->data==n1)
         //     return root;
         // if(root->data==n2)
         //     return root;    
-        Node* lh=lcaFinder(root->left,n1,n2,head);
-        Node* rh=lcaFinder(root->right,n1,n2,head);
+        Node* lh=lca(root->left,n1,n2);
+        Node* rh=lca(root->right,n1,n2);
         if(lh==NULL)
             return rh;
        else if(rh==NULL)
             return lh;
         else return root; //means here we found both the nodes. So from here I
-        // sent back the node..
-    }
-    Node* lca(Node* root ,int n1 ,int n2 )
-    {
-      if(root==NULL) return NULL;
-      Node*head= lcaFinder(root,n1,n2,NULL);
-      if(head==NULL){
-          Node* newHead=new Node(-1);
-          return newHead;
-      }
-      return head;
+        // sent back the node.. 
     }
 };
 
