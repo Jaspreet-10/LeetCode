@@ -19,10 +19,10 @@ public:
         q.push({root,0});
         while (!q.empty()) {
         int size = q.size();
-        int curMin = q.front().second;
+        // int curMin = q.front().second;
         int leftMost, rightMost;
         for (int i = 0; i < size; i++) {
-        int cur_id = q.front().second - curMin; // subtracted to prevent integer overflow
+        int cur_id = q.front().second; // subtracted to prevent integer overflow
         TreeNode * temp = q.front().first;
         q.pop();
         if (i == 0) leftMost = cur_id;
