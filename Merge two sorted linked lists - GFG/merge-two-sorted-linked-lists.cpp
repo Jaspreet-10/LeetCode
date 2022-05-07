@@ -85,7 +85,6 @@ Node* sortedMerge(Node* head1, Node* head2)
 {  
     Node *start = new Node(-1);
     Node*head = start;
-    // head = head->next;
     while(head1!=NULL and head2!=NULL){
         if(head1->data<head2->data){
             head->next = head1;
@@ -96,16 +95,7 @@ Node* sortedMerge(Node* head1, Node* head2)
         }
         head = head->next;
     }
-    while(head1!=NULL){
-        head->next = head1;
-        head = head->next;
-        head1 = head1->next;
-    }
-    while(head2!=NULL){
-        head->next = head2;
-        head = head->next;
-        head2 = head2->next;
-    }
-
+    if(head1) head->next = head1;
+    if(head2) head->next = head2;
     return start->next;
 }  
