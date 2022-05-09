@@ -12,6 +12,7 @@
 class Solution {
 public:
     int leftSum(TreeNode* root,bool tracker,int&sum){
+        
         if(!root)
             return sum;
         
@@ -23,7 +24,6 @@ public:
         leftSum(root->left,true,sum);
         leftSum(root->right,false,sum);
         return sum;
-        
     }
     int sumOfLeftLeaves(TreeNode* root) {
         int sum = 0;
