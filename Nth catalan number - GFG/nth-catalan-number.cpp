@@ -13,7 +13,11 @@ using namespace std;
 class Solution
 {
     public:
-    //Function to find the nth catalan number.
+//Function to find the nth catalan number.i =n-1
+    //Formula of nt catlan Number is C(n) = Σ c(i)*c(n-i-1);
+    //                                    i = 0
+    // For ex: c(2) = c(0)*c(1) + c(1)*c(0)
+    // For ex:C(3) = c(0)*c(2) + c(1)*c(1) + c(2)*c(0)
     cpp_int findNumber(int n,vector<cpp_int>&dp){
         if(n==0 || n==1)
             return 1;
