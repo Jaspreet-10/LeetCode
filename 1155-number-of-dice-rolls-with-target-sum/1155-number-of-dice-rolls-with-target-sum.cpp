@@ -12,7 +12,7 @@ public:
             return dp[n][target];
 //         (a+b)%c = (a%c + b%c)%c
 //         (ways+tempAns)%MOD
-        int ways=0,MOD=1e9+7;
+        int ways=0,MOD=1e9+7;//How the values in ways is getting store. Didn't get this.
         for(int i=1;i<=k;++i){
             int tempAns = totalWays(n-1,k,target - i, dp)%MOD;
             ways = ways % MOD;
