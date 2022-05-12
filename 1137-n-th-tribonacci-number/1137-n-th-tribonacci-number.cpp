@@ -10,6 +10,6 @@ public:
         if(memo.find(currentKey)!=memo.end())
             return memo[currentKey];
         memo[currentKey]=tribonacci(n-3)+tribonacci(n-2)+tribonacci(n-1);
-        return (tribonacci(n-3)+tribonacci(n-2)+tribonacci(n-1));
+        return memo[currentKey];
     }
 };
