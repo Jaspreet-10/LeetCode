@@ -1,18 +1,15 @@
 class Solution {
 public:
     int numIdenticalPairs(vector<int>& nums) {
-        unordered_map<int,vector<int>>m;
+        unordered_map<int,int>m;
         int count=0;
         for(int i=0;i<nums.size();++i){
-            if(nums[i]==0){
-                m.insert(pair<int,vector<int> >(nums[i], vector<int>()));
-                m[nums[i]].push_back(i);
+            if(nums[i]>0){
+                count+=m[nums[i]];
+                m[nums[i]]++;
             }else{
-                for(int j=0;j<m[nums[i]].size();++j){
-                    count++;
-                }
-                m[nums[i]].push_back(i);
-            }
+                m[nums[i]]++;
+            }    
         }
         return count;
     }
