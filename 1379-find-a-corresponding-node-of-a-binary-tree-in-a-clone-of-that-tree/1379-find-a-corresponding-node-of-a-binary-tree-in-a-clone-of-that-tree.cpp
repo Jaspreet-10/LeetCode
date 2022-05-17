@@ -10,7 +10,7 @@
 
 class Solution {
 public:
-    TreeNode* ans;
+    TreeNode* ans=NULL;
     TreeNode* findNode(TreeNode* cloned, TreeNode* target){
         if(!cloned)
             return NULL;
@@ -19,7 +19,11 @@ public:
             return cloned;
         }
         findNode(cloned->left,target);
+        if(ans!=NULL)
+            return ans;
         findNode(cloned->right,target);
+         if(ans!=NULL)
+            return ans;
         return NULL;
     }
     TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {
