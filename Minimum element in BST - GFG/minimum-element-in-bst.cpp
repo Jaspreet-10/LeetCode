@@ -93,13 +93,14 @@ int main() {
 
 
 // Function to find the minimum element in the given BST.
-int mini = -1;
+
 int minValue(Node* root) {
     if(!root)
         return -1;
-    if(!root->left){
-        mini = root->data;
+    if(!root->left)
+        return root->data;
+    while(root->left){
+        root = root->left;
     }
-    minValue(root->left);
-    return mini;
+    return root->data;
 }
