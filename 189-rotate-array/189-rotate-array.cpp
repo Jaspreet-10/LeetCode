@@ -1,10 +1,9 @@
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
-        vector<int>v=nums;
-        int n=nums.size();
-        for(int i=0;i<n;++i){
-            nums[(i+k)%n]=v[i];
+        vector<int>arr = nums;
+        for(int i = 0 ; i < nums.size() ; ++i){
+            nums[(i+k)%nums.size()] = arr[i];
         }
     }
 };
