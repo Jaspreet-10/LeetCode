@@ -7,7 +7,7 @@ public:
         }
         bt.push_back(nums[index]);
         totalSubset(index+1,nums,ans,bt);
-        bt.pop_back();
+        bt.pop_back();//This thing is called backtracking. That we are going back..
         totalSubset(index+1,nums,ans,bt);
         return 0;
     }
