@@ -1,30 +1,24 @@
 class Solution {
 public:
-    vector<vector<int>>res;
-vector<vector<int>> uniqueCombinations(int index,int target,vector<int>& candidates, vector<int>&v){
-    if(target==0){
-        res.push_back(v);
-        return res;
-    }
-    if(index>=candidates.size())
-        return res;
-    // pair<vector<int>,int> currentKey = {v,target};
-    // if(memo.find(currentKey)!=memo.end())
-    //     return res;
-    int consider=0;
-    if(candidates[index]<=target){
-        v.push_back(candidates[index]);
-        uniqueCombinations(index,target-candidates[index],candidates,v);
-        v.pop_back();
-    }
-    uniqueCombinations(index+1,target,candidates,v);
-    // memo[currentKey] = res;
-    return res;
-}
+    int totalWays(int index,vector<int>& candidates,vector<int>&bt,vector<vector<int>>&ans,int target){
+        if(target==0){
+            ans.push_back(bt);
+            return 0;
+        }
+        if(index>=candidates.size())
+            return 0;
+        if(candidates[index]<=target){
+            bt.push_back(candidates[index]);
+            totalWays(index,candidates,bt,ans,target-candidates[index]);
+            bt.pop_back();
+        }
+        totalWays(index+1,candidates,bt,ans,target);
+        return 0;
+    } 
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        if(candidates.empty()) return res;
-        vector<int>ds;
-        // map<pair<vector<int>,int>,vector<vector<int>>>memo;
-        return uniqueCombinations(0,target,candidates,ds);
+        vector<int>bt;
+        vector<vector<int>>ans;
+        totalWays(0,candidates,bt,ans,target);
+        return ans;
     }
 };
