@@ -11,11 +11,11 @@ class Solution{
     void rotateArr(int arr[], int d, int n){
         int a[n];
         if(d>n)
-         d = d-n;
+         d = d-n; 
         for(int i = 0 ; i < n ; ++i)
             a[i] = arr[i];
         for(int i = 0 ; i < n ; ++i){
-            arr[(i+n-d)%n] = a[i];//
+            arr[(i+n-d)%n] = a[i];
         }
     }
 };
