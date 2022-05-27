@@ -12,16 +12,14 @@ public:
 	
 	int isPalindrome(string S)
 	{
-	    int i = 0 , j = S.length()-1;
-	    while(i<=j){
-	        if(S[i]!=S[j])
-	            return 0;
-	            ++i;
-	            --j;
-	    }
+	 string str="";
+	 for(int i = S.length()-1 ; i >=0 ; --i){
+	     str+=S[i];
+	 }
+	 if(S==str)
 	    return 1;
+	    return 0;
 	}
-
 };
 
 // { Driver Code Starts.
