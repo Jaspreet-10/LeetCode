@@ -11,19 +11,17 @@ using namespace std;
 class Solution
 {
   public:
-    //Function to check if a string is Pangram or not.
     bool checkPangram (string &str) {
         unordered_map<char,int>m;
         for(int i = 0 ; i < str.length() ; ++i){
             int ch = str[i];
-    
-            if((ch>=65 and ch<=90) || (ch>=97 and ch<=122)){
-                m[str[i]]++;
+            if((ch>=65 and ch<=90) || (ch>=97 and ch<=122)){ 
+                m[str[i]]++; 
             }
         }
         if(m.size()==26)
-            return 1;
-        return 0;
+            return true;
+        return false;
     }
 };
 
