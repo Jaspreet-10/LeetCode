@@ -11,22 +11,18 @@ class Solution
     //another string by exactly 2 places.
     bool isRotated(string str1, string str2)
     {
-        // Your code here
-        string str;
-        int n=str2.length();
-        for(int i=0;i<n;++i){
-            str=str+str2[i];
+        int n = str1.length();
+        string str = str1;
+        for(int i = 0 ; i < str.length() ; ++i){
+            str1[(i+2)%n] = str[i];
         }
-        for(int i=0;i<n;++i){
-            str2[(i+2)%n]=str[i];
-        }
-        if(str2==str1)
+        if(str1 == str2)
             return true;
-    reverse(str.begin(), str.begin()+2);
-    reverse(str.begin()+2, str.end());
-    reverse(str.begin(), str.end());
-    if(str1==str)
-        return true;
+        for(int i = 0 ; i < str.length() ; ++i){
+            str1[(i+n-2)%n] = str[i];
+        }
+        if(str1 == str2)
+            return true;
         return false;
     }
 
