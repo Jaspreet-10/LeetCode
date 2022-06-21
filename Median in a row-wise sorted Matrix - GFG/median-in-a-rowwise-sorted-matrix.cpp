@@ -11,22 +11,13 @@ using namespace std;
 class Solution{   
 public:
     int median(vector<vector<int>> &matrix, int r, int c){
+        int middle = (r*c+1)/2;
         priority_queue<int>pq;
-        int k=0;
-        if((r*c)%2==0)
-            k=(r*c)/2-1;
-         else
-            k=(r*c)/2;
-        for(int i=0;i<r;++i){
-            for(int j=0;j<c;++j){
-                if(pq.size()<=k){
-                    pq.push(matrix[i][j]);
-                }else{
-                    if(pq.top()>matrix[i][j]){
-                        pq.pop();
-                        pq.push(matrix[i][j]);
-                    }
-                }
+        for(int i = 0 ; i < r;++i){
+            for(int j = 0 ; j < c; ++j){
+                pq.push(matrix[i][j]);
+                if(pq.size()>middle)
+                    pq.pop();
             }
         }
         return pq.top();
