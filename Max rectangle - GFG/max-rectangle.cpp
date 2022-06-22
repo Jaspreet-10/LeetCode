@@ -10,7 +10,6 @@ using namespace std;
 class Solution{
   public:
     int maxArea(int M[MAX][MAX], int num, int m) {
-        // Your code here
         int maxA = 0;
         vector<int>heights(m);
         for(int k=0;k<num;++k){
