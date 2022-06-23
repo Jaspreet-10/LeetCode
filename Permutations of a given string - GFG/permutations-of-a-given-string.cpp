@@ -6,37 +6,28 @@ using namespace std;
 class Solution
 {
 	public:
-	    void printPermutations(string S,vector<char>ds,vector<string>&res,
-	    bool freq[],int n){
-	        if(n==ds.size()){
-	            string str="";
-	            for(auto it:ds){
-	                str+=it;
-	            }
-	            res.push_back(str);
-	            return ;
-	        }
-	        for(int i=0;i<n;++i){
-	            if(!freq[i]){
-	            freq[i]=1;
-	            ds.push_back(S[i]);
-	            printPermutations(S,ds,res,freq,n);
-	            ds.pop_back();
-	            freq[i]=0;
-	            }
-	        }
+	unordered_map<string,int>m;
+	void permutation(int index,int n,string S,vector<string>&res){
+	    if(index==n){
+	        if(m[S]==0)
+	        res.push_back(S);
+	        m[S]++;
 	        return;
 	    }
-		vector<string>find_permutation(string S)
-		{
-		    vector<string>res;
-		    vector<char>ds;
-		    int n=S.length();
-		    bool freq[n-1]={0};
-		    printPermutations(S,ds,res,freq,n);
-		    sort(res.begin(),res.end());
-		    return res;
-		}
+	    for(int i = 0 ; i < S.length() ; ++i){
+	        swap(S[index],S[i]);
+	        permutation(index+1,n,S,res);
+	        swap(S[index],S[i]);
+	    }
+	    return;
+	}
+	vector<string>find_permutation(string S)
+	{
+	    vector<string>res;
+	    permutation(0,S.length(),S,res);
+	    sort(res.begin(),res.end());
+	    return res;
+	}
 };
 
 
