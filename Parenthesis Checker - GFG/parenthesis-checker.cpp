@@ -12,36 +12,24 @@ class Solution
     //Function to check if brackets are balanced or not.
     bool ispar(string x)
     {
-        stack<char>s;
-        for(int i=0;i<x.length();++i){
-        if(s.empty() and (x[i]==')' || x[i]=='}' || x[i]==']'))
-            return false;
-        if(x[i]=='{' || x[i]=='[' || x[i]=='(')
-            s.push(x[i]);
-        if(x[i]==')'){
-            if(s.top()=='(')
-            s.pop();
+        stack<char>st;
+        for(int i = 0 ; i < x.length() ; ++i){
+            if(x[i]=='{'||x[i]=='['||x[i]=='(')
+                st.push(x[i]);
+            else if(!st.empty() and x[i]=='}' and st.top()=='{')
+                st.pop();
+            else if(!st.empty() and x[i]==']' and st.top()=='['){
+                st.pop();
+            }
+            else if(!st.empty() and x[i]==')' and st.top()=='(')
+                st.pop();
             else
-            return false;
+                return false;
         }
-        if(x[i]==']'){
-            if(s.top()=='[')
-            s.pop();
-            else
-            return false;
-        }
-        if(x[i]=='}'){
-            if(s.top()=='{')
-            s.pop();
-            else
-            return false;
-        }
-        }
-        if(!s.empty())
-            return false;
+        if(st.empty())
         return true;
+        return false;
     }
-
 };
 
 // { Driver Code Starts.
