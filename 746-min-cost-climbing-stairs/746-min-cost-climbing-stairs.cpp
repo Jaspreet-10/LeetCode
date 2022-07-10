@@ -1,20 +1,18 @@
 class Solution {
 public:
-    int minCost(int index,vector<int>&cost,int n,unordered_map<int,int>&memo){
-        if(index==n)
+    unordered_map<int,int>m;
+    int minCost(int index, int n, vector<int>&cost){
+        if(index>=n){
             return 0;
-        if(index>n)
-            return 1000;//maximum depends on the cpst array. Here max cost is 999.
-        int currentKey=index;
-        if(memo[currentKey]>0)
-            return memo[currentKey];
-        int oneJump=cost[index]+minCost(index+1,cost,n,memo);
-        int twoJumps=cost[index]+minCost(index+2,cost,n,memo);
-        memo[currentKey]=min(oneJump,twoJumps);
-        return memo[currentKey];
+        }
+        if(m[index+1]!=0)
+            return m[index+1];
+        int oneStep = cost[index]+minCost(index+1,n,cost);
+        int twoStep = cost[index]+minCost(index+2,n,cost);
+        m[index+1] = min(oneStep,twoStep);
+        return m[index+1];
     }
     int minCostClimbingStairs(vector<int>& cost) {
-        unordered_map<int,int>memo;
-        return min(minCost(0,cost,cost.size(),memo),memo[1]);
+        return min(minCost(0,cost.size(),cost),minCost(1,cost.size(),cost));
     }
 };
