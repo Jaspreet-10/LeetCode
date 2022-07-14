@@ -90,20 +90,22 @@ struct Node
         left = right = NULL;
     }
 }; */
+
 class Solution {
   public:
-    int d=0;
-    int height(Node* node){
-       if(node==NULL) 
-        return 0;
-        int lh=height(node->left);
-        int rh=height(node->right);
-        d=max(d,lh+rh+1);
-            return 1+max(lh,rh); 
+    // Function to return the diameter of a Binary Tree.
+    int maxi = INT_MIN;
+    int lenOfDia(Node* root){
+        if(!root)
+            return 0;
+        int lh = lenOfDia(root->left);
+        int rh = lenOfDia(root->right);
+        maxi = max(maxi,lh+rh+1);
+        return 1 + max(lh,rh);
     }
-    int diameter(Node* node) {
-        height(node);
-        return d;
+    int diameter(Node* root) {
+        lenOfDia(root);
+        return maxi;
     }
 };
 
