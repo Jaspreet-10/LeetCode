@@ -1,4 +1,4 @@
-// { Driver Code Starts
+//{ Driver Code Starts
 //Initial Template for C++
 
 
@@ -85,7 +85,7 @@ Node* buildTree(string str) {
 }
 
 
- // } Driver Code Ends
+// } Driver Code Ends
 /*Complete the function below
 
 struct Node
@@ -105,30 +105,27 @@ class Solution{
     public:
     //Function to check whether all nodes of a tree have the value 
     //equal to the sum of their child nodes.
-    int isSum(Node* root,bool &flag){
-        if(!root)
+    int sumProperty(Node* root){
+            if(!root)
             return 0;
-        if(root->left==NULL and root->right==NULL)
+        if(!root->left and !root->right)
             return root->data;
-        int leftSum = isSum(root->left,flag);
-        int rightSum = isSum(root->right,flag);
-        if(leftSum+rightSum != root->data){
-            flag = true;
-            return 0;
-        }
+        int lh = sumProperty(root->left);
+        int rh = sumProperty(root->right);
+        if(root->data != lh+rh)
+            return -1001;
         return root->data;
     }
     int isSumProperty(Node *root)
     {
-        bool flag = false;
-        isSum(root,flag);
-        if(flag == true)
-            return 0;
+     // Add your code here
+     if(sumProperty(root)!=-1001)
         return 1;
+    return 0;
     }
 };
 
-// { Driver Code Starts.
+//{ Driver Code Starts.
 
 /* Driver program to test size function*/
 
@@ -149,4 +146,5 @@ int main() {
     }
     return 0;
 }
-  // } Driver Code Ends
+
+// } Driver Code Ends
