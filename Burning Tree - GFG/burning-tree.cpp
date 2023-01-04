@@ -1,4 +1,4 @@
-// { Driver Code Starts
+//{ Driver Code Starts
 //Initial Template for C++
 
 #include <bits/stdc++.h>
@@ -79,75 +79,64 @@ Node *buildTree(string str) {
 }
 
 
- // } Driver Code Ends
+// } Driver Code Ends
 //User function Template for C++
 
 class Solution {
   public:
-    Node* start = NULL;
-    Node* findNode(Node*root,int target){
-        if(!root)
-            return NULL;
-        if(root->data == target){
-         start = root;
-         return root;   
-        }
-        findNode(root->left,target);
-        findNode(root->right,target);
-        return root;
-    }
     int minTime(Node* root, int target) 
     {
+        if(!root)
+            return 0;
+        Node*t = NULL;
         queue<Node*>q;
-        q.push(root);
-        unordered_map<Node*,Node*>map;
+        unordered_map<Node*,Node*>m;
         unordered_map<Node*,int>visited;
+        q.push(root);
         while(!q.empty()){
-            int size = q.size();
-            for(int i = size-1;i>=0;--i){
-                Node *head = q.front();
-                q.pop();
-                if(head->left){
-                    map[head->left] = head;
-                    q.push(head->left);   
-                }
-                if(head->right){
-                   map[head->right] = head;
-                   q.push(head->right);   
-                }
+            Node* head = q.front();
+            if(head->data == target){
+                t = head;
+                // cout<<t->data<<" ";
             }
-        }
-        findNode(root,target);
-        if(start!=NULL){
-        q.push(start);
-        visited[start] = 1;
+            // cout<<head->data<<" ";
+            q.pop();
+            if(head->left){
+                q.push(head->left);
+                m[head->left] = head;
+            }
+             if(head->right){
+                q.push(head->right);
+                m[head->right] = head;
+            }
         }
         int distance = 0;
+        q.push(t);
         while(!q.empty()){
             int size = q.size();
             for(int i = size-1;i>=0;--i){
-                Node* head = q.front();
-                q.pop();
-                if(map[head] and visited[map[head]]==0){
-                    visited[map[head]] = 1;
-                    q.push(map[head]);
-                }
-                if(head->left and visited[head->left]==0){
-                    visited[head->left] = 1;
-                    q.push(head->left);
-                }
-                if(head->right and visited[head->right]==0){
-                    visited[head->right] = 1;
-                    q.push(head->right);
-                }
+            Node* head = q.front();
+            q.pop();
+            if(head->left && head->left!=t && visited[head->left]!=1){
+                q.push(head->left);
+                visited[head->left] = 1;
             }
-            ++distance;
+            if(head->right && head->right!=t && visited[head->right]!=1){
+                q.push(head->right);
+                visited[head->right] = 1;
+            }
+            if(m[head] && m[head]!=t && visited[m[head]]!=1){
+                q.push(m[head]);
+                visited[m[head]] = 1;
+            }
+            }
+            ++distance;        
         }
         return distance-1;
     }
 };
 
-// { Driver Code Starts.
+//{ Driver Code Starts.
 
 int main() 
 {
@@ -173,4 +162,5 @@ int main()
 
     return 0;
 }
-  // } Driver Code Ends
+
+// } Driver Code Ends
