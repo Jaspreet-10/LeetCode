@@ -1,7 +1,6 @@
 # Children Sum Parent
-## Easy 
-<div class="problem-statement">
-                <p></p><p><span style="font-size:18px">Given a Binary Tree. Check whether all of its nodes have the value equal to the sum of their child nodes.</span></p>
+## Easy
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given a Binary Tree. Check whether all of its nodes have the value equal to the sum of their child nodes.</span></p>
 
 <p><br>
 <span style="font-size:18px"><strong>Example 1:</strong></span></p>
@@ -43,5 +42,4 @@ For every node, data value must be equal to the&nbsp;sum of data values in left 
 <p><span style="font-size:18px"><strong>Constraints:</strong><br>
 1 &lt;= N &lt;= 10<sup>5</sup><br>
 1 &lt;= Data on nodes &lt;= 10<sup>5</sup></span></p>
- <p></p>
-            </div>
+</div>
