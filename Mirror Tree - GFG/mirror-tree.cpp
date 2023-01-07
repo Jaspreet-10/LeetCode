@@ -1,4 +1,4 @@
-// { Driver Code Starts
+//{ Driver Code Starts
 // Initial Template for C++
 
 #include <bits/stdc++.h>
@@ -90,7 +90,7 @@ void inOrder(struct Node *node) {
 }
 
 
- // } Driver Code Ends
+// } Driver Code Ends
 // function Template for C++
 
 /* A binary tree node has data, pointer to left child
@@ -111,19 +111,26 @@ class Solution {
   public:
     // Function to convert a binary tree into its mirror tree.
     void mirror(Node* node) {
-        if(node==NULL) return;
-        Node*temp=node->left;
-        node->left=node->right;
-        node->right=temp;
-        if(node->left)
-            mirror(node->left);
-        if(node->right)
-            mirror(node->right);
+        if(!node)
             return ;
+        else if(node->right && node->left){
+            swap(node->right,node->left);
+        }
+        else if(!node->right && node->left){
+            node->right = node->left;
+            node->left = NULL;
+        }
+        else if(node->right && !node->left){
+            node->left = node->right;
+            node->right = NULL;
+        }
+        mirror(node->left);
+        mirror(node->right);
+        return ;
     }
 };
 
-// { Driver Code Starts.
+//{ Driver Code Starts.
 
 /* Driver program to test size function*/
 int main() {
@@ -140,4 +147,5 @@ int main() {
     }
 
     return 0;
-}  // } Driver Code Ends
+}
+// } Driver Code Ends
