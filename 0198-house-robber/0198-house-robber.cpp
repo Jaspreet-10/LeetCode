@@ -1,19 +1,19 @@
 class Solution {
 public:
-    int maxMoney(vector<int>&nums,int index, unordered_map<int,int>&m){
-        if(index>nums.size())
-            return 0;
-        if(m.find(index)!=m.end())
-            return m[index];
-        int consider = 0;
-        if(index<nums.size())
-        consider = nums[index] + maxMoney(nums,index+2,m);
-        int notConsider = maxMoney(nums, index+1,m);
-        m[index] = max(consider,notConsider);
-        return m[index];
+    int maxAmount(int index, vector<int>&nums, vector<int>&dp){
+        if(index>=nums.size()) return 0;
+        if(dp[index]!=-1){
+            return dp[index];
+        }
+        int consider = nums[index]+maxAmount(index+2,nums,dp);
+        int notConsider = maxAmount(index+1,nums,dp);
+        dp[index] = max(consider, notConsider);
+        return dp[index];
     }
     int rob(vector<int>& nums) {
-       unordered_map<int,int>m;
-       return max(maxMoney(nums,0,m),m[1]);
+        if(nums.size() == 1)
+         return nums[0];
+        vector<int>dp(nums.size(),-1);
+        return max(maxAmount(0,nums,dp),dp[1]);
     }
 };
