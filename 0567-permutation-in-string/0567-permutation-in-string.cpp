@@ -10,15 +10,15 @@ public:
             arr2[s2[i]-'a']+=1;
             right++;
         }
-        right-=1;
         while(right<size){
             if(arr1==arr2) return true;
-            right+=1;
             if(right<size)
                 arr2[s2[right]-'a']+=1;
                 arr2[s2[left]-'a']-=1;
             left+=1;
+            right+=1;
         }
+        if(arr1 == arr2) return true;
         return false;
     }
 };
