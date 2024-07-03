@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/Jaspreet-10/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Jaspreet-10/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/Jaspreet-10/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0130-surrounded-regions](https://github.com/Jaspreet-10/LeetCode/tree/master/0130-surrounded-regions) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Jaspreet-10/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Jaspreet-10/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0200-number-of-islands](https://github.com/Jaspreet-10/LeetCode/tree/master/0200-number-of-islands) |
@@ -30,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Jaspreet-10/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0130-surrounded-regions](https://github.com/Jaspreet-10/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/Jaspreet-10/LeetCode/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/Jaspreet-10/LeetCode/tree/master/0695-max-area-of-island) |
 ## Two Pointers
@@ -119,12 +121,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0130-surrounded-regions](https://github.com/Jaspreet-10/LeetCode/tree/master/0130-surrounded-regions) |
 | [0133-clone-graph](https://github.com/Jaspreet-10/LeetCode/tree/master/0133-clone-graph) |
 | [0200-number-of-islands](https://github.com/Jaspreet-10/LeetCode/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/Jaspreet-10/LeetCode/tree/master/0695-max-area-of-island) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0130-surrounded-regions](https://github.com/Jaspreet-10/LeetCode/tree/master/0130-surrounded-regions) |
 | [0133-clone-graph](https://github.com/Jaspreet-10/LeetCode/tree/master/0133-clone-graph) |
 | [0200-number-of-islands](https://github.com/Jaspreet-10/LeetCode/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/Jaspreet-10/LeetCode/tree/master/0695-max-area-of-island) |
@@ -132,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0130-surrounded-regions](https://github.com/Jaspreet-10/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/Jaspreet-10/LeetCode/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/Jaspreet-10/LeetCode/tree/master/0695-max-area-of-island) |
 | [1036-rotting-oranges](https://github.com/Jaspreet-10/LeetCode/tree/master/1036-rotting-oranges) |
