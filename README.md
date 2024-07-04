@@ -136,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0547-number-of-provinces](https://github.com/Jaspreet-10/LeetCode/tree/master/0547-number-of-provinces) |
+| [0662-maximum-width-of-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0695-max-area-of-island](https://github.com/Jaspreet-10/LeetCode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/Jaspreet-10/LeetCode/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/Jaspreet-10/LeetCode/tree/master/0801-is-graph-bipartite) |
@@ -150,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0542-01-matrix](https://github.com/Jaspreet-10/LeetCode/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/Jaspreet-10/LeetCode/tree/master/0547-number-of-provinces) |
+| [0662-maximum-width-of-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0695-max-area-of-island](https://github.com/Jaspreet-10/LeetCode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/Jaspreet-10/LeetCode/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/Jaspreet-10/LeetCode/tree/master/0801-is-graph-bipartite) |
@@ -180,8 +182,10 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0662-maximum-width-of-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0662-maximum-width-of-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 <!---LeetCode Topics End-->
