@@ -64,12 +64,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/Jaspreet-10/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Jaspreet-10/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0542-01-matrix](https://github.com/Jaspreet-10/LeetCode/tree/master/0542-01-matrix) |
+| [0678-valid-parenthesis-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0678-valid-parenthesis-string) |
 ## Stack
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/Jaspreet-10/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Jaspreet-10/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/Jaspreet-10/LeetCode/tree/master/0155-min-stack) |
+| [0678-valid-parenthesis-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0739-daily-temperatures](https://github.com/Jaspreet-10/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/Jaspreet-10/LeetCode/tree/master/0883-car-fleet) |
 ## Monotonic Stack
@@ -88,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0424-longest-repeating-character-replacement](https://github.com/Jaspreet-10/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0567-permutation-in-string) |
+| [0678-valid-parenthesis-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0678-valid-parenthesis-string) |
 ## Sliding Window
 |  |
 | ------- |
@@ -211,4 +214,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0455-assign-cookies](https://github.com/Jaspreet-10/LeetCode/tree/master/0455-assign-cookies) |
+| [0678-valid-parenthesis-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0678-valid-parenthesis-string) |
 <!---LeetCode Topics End-->
