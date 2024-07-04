@@ -11,7 +11,7 @@ public:
         }
         for(int i = 0 ; i < numCourses ; ++i){
             if(inDegree[i] == 0){
-                v.push_back(i);
+                // v.push_back(i);
                 q.push(i);
                 inDegree[i] = -1;
             }
@@ -19,13 +19,13 @@ public:
 
         while(!q.empty()){
             int node = q.front();
-            // v.push_back(node);
+            v.push_back(node);
             q.pop();
             for(auto it : adjList[node]){
                 inDegree[it]--;
                 if(inDegree[it] == 0){
                     inDegree[it] = -1;
-                    v.push_back(it);
+                    // v.push_back(it);
                     q.push(it);
                 }
             }
