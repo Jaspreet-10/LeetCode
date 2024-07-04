@@ -3,7 +3,6 @@ public:
     bool checkValidString(string s) {
         stack<int> open,star;
         int len = s.length();
-        
         for(int i=0;s[i]!='\0';++i)
         {
             if(s[i]=='(')
