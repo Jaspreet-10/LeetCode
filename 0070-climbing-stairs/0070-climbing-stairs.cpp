@@ -1,25 +1,18 @@
 class Solution {
 public:
-    int lh = 0, rh = 0;
-    int totalWays(int i, int n, vector<int>&vis){
-        if(i>n){
-            return 0; 
-        }
-        if(i == n){
+    int countStairs(int steps, int n, vector<int>&dp){
+        if(steps>n) return 0;
+        if(steps == n){
             return 1;
         }
-        if(vis[i]!=-1)
-            return vis[i];
-         lh=totalWays(i+1,n,vis);
-         rh=totalWays(i+2,n,vis);
-         vis[i] = lh+rh;
-         return vis[i];
+        if(dp[steps]!=-1) return dp[steps];
+        int oneSteps = countStairs(steps+1,n,dp);
+        int twoSteps = countStairs(steps+2,n,dp);
+        dp[steps] = oneSteps+twoSteps;
+        return dp[steps];
     }
     int climbStairs(int n) {
-        int ans = 0;
-        vector<int>vis(n,-1);
-            int count = 0;
-            ans+=totalWays(0,n,vis);
-        return ans;
+        vector<int>dp(n,-1);
+        return countStairs(0,n,dp);
     }
 };
