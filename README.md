@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0695-max-area-of-island](https://github.com/Jaspreet-10/LeetCode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/Jaspreet-10/LeetCode/tree/master/0733-flood-fill) |
 | [0739-daily-temperatures](https://github.com/Jaspreet-10/LeetCode/tree/master/0739-daily-temperatures) |
+| [0747-min-cost-climbing-stairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/Jaspreet-10/LeetCode/tree/master/0883-car-fleet) |
 | [1036-rotting-oranges](https://github.com/Jaspreet-10/LeetCode/tree/master/1036-rotting-oranges) |
@@ -75,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/Jaspreet-10/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0542-01-matrix](https://github.com/Jaspreet-10/LeetCode/tree/master/0542-01-matrix) |
 | [0678-valid-parenthesis-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [0747-min-cost-climbing-stairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 ## Stack
 |  |
 | ------- |
