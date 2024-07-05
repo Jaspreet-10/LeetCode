@@ -18,7 +18,6 @@ public:
         
         if (s[index] != '0') {
             count += codes(s, dp, index + 1);
-            
             if (index + 1 < s.length() && stoi(s.substr(index, 2)) <= 26) {
                 count += codes(s, dp, index + 2);
             }
