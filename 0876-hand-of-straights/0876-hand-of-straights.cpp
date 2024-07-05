@@ -12,7 +12,6 @@ public:
             while(k<groupSize){
                 if(m[key]>0){
                     m[key]--;
-                    cout<<key<<" ";
                     if(m[key] == 0) m.erase(key);
                     ++key;
                 }else
