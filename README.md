@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0127-word-ladder](https://github.com/Jaspreet-10/LeetCode/tree/master/0127-word-ladder) |
 | [0128-longest-consecutive-sequence](https://github.com/Jaspreet-10/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/Jaspreet-10/LeetCode/tree/master/0133-clone-graph) |
+| [0202-happy-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0202-happy-number) |
 | [0347-top-k-frequent-elements](https://github.com/Jaspreet-10/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0424-longest-repeating-character-replacement](https://github.com/Jaspreet-10/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0567-permutation-in-string) |
@@ -66,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0015-3sum) |
 | [0042-trapping-rain-water](https://github.com/Jaspreet-10/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Jaspreet-10/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0202-happy-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0202-happy-number) |
 | [0455-assign-cookies](https://github.com/Jaspreet-10/LeetCode/tree/master/0455-assign-cookies) |
 | [0567-permutation-in-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/Jaspreet-10/LeetCode/tree/master/0647-palindromic-substrings) |
@@ -146,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/Jaspreet-10/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Jaspreet-10/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0202-happy-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0202-happy-number) |
 ## Backtracking
 |  |
 | ------- |
