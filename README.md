@@ -123,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/Jaspreet-10/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/Jaspreet-10/LeetCode/tree/master/0022-generate-parentheses) |
+| [0043-multiply-strings](https://github.com/Jaspreet-10/LeetCode/tree/master/0043-multiply-strings) |
 | [0076-minimum-window-substring](https://github.com/Jaspreet-10/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0091-decode-ways](https://github.com/Jaspreet-10/LeetCode/tree/master/0091-decode-ways) |
 | [0097-interleaving-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0097-interleaving-string) |
@@ -149,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0043-multiply-strings](https://github.com/Jaspreet-10/LeetCode/tree/master/0043-multiply-strings) |
 | [0062-unique-paths](https://github.com/Jaspreet-10/LeetCode/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/Jaspreet-10/LeetCode/tree/master/0066-plus-one) |
 | [0070-climbing-stairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0070-climbing-stairs) |
@@ -311,4 +313,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/Jaspreet-10/LeetCode/tree/master/0062-unique-paths) |
+## Simulation
+|  |
+| ------- |
+| [0043-multiply-strings](https://github.com/Jaspreet-10/LeetCode/tree/master/0043-multiply-strings) |
 <!---LeetCode Topics End-->
