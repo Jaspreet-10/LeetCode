@@ -12,8 +12,6 @@ public:
     int findTargetSumWays(vector<int>& nums, int target) {
         int n = nums.size();
         map<pair<int,int>,int>m;
-        int ans = totalWays(0,n,nums,target,m);
-        if(ans == 10001) return -1;
-        return ans;
+        return totalWays(0,n,nums,target,m);
     }
 };
