@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0128-longest-consecutive-sequence](https://github.com/Jaspreet-10/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/Jaspreet-10/LeetCode/tree/master/0133-clone-graph) |
 | [0202-happy-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0202-happy-number) |
+| [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0347-top-k-frequent-elements](https://github.com/Jaspreet-10/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0424-longest-repeating-character-replacement](https://github.com/Jaspreet-10/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0567-permutation-in-string) |
@@ -128,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0091-decode-ways](https://github.com/Jaspreet-10/LeetCode/tree/master/0091-decode-ways) |
 | [0097-interleaving-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0097-interleaving-string) |
 | [0127-word-ladder](https://github.com/Jaspreet-10/LeetCode/tree/master/0127-word-ladder) |
+| [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0424-longest-repeating-character-replacement](https://github.com/Jaspreet-10/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0567-permutation-in-string) |
@@ -145,6 +147,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/Jaspreet-10/LeetCode/tree/master/0155-min-stack) |
+| [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 ## Math
@@ -317,4 +320,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0043-multiply-strings](https://github.com/Jaspreet-10/LeetCode/tree/master/0043-multiply-strings) |
+## Trie
+|  |
+| ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 <!---LeetCode Topics End-->
