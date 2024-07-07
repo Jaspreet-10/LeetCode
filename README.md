@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0883-car-fleet](https://github.com/Jaspreet-10/LeetCode/tree/master/0883-car-fleet) |
 | [1036-rotting-oranges](https://github.com/Jaspreet-10/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/Jaspreet-10/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/Jaspreet-10/LeetCode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 ## Hash Table
@@ -182,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/Jaspreet-10/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
 ## Bucket Sort
 |  |
 | ------- |
