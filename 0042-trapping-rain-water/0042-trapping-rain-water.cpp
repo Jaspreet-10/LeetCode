@@ -16,11 +16,7 @@ public:
             maxi = right[i];
         }
         for(int i = 0 ; i < n ; ++i){
-            if(left[i]<right[i]){
-                trappedWater+= (left[i]-arr[i]);
-            }
-            else
-            trappedWater+= (right[i]-arr[i]);
+            trappedWater+=min(left[i],right[i])-arr[i];
         }
         return trappedWater;
     }
