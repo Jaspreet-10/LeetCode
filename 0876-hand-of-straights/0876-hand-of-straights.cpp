@@ -2,7 +2,6 @@ class Solution {
 public:
     bool isNStraightHand(vector<int>& hand, int groupSize) {
        map<int,int>m;
-    //    int i = 0;
        if(hand.size()%groupSize!=0) return false;
        for(int i = 0 ; i < hand.size() ; ++i) m[hand[i]]++;
        while(m.size()>0){
@@ -18,7 +17,6 @@ public:
                     return false;
                 ++k;
             }
-            // ++i;
         }
         if(m.size()!=0)
         return false;
