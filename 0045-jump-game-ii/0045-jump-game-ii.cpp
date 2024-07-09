@@ -1,12 +1,12 @@
 class Solution {
 public:
     int jump(vector<int>& nums) {
-        int jumps = 0, farthest = 0, current = 0;
+        int jumps = 0, reachable = 0, current = 0;
         for(int i = 0 ; i < nums.size()-1 ; ++i){
-            farthest = max(farthest, nums[i]+i);
-            if(i>farthest) return -1;
+            reachable = max(reachable, nums[i]+i);
+            if(i>reachable) return -1;
             if(i==current){
-                current = farthest;
+                current = reachable;
                 ++jumps;
             }
         }
