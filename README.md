@@ -182,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/Jaspreet-10/LeetCode/tree/master/0002-add-two-numbers) |
 | [0043-multiply-strings](https://github.com/Jaspreet-10/LeetCode/tree/master/0043-multiply-strings) |
 | [0062-unique-paths](https://github.com/Jaspreet-10/LeetCode/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/Jaspreet-10/LeetCode/tree/master/0066-plus-one) |
@@ -393,4 +394,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/Jaspreet-10/LeetCode/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/Jaspreet-10/LeetCode/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
