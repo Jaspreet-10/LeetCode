@@ -7,10 +7,10 @@ public:
             int x = points[i][0], y = points[i][1];
             int dist = (x*x) + (y*y);
             pq.push({dist,{x,y}});
-        } 
-        while(pq.size()>k){
+            if(pq.size()>k){
             pq.pop();
         }
+        } 
         while(!pq.empty()){
             ans.push_back({pq.top().second.first,pq.top().second.second});
             pq.pop();
