@@ -171,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/Jaspreet-10/LeetCode/tree/master/0155-min-stack) |
 | [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 ## Math
 |  |
@@ -211,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/Jaspreet-10/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/Jaspreet-10/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0347-top-k-frequent-elements](https://github.com/Jaspreet-10/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1014-k-closest-points-to-origin](https://github.com/Jaspreet-10/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
 ## Bucket Sort
@@ -304,6 +306,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Binary Tree
@@ -317,6 +320,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Greedy
@@ -344,6 +348,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Jaspreet-10/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Memoization
 |  |
 | ------- |
@@ -372,4 +377,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Jaspreet-10/LeetCode/tree/master/0239-sliding-window-maximum) |
+## Data Stream
+|  |
+| ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 <!---LeetCode Topics End-->
