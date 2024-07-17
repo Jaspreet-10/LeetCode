@@ -5,7 +5,7 @@ public:
         for(int i = 0 ; i < num.size() ; ++i){
             int dig = num[i]-'0';
             while(!st.empty() && st.top()>dig && k>0){
-                cout<<k<<" "<<st.top()<<" ";
+                // cout<<k<<" "<<st.top()<<" ";
                 st.pop();
                 --k;
             }
