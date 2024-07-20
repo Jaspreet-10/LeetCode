@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/Jaspreet-10/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/Jaspreet-10/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
+| [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/Jaspreet-10/LeetCode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 | [2227-sum-of-subarray-ranges](https://github.com/Jaspreet-10/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
@@ -344,6 +345,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/Jaspreet-10/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/Jaspreet-10/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/Jaspreet-10/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 ## Graph
 |  |
 | ------- |
@@ -397,6 +399,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0678-valid-parenthesis-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0768-partition-labels](https://github.com/Jaspreet-10/LeetCode/tree/master/0768-partition-labels) |
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
+| [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/Jaspreet-10/LeetCode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 ## String Matching
 |  |
