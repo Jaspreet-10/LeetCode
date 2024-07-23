@@ -13,25 +13,14 @@ class Solution {
 public:
     bool flag = false;
     TreeNode* insertIntoBSTHelper(TreeNode* root, int val){
-        if(!root) return NULL;
-        if(!root->left && val<root->val && !flag){
-            flag = true;
-            return root->left = new TreeNode(val);
-        }
-        if(!root->right && val>root->val && !flag){
-            flag = true;
-            return root->right = new TreeNode(val);
-
-        }
+        if(!root) return new TreeNode(val);
         if(root->val<val)
-        insertIntoBSTHelper(root->right,val);
+        root->right = insertIntoBSTHelper(root->right,val);
         else
-        insertIntoBSTHelper(root->left,val);
-         return NULL;
+        root->left = insertIntoBSTHelper(root->left,val);
+         return root;
     }
     TreeNode* insertIntoBST(TreeNode* root, int val) {
-        if(!root) return new TreeNode(val);
-        insertIntoBSTHelper(root,val);
-        return root;
+        return insertIntoBSTHelper(root,val);
     }
 };
