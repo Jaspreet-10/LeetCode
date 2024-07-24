@@ -11,22 +11,20 @@
  */
 class Solution {
 public:
-    int element = 0;
-    int findElement(TreeNode* root,int k , int &cnt){
-        if(!root)
-            return 0;
-        findElement(root->left,k,cnt);
+    int helper(TreeNode* root, int k, int &ans, int &cnt){
+        if(!root) return -1;
+        if(helper(root->left, k, ans, cnt)!=-1) return ans;
         ++cnt;
-        if(cnt == k){
-            element =  root->val;
-            return 0;
+        if(cnt == k){ 
+            ans = root->val;
+            return root->val;
         }
-        findElement(root->right,k,cnt);
-        return 0;
+        if(helper(root->right, k, ans, cnt)!=-1) return ans;
+        return -1;
     }
     int kthSmallest(TreeNode* root, int k) {
-        int cnt = 0;
-        findElement(root,k,cnt);
-        return element;
+        int ans = 0,cnt = 0;
+        helper(root,k,ans,cnt);
+        return ans;
     }
 };
