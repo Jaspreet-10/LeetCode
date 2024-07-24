@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0066-plus-one](https://github.com/Jaspreet-10/LeetCode/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/Jaspreet-10/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/Jaspreet-10/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0075-sort-colors](https://github.com/Jaspreet-10/LeetCode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/Jaspreet-10/LeetCode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Jaspreet-10/LeetCode/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Jaspreet-10/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
@@ -107,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Jaspreet-10/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0042-trapping-rain-water](https://github.com/Jaspreet-10/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0075-sort-colors](https://github.com/Jaspreet-10/LeetCode/tree/master/0075-sort-colors) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Jaspreet-10/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0202-happy-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0202-happy-number) |
 | [0295-find-median-from-data-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0295-find-median-from-data-stream) |
@@ -252,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0015-3sum) |
+| [0075-sort-colors](https://github.com/Jaspreet-10/LeetCode/tree/master/0075-sort-colors) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Jaspreet-10/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0295-find-median-from-data-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/Jaspreet-10/LeetCode/tree/master/0347-top-k-frequent-elements) |
