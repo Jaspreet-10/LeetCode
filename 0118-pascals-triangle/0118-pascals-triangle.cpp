@@ -2,11 +2,7 @@ class Solution {
 public:
     vector<vector<int>> generate(int numRows) {
         if(numRows == 1) return {{1}};
-        vector<int>P1 = {1};
-        vector<int>P2 = {1,1};
-        vector<vector<int>>res;
-        res.push_back(P1);
-        res.push_back(P2);
+        vector<vector<int>>res = {{1},{1,1}};
         for(int i = 2 ; i < numRows ; ++i){
             vector<int>tmp;
             tmp.push_back(res[i-1][0]);
