@@ -14,3 +14,12 @@ public:
         return answer;
     }
 };
+
+// Combining these observations:
+
+// The outer loop runs 
+// O(n) times.
+// The inner while loop runs 
+// O(n) times in total over the entire string.
+// Therefore, the overall time complexity is 
+// O(n).
