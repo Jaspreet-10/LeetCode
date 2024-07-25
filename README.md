@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/Jaspreet-10/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/Jaspreet-10/LeetCode/tree/master/0455-assign-cookies) |
+| [0493-reverse-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/Jaspreet-10/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0503-next-greater-element-ii) |
@@ -133,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Jaspreet-10/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Jaspreet-10/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0300-longest-increasing-subsequence](https://github.com/Jaspreet-10/LeetCode/tree/master/0300-longest-increasing-subsequence) |
+| [0493-reverse-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0493-reverse-pairs) |
 | [0792-binary-search](https://github.com/Jaspreet-10/LeetCode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/Jaspreet-10/LeetCode/tree/master/0907-koko-eating-bananas) |
 ## Dynamic Programming
@@ -285,6 +287,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/Jaspreet-10/LeetCode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Jaspreet-10/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/Jaspreet-10/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0493-reverse-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0493-reverse-pairs) |
 | [1014-k-closest-points-to-origin](https://github.com/Jaspreet-10/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
@@ -504,8 +507,21 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Jaspreet-10/LeetCode/tree/master/0023-merge-k-sorted-lists) |
+| [0493-reverse-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0493-reverse-pairs) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [0078-subsets](https://github.com/Jaspreet-10/LeetCode/tree/master/0078-subsets) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0493-reverse-pairs) |
+## Segment Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0493-reverse-pairs) |
+## Ordered Set
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0493-reverse-pairs) |
 <!---LeetCode Topics End-->
