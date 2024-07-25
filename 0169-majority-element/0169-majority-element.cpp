@@ -7,11 +7,12 @@ public:
             if(nums[i] == ele) ++cnt;
             else --cnt;
         }
-        cnt = 0;
-        for(int i = 0 ; i < n ; ++i){
-            if(ele == nums[i]) ++cnt;
-        }
-        if(cnt>(n/2)) return ele;
-        return -1;
+        // cnt = 0;
+        // for(int i = 0 ; i < n ; ++i){
+        //     if(ele == nums[i]) ++cnt;
+        // }
+        // if(cnt>(n/2)) return ele;
+        // return -1;
+        return ele;
     }
 };
