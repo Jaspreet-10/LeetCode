@@ -76,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 | [2165-plates-between-candles](https://github.com/Jaspreet-10/LeetCode/tree/master/2165-plates-between-candles) |
 | [2227-sum-of-subarray-ranges](https://github.com/Jaspreet-10/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
+| [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## Hash Table
 |  |
 | ------- |
@@ -102,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
+| [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## Union Find
 |  |
 | ------- |
@@ -324,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/Jaspreet-10/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/Jaspreet-10/LeetCode/tree/master/0621-task-scheduler) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
+| [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## Quickselect
 |  |
 | ------- |
@@ -448,6 +451,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/Jaspreet-10/LeetCode/tree/master/2026-merge-triplets-to-form-target-triplet) |
+| [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## String Matching
 |  |
 | ------- |
