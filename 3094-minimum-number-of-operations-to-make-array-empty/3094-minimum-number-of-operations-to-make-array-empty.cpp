@@ -7,10 +7,16 @@ public:
             m[nums[i]]++;
         }
         for(auto it : m){
+                cout<<it.first<<" "<<it.second<<"\n";
                  while(it.second>=2){
-                   if(it.second%3 == 0) it.second-=3;
-                   else it.second-=2;
-                   ++cnt;
+                   if(it.second%3 == 0){
+                    cnt+=it.second/3;
+                    it.second = 0;
+                   }
+                   else{
+                    it.second-=2;
+                    ++cnt;
+                   }
                 }
                 if(it.second>0){ 
                     return -1;
