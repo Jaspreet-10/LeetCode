@@ -1,7 +1,7 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        vector<int>remaining(128,0);
+      vector<int>remaining(128,0);
         int i = 0, left = 0, required = t.size(), mini = INT_MAX, start = 0;
         for(int i = 0 ; i < t.size() ; ++i){
             remaining[t[i]]++;
