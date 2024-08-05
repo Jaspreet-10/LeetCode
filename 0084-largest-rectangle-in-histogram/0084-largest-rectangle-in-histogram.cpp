@@ -2,32 +2,27 @@ class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {
         int n = heights.size();
-        int leftSmallest[n], rightSmallest[n], maxi = INT_MIN;
+        vector<int>left(n,0);
+        vector<int>right(n,0);
         stack<int>st;
-        for(int i = 0 ; i < n ; ++i){
-            while(!st.empty() and heights[st.top()]>=heights[i]) st.pop();
-            if(!st.empty()){
-                leftSmallest[i] = st.top()+1;
-            }else{
-                leftSmallest[i] = 0;
-            }
+        for(int i = 0 ; i < heights.size() ; ++i){
+            while(!st.empty() && heights[st.top()]>=heights[i]) st.pop();
+            if(st.empty()) left[i] = 0;
+            else left[i] = st.top()+1;
             st.push(i);
         }
         while(!st.empty()) st.pop();
-        for(int i=n-1;i>=0;--i){
-            while(!st.empty() and heights[st.top()]>heights[i]) st.pop();
-            if(!st.empty()){
-                rightSmallest[i] = st.top()-1;
-            }else{
-                rightSmallest[i] = n-1;
-            }
+        
+        for(int i = n-1 ; i >= 0 ; --i){
+            while(!st.empty() && heights[st.top()]>heights[i]) st.pop();
+            if(st.empty()) right[i] = n-1;
+            else right[i] = st.top()-1;
             st.push(i);
         }
-        int maxA = 0;
+        int maxLen = 0;
         for(int i = 0 ; i < n ; ++i){
-            cout<<heights[i]*(rightSmallest[i]-leftSmallest[i]+1)<<" ";
-            maxA = max(maxA,heights[i]*(rightSmallest[i]-leftSmallest[i]+1));
+            maxLen = max(maxLen,(right[i] - left[i] + 1)*heights[i]);
         }
-        return maxA;
+        return maxLen;
     }
 };
