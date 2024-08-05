@@ -62,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0542-01-matrix](https://github.com/Jaspreet-10/LeetCode/tree/master/0542-01-matrix) |
 | [0621-task-scheduler](https://github.com/Jaspreet-10/LeetCode/tree/master/0621-task-scheduler) |
 | [0695-max-area-of-island](https://github.com/Jaspreet-10/LeetCode/tree/master/0695-max-area-of-island) |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Jaspreet-10/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0733-flood-fill](https://github.com/Jaspreet-10/LeetCode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/Jaspreet-10/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/Jaspreet-10/LeetCode/tree/master/0739-daily-temperatures) |
@@ -180,6 +181,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0542-01-matrix](https://github.com/Jaspreet-10/LeetCode/tree/master/0542-01-matrix) |
 | [0647-palindromic-substrings](https://github.com/Jaspreet-10/LeetCode/tree/master/0647-palindromic-substrings) |
 | [0678-valid-parenthesis-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Jaspreet-10/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0747-min-cost-climbing-stairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0943-sum-of-subarray-minimums](https://github.com/Jaspreet-10/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 ## Stack
@@ -456,6 +458,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/Jaspreet-10/LeetCode/tree/master/0455-assign-cookies) |
 | [0621-task-scheduler](https://github.com/Jaspreet-10/LeetCode/tree/master/0621-task-scheduler) |
 | [0678-valid-parenthesis-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/Jaspreet-10/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0768-partition-labels](https://github.com/Jaspreet-10/LeetCode/tree/master/0768-partition-labels) |
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
