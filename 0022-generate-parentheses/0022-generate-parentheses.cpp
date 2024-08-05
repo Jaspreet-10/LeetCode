@@ -1,19 +1,19 @@
 class Solution {
 public:
-    void findAllCombs(int openCount,int closeCount,string str,int n,vector<string>&answer){
-        if(openCount==closeCount and closeCount==n){
-            answer.push_back(str);
-            return;
+    vector<string>helper(int open, int close, int n, string str, vector<string>&ans){
+        if(close == open && close == n){
+            ans.push_back(str);
+            return ans;
         }
-        if(openCount<n)
-        findAllCombs(openCount+1,closeCount,str+"(",n,answer);
-        if(closeCount<openCount)
-        findAllCombs(openCount,closeCount+1,str+")",n,answer);
-        return;
+        if(open<n)
+            helper(open+1,close,n,str+"(",ans);
+        if(close<open)
+            helper(open,close+1,n,str+")",ans);
+        return ans;
     }
     vector<string> generateParenthesis(int n) {
-        vector<string>answer;
-        findAllCombs(0,0,"",n,answer);
-        return answer;
+        string str = "";
+        vector<string>ans;
+        return helper(0,0,n,str,ans);
     }
 };
