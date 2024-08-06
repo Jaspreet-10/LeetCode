@@ -15,7 +15,6 @@ public:
         if(!root and !subRoot) return true;
         if(!root or !subRoot) return false;
         if(root->val == subRoot->val){
-            cout<<root->val<<" ";
             if(!findSubRoot(root->left, subRoot->left)) return false;
             if(!findSubRoot(root->right, subRoot->right)) return false;
         }else return false;
