@@ -11,24 +11,23 @@
  */
 class Solution {
 public:
-    vector<int> rightSideView(TreeNode* root) {
-         if(!root) return {};
-        vector<int>temp;
-        // vector<vector<int>>ans;
-        queue<TreeNode*>q;
-        q.push(root);
-        while(!q.empty()){
-            int size = q.size();
-            for(int i = size-1;i>=0;--i){
-                TreeNode* head = q.front();
-                if(i == 0)
-                temp.push_back(head->val);
-                 q.pop();
-                if(head->left) q.push(head->left);
-                if(head->right) q.push(head->right);
-            }
-            // ans.push_back(temp);
-        }
-        return temp;
+   void dfs(TreeNode* node, int level, vector<int>& result) {
+    if (!node) return;
+    
+    // If this is the first time we are visiting this level
+    if (level == result.size()) {
+        result.push_back(node->val);
+    }
+    
+    // First visit the right subtree
+    dfs(node->right, level + 1, result);
+    // Then visit the left subtree
+    dfs(node->left, level + 1, result);
+}
+
+vector<int> rightSideView(TreeNode* root) {
+    vector<int> result;
+    dfs(root, 0, result);
+    return result;
     }
 };
