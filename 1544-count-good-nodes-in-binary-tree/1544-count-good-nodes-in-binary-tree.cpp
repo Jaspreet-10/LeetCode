@@ -11,18 +11,19 @@
  */
 class Solution {
 public:
-    int maximumNode(TreeNode* root, int maxi, int& cnt){
-        if(!root) return cnt;
-        maxi = max(maxi, root->val);
-        if(root->val>=maxi)++cnt;
-        maximumNode(root->left, maxi, cnt);
-        maximumNode(root->right, maxi, cnt);
+    int cnt = 0;
+    int findGoodNodes(TreeNode* root, int maxi){
+        if(!root) return 0;
+        if(root->val >= maxi) ++cnt;
+        if(root->val > maxi) maxi = root->val;
+        int lh = findGoodNodes(root->left, maxi);
+        int rh = findGoodNodes(root->right, maxi);
         return cnt;
     }
     int goodNodes(TreeNode* root) {
         if(!root) return 0;
-        int cnt = 0;
         int maxi = root->val;
-       return maximumNode(root, maxi, cnt);
+        findGoodNodes(root,maxi);  
+        return cnt; 
     }
 };
