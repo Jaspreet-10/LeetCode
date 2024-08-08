@@ -4,8 +4,8 @@ public:
         vector<int>inDegree(numCourses,0);
         vector<int>adjL[numCourses];
         for(int i = 0 ; i < prerequisites.size() ; ++i){
-            adjL[prerequisites[i][0]].push_back(prerequisites[i][1]);
-            // adjL[prerequisites[i][1]].push_back(prerequisites[i][0]);
+            // adjL[prerequisites[i][0]].push_back(prerequisites[i][1]);
+            adjL[prerequisites[i][1]].push_back(prerequisites[i][0]);
         }
         for(int i = 0 ; i < numCourses; ++i){
             for(auto it:adjL[i]){
