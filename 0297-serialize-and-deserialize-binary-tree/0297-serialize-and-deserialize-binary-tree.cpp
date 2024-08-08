@@ -27,7 +27,7 @@ public:
                q.push(curNode->right);            
            }
         }
-        cout<<s<<" ";
+        // cout<<s<<" ";
         return s;
     }
 
