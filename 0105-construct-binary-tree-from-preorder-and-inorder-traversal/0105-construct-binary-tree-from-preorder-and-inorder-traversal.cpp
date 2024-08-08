@@ -11,26 +11,22 @@
  */
 class Solution {
 public:
-    TreeNode* treeConstruct(vector<int>pre,int preStart,int preEnd,vector<int>in,int inStart,
-    int inEnd,unordered_map<int,int>&m){
-        if(preStart>preEnd || inStart>inEnd)
-            return NULL;
-        TreeNode* root = new TreeNode(pre[preStart]);
-        int inRoot = m[pre[preStart]];
-        int numsLeft = inRoot-inStart;
-        root->left = treeConstruct(pre,preStart+1,preStart+numsLeft,in,inStart,
-                                    inRoot-1,m);
-        root->right = treeConstruct(pre,preStart+numsLeft+1,preEnd,in,inRoot+1,
-                                    inEnd,m);
+    TreeNode* constructBinaryTree(vector<int>&preorder, vector<int>&inorder,
+    unordered_map<int,int>&m, int prestart, int preend, int instart, int inend){
+        if(inend<instart || prestart>preend) return NULL;
+        TreeNode* root = new TreeNode(preorder[prestart]);
+        int inRoot = m[preorder[prestart]];
+        int numsLeft = inRoot-instart;
+        root->left = constructBinaryTree(preorder, inorder,m,prestart+1,prestart+numsLeft,
+                                    instart,inRoot-1);
+        root->right = constructBinaryTree(preorder,inorder,m,prestart+numsLeft+1,preend,
+                                    inRoot+1,inend);
         return root;
     }
-    TreeNode* buildTree(vector<int>& pre, vector<int>& in) {
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
         unordered_map<int,int>m;
-        int n = pre.size();
-        for(int i = 0 ; i < n ; ++i){
-            m[in[i]]=i;
-        }
-        TreeNode* root = treeConstruct(pre,0,n-1,in,0,n-1,m);
-        return root;
+        int n = inorder.size();
+        for(int i = 0 ; i < n ; ++i) m[inorder[i]] = i;
+        return constructBinaryTree(preorder,inorder,m,0,n-1,0,n-1);
     }
 };
