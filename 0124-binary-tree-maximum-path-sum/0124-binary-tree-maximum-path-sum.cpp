@@ -28,3 +28,7 @@ public:
         return maxi;
     }
 };
+
+// Test case: 15,10,20, null, null,-30-15. will never give the right answer
+//  if I will not apply that logic in the max condition.
+//   Because taking negative values will never give me the right answer.
