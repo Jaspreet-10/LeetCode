@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/Jaspreet-10/LeetCode/tree/master/0130-surrounded-regions) |
 | [0134-gas-station](https://github.com/Jaspreet-10/LeetCode/tree/master/0134-gas-station) |
 | [0135-candy](https://github.com/Jaspreet-10/LeetCode/tree/master/0135-candy) |
+| [0139-word-break](https://github.com/Jaspreet-10/LeetCode/tree/master/0139-word-break) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Jaspreet-10/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0152-maximum-product-subarray](https://github.com/Jaspreet-10/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Jaspreet-10/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
@@ -98,6 +99,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0127-word-ladder](https://github.com/Jaspreet-10/LeetCode/tree/master/0127-word-ladder) |
 | [0128-longest-consecutive-sequence](https://github.com/Jaspreet-10/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/Jaspreet-10/LeetCode/tree/master/0133-clone-graph) |
+| [0139-word-break](https://github.com/Jaspreet-10/LeetCode/tree/master/0139-word-break) |
 | [0169-majority-element](https://github.com/Jaspreet-10/LeetCode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0202-happy-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
@@ -176,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/Jaspreet-10/LeetCode/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0139-word-break](https://github.com/Jaspreet-10/LeetCode/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/Jaspreet-10/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Jaspreet-10/LeetCode/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0198-house-robber](https://github.com/Jaspreet-10/LeetCode/tree/master/0198-house-robber) |
@@ -240,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0091-decode-ways](https://github.com/Jaspreet-10/LeetCode/tree/master/0091-decode-ways) |
 | [0097-interleaving-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0097-interleaving-string) |
 | [0127-word-ladder](https://github.com/Jaspreet-10/LeetCode/tree/master/0127-word-ladder) |
+| [0139-word-break](https://github.com/Jaspreet-10/LeetCode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0402-remove-k-digits](https://github.com/Jaspreet-10/LeetCode/tree/master/0402-remove-k-digits) |
@@ -537,6 +541,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0070-climbing-stairs) |
+| [0139-word-break](https://github.com/Jaspreet-10/LeetCode/tree/master/0139-word-break) |
 ## Combinatorics
 |  |
 | ------- |
@@ -549,6 +554,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Trie
 |  |
 | ------- |
+| [0139-word-break](https://github.com/Jaspreet-10/LeetCode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 ## Geometry
 |  |
