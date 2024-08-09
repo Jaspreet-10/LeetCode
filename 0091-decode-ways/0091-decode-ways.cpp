@@ -22,7 +22,6 @@ public:
                 count += codes(s, dp, index + 2);
             }
         }
-        
         dp[index] = count;
         return count;
     }
