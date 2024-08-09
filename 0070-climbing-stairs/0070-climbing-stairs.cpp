@@ -1,18 +1,14 @@
 class Solution {
 public:
-    int countStairs(int steps, int n, vector<int>&dp){
-        if(steps>n) return 0;
-        if(steps == n){
-            return 1;
-        }
-        if(dp[steps]!=-1) return dp[steps];
-        int oneSteps = countStairs(steps+1,n,dp);
-        int twoSteps = countStairs(steps+2,n,dp);
-        dp[steps] = oneSteps+twoSteps;
-        return dp[steps];
+    int countTheSteps(int index, int n, vector<int>&dp){
+        if(index == n) return 1;
+        if(index>n) return 0;
+        if(dp[index]!=0) return dp[index];
+        dp[index] = countTheSteps(index+1,n,dp) + countTheSteps(index+2,n,dp);
+        return dp[index];
     }
     int climbStairs(int n) {
-        vector<int>dp(n,-1);
-        return countStairs(0,n,dp);
+        vector<int>dp(n+1);
+        return countTheSteps(0,n,dp);
     }
 };
