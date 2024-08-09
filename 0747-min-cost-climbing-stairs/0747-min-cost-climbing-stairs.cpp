@@ -1,17 +1,17 @@
 class Solution {
 public:
-    int minimumCost(int index, vector<int>&cost, int n, unordered_map<int,int>&m){
-        if(index>n)
-            return 1001;
-        if(index == n) return 0;
-        if(m[index]>0) return m[index];
-        int lh = cost[index] + minimumCost(index+1,cost,n,m);
-        int rh = cost[index] + minimumCost(index+2,cost,n,m);
-        m[index] = min(lh,rh);
-        return m[index];
+    int countTheSteps(int index, int n, vector<int>&dp, vector<int>&cost){
+        if(index == n-1) return cost[index];
+        if(index>=n) return 0;
+        if(dp[index]!=0) return dp[index];
+        int oneJump = cost[index] + countTheSteps(index+1,n,dp,cost);
+        int twoJump = cost[index] + countTheSteps(index+2,n,dp,cost);
+        dp[index] = min(oneJump,twoJump);
+        return dp[index];
     }
     int minCostClimbingStairs(vector<int>& cost) {
-        unordered_map<int,int>m;
-        return min(minimumCost(0,cost,cost.size(),m),m[1]);
+        int n = cost.size();
+        vector<int>dp(n+1);
+        return min(countTheSteps(0,n,dp,cost),countTheSteps(1,n,dp,cost));
     }
 };
