@@ -1,22 +1,23 @@
 class Solution {
 public:
-    int lcsLength(int i,int j,string &text1,string &text2,int len1,int len2,vector<vector<int>>&dp){
-        if(i>=len1 || j>=len2)
-            return 0;
-        int ans = -1001;
-        if(dp[i][j]!=-1)
-            return dp[i][j];
-        if(text1[i] == text2[j]){
-            ans = 1+lcsLength(i+1,j+1,text1,text2,len1,len2,dp);
-        }else{
-            ans=max(lcsLength(i,j+1,text1,text2,len1,len2,dp),lcsLength(i+1,j,text1,text2,len1,len2,dp));
+    int lcs(int i, int j, int n, int m, string &text1, string &text2, 
+    map<pair<int,int>,int>&M){
+        if(i>=n || j>=m) return 0;
+        pair<int,int>p = {i,j};
+        if(M.find(p)!=M.end()) return M[p];
+
+        int ans = 0;
+        if(text1[i] == text2[j]) 
+        ans = 1 + lcs(i+1, j+1, n, m, text1, text2, M);
+        else{
+            ans = max(lcs(i+1, j, n, m, text1, text2, M),
+            lcs(i, j+1, n, m, text1, text2, M));
         }
-        dp[i][j] =  ans;
+        M[p] = ans;
         return ans;
     }
     int longestCommonSubsequence(string text1, string text2) {
-        int len1 = text1.length(),len2 = text2.length();
-        vector<vector<int>>dp(len1+1,vector<int>(len2+1,-1));
-        return lcsLength(0,0,text1,text2,len1,len2,dp);
+        map<pair<int,int>,int>m;
+        return lcs(0, 0, text1.length(), text2.length(), text1, text2, m);
     }
 };
