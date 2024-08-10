@@ -1,19 +1,17 @@
 class Solution {
 public:
-    int longestSub(int index, int prevIndex, vector<int>&nums, vector<vector<int>>&dp){
-        if(index == nums.size()) return 0;
-        if(dp[index][prevIndex+1]!=-1) return dp[index][prevIndex+1];
-        int take = 0;
-        if(prevIndex == -1 || nums[index]>nums[prevIndex]){
-            take = 1+longestSub(index+1,index,nums,dp);
+    int maxLengthOfLIS(int index, vector<int>&nums, vector<vector<int>>&dp, int prev){
+        if(index>=nums.size()) return 0;
+        if(dp[index][prev+1]!=-1) return dp[index][prev+1];
+        int consider = 0;
+        if(prev == -1 || nums[index] > nums[prev]){
+            consider = 1 + maxLengthOfLIS(index+1, nums, dp, index);
         }
-        int notTake = longestSub(index+1,prevIndex,nums,dp);
-        dp[index][prevIndex+1] = max(take, notTake);
-        return dp[index][prevIndex+1];
+        int notConsider = maxLengthOfLIS(index+1, nums, dp, prev);
+        return dp[index][prev+1] = max(consider,notConsider);
     }
     int lengthOfLIS(vector<int>& nums) {
-        int n = nums.size();
-        vector<vector<int>>dp(n,vector<int>(n+1,-1));
-        return longestSub(0,-1,nums,dp);
+        vector<vector<int>>dp(nums.size(),vector<int>(nums.size(),-1));
+        return maxLengthOfLIS(0,nums,dp,-1);
     }
 };
