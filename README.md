@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0045-jump-game-ii) |
 | [0046-permutations](https://github.com/Jaspreet-10/LeetCode/tree/master/0046-permutations) |
 | [0053-maximum-subarray](https://github.com/Jaspreet-10/LeetCode/tree/master/0053-maximum-subarray) |
+| [0057-insert-interval](https://github.com/Jaspreet-10/LeetCode/tree/master/0057-insert-interval) |
 | [0066-plus-one](https://github.com/Jaspreet-10/LeetCode/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/Jaspreet-10/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/Jaspreet-10/LeetCode/tree/master/0074-search-a-2d-matrix) |
