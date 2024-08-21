@@ -21,27 +21,18 @@ public:
 
 class Solution {
 public:
-    // Node* cloneGraphHelper(Node* node, unordered_map<Node*, Node*>&m){
-    //     if(m.find(node)!=m.end()) return m[node];
-    //     Node* newNode = new Node(node->val);
-    //     m[node] = newNode;
-    //     for(Node* it:node){
-    //         it->neighbours.push_back(cloneGraphHelper(node,m));
-    //     }
-    //     return node;
-    // }
-    Node* clone(Node* node, unordered_map<Node*,Node*>&oldNode){
-        if(oldNode.find(node)!=oldNode.end()) return oldNode[node];
-        Node* copy = new Node(node->val);
-        oldNode[node] = copy;
-        for(auto it:node->neighbors){
-            copy->neighbors.push_back(clone(it, oldNode));
+    Node* dfs(Node* node, unordered_map<Node*, Node*>&m){
+        if(m.find(node)!=m.end()) return m[node];
+        Node* newNode = new Node(node->val);
+        m[node] = newNode;
+        for(auto it : node->neighbors){
+            newNode->neighbors.push_back(dfs(it, m));
         }
-        return copy;
+        return newNode;
     }
     Node* cloneGraph(Node* node) {
         if(!node) return NULL;
         unordered_map<Node*, Node*>m;
-        return clone(node, m);
+        return dfs(node, m);
     }
 };
