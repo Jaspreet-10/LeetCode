@@ -143,6 +143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/Jaspreet-10/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0075-sort-colors](https://github.com/Jaspreet-10/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Jaspreet-10/LeetCode/tree/master/0088-merge-sorted-array) |
+| [0125-valid-palindrome](https://github.com/Jaspreet-10/LeetCode/tree/master/0125-valid-palindrome) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Jaspreet-10/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0202-happy-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0202-happy-number) |
 | [0295-find-median-from-data-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0295-find-median-from-data-stream) |
@@ -251,6 +252,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/Jaspreet-10/LeetCode/tree/master/0079-word-search) |
 | [0091-decode-ways](https://github.com/Jaspreet-10/LeetCode/tree/master/0091-decode-ways) |
 | [0097-interleaving-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0097-interleaving-string) |
+| [0125-valid-palindrome](https://github.com/Jaspreet-10/LeetCode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/Jaspreet-10/LeetCode/tree/master/0127-word-ladder) |
 | [0139-word-break](https://github.com/Jaspreet-10/LeetCode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
