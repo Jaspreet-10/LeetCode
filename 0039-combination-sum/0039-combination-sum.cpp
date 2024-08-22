@@ -1,24 +1,23 @@
 class Solution {
 public:
-    int totalWays(int index,vector<int>& candidates,vector<int>&bt,vector<vector<int>>&ans,int target){
-        if(target==0){
-            ans.push_back(bt);
-            return 0;
+    void findCombinations(int index, int n, vector<int>&candidates, vector<vector<int>>&ans,
+    map<vector<int>,int>&m, int target, vector<int>&temp){
+        if(index>=n || target<0) return ;
+        if(target == 0){
+            if(m[temp] == 0) ans.push_back(temp);
+            return ;
         }
-        if(index>=candidates.size())
-            return 0;
-        if(candidates[index]<=target){
-            bt.push_back(candidates[index]);
-            totalWays(index,candidates,bt,ans,target-candidates[index]);
-            bt.pop_back();
-        }
-        totalWays(index+1,candidates,bt,ans,target);
-        return 0;
-    } 
+        temp.push_back(candidates[index]);
+        findCombinations(index, n, candidates, ans, m, target-candidates[index], temp);
+        temp.pop_back();
+        findCombinations(index+1, n, candidates, ans, m, target, temp);
+        return ;
+    }
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        vector<int>bt;
         vector<vector<int>>ans;
-        totalWays(0,candidates,bt,ans,target);
+        vector<int>temp;
+        map<vector<int>, int>m;
+        findCombinations(0, candidates.size(),candidates, ans, m, target, temp);
         return ans;
     }
 };
