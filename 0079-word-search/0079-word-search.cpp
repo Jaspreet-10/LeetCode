@@ -1,26 +1,27 @@
 class Solution {
 public:
-    bool dfs(vector<vector<char>>&board, string word, int index, int i, 
-    int j , int m, int n){
-        if(index>=word.size()){
-            return true;
+    bool searchWord(int index, int cr, int cc, int m, int n, vector<vector<char>>& board, 
+    string word, char temp){
+        if(word.size() == index) return true;
+        if(index>=word.size() || cr<0 || cc<0 || cr>=m ||cc >=n || 
+        board[cr][cc] == '.' || board[cr][cc]!=word[index]) return false;
+        if(word[index] == board[cr][cc]){
+            temp = board[cr][cc];
+            board[cr][cc] = '.';
+            if(searchWord(index+1, cr+1, cc, m, n, board, word, temp)) return true;
+            if(searchWord(index+1, cr-1, cc, m, n, board, word, temp)) return true;
+            if(searchWord(index+1, cr, cc+1, m, n, board, word, temp)) return true;
+            if(searchWord(index+1, cr, cc-1, m, n, board, word, temp)) return true;
+            board[cr][cc] = temp;
         }
-        if(i>=m || j>=n || i<0 || j < 0 || board[i][j] == '.' || board[i][j]!=word[index]) 
         return false;
-        char temp = board[i][j];
-        board[i][j] = '.';
-        if(dfs(board,word,index+1,i+1,j,m,n)) return true;
-        if(dfs(board,word,index+1,i,j+1,m,n)) return true;
-        if(dfs(board,word,index+1,i-1,j,m,n)) return true;
-        if(dfs(board,word,index+1,i,j-1,m,n)) return true;
-        board[i][j] = temp;
-        return false;
-    }   
+    }
     bool exist(vector<vector<char>>& board, string word) {
-        int m = board.size(), n = board[0].size();
-        for(int i = 0 ; i < m ; ++i){
-            for(int j = 0 ; j < n ; ++j){
-                if(board[i][j] == word[0] && dfs(board, word, 0, i, j, m, n)) return true;
+        char temp;
+        for(int i = 0 ; i < board.size() ; ++i){
+            for(int j = 0 ; j < board[i].size() ; ++j){
+                if(searchWord(0, i, j, board.size(), board[0].size(), board, word, temp))
+                    return true;
             }
         }
         return false;
