@@ -18,17 +18,14 @@ public:
             ++cnt;
             node = node->next;
         }
-
+        if(cnt == n){
+            return ans->next;
+        }
         int rem = cnt - n - 1;
         while(head!=NULL && rem>0){
             --rem;
             head = head->next;
-            cout<<head->val<<" ";
         }
-        if(cnt == n){
-            return ans->next;
-        }
-        else
         head->next = head->next->next;
         return ans;
     }
