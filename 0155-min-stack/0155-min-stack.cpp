@@ -1,6 +1,7 @@
 class MinStack {
-public:
+private: 
     vector<pair<int,int>>v;
+public:
     MinStack() {
         
     }
