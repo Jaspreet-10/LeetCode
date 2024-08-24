@@ -23,6 +23,7 @@ public:
     }
     int goodNodes(TreeNode* root) {
         int cnt = 0, maxi = INT_MIN;
+        if(!root) return 0;
         return findGoodNodes(root, cnt, maxi);
     }
 };
