@@ -1,9 +1,9 @@
 class Solution {
 public:
     int minEatingSpeed(vector<int>& piles, int h) {
-        long long sum = 0, maxi = 0;
+        long long  maxi = 0;
     for(int i = 0; i < piles.size(); ++i){
-        sum += piles[i];
+        // sum += piles[i];
         maxi = max((long long)piles[i], maxi);
     }
 
@@ -14,7 +14,7 @@ public:
         long long hours = 0;
 
         for(int j = 0; j < piles.size(); ++j) {
-            hours += ceil((piles[j]) / (mid*1.0)); // Equivalent to ceil(piles[j] / (mid * 1.0))
+            hours += ceil(piles[j] / (mid*1.0)); // Equivalent to ceil(piles[j] / (mid * 1.0))
         }
 
         if(hours > h) {
