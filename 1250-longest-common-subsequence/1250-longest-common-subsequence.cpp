@@ -6,15 +6,14 @@ public:
         pair<int,int>p = {i,j};
         if(M.find(p)!=M.end()) return M[p];
 
-        int ans = 0;
+        int consider = 0, notConsider = 0;
         if(text1[i] == text2[j]) 
-        ans = 1 + lcs(i+1, j+1, n, m, text1, text2, M);
+        consider = 1 + lcs(i+1, j+1, n, m, text1, text2, M);
         else{
-            ans = max(lcs(i+1, j, n, m, text1, text2, M),
+            notConsider = max(lcs(i+1, j, n, m, text1, text2, M),
             lcs(i, j+1, n, m, text1, text2, M));
         }
-        M[p] = ans;
-        return ans;
+       return M[p] = max(consider,notConsider);
     }
     int longestCommonSubsequence(string text1, string text2) {
         map<pair<int,int>,int>m;
