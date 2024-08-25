@@ -3,16 +3,15 @@ public:
     int trans(int index, int n, vector<int>&prices, vector<vector<int>>&dp, bool canBuy){
         if(index >= n) return 0;
         if(dp[index][canBuy]!=-1) return dp[index][canBuy];
+        int idle = 0, profit = 0;
         if(canBuy){
-            int idle = trans(index+1,n,prices,dp,canBuy);
-            int profit = -prices[index] + trans(index+1,n,prices,dp,false);
-             dp[index][canBuy] = max(idle, profit);
+            idle = trans(index+1,n,prices,dp,canBuy);
+            profit = -prices[index] + trans(index+1,n,prices,dp,false);
         }else{
-            int idle = trans(index+1,n,prices,dp,canBuy);
-            int profit = prices[index] + trans(index+2,n,prices,dp,true);
-            dp[index][canBuy] = max(idle, profit);
+            idle = trans(index+1,n,prices,dp,canBuy);
+            profit = prices[index] + trans(index+2,n,prices,dp,true);
         }
-        return dp[index][canBuy];
+        return dp[index][canBuy] =  max(idle, profit);
     }
     int maxProfit(vector<int>& prices) {
         int n = prices.size();
