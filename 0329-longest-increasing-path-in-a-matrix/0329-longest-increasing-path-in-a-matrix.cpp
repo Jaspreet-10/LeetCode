@@ -8,15 +8,13 @@ public:
     if (dp[cr][cc] != -1) return dp[cr][cc];
 
     // Explore all four directions
-    int down = findUniquePaths(cr + 1, cc, row, col, dp, matrix[cr][cc], matrix);
-    int right = findUniquePaths(cr, cc + 1, row, col, dp, matrix[cr][cc], matrix);
-    int up = findUniquePaths(cr - 1, cc, row, col, dp, matrix[cr][cc], matrix);
-    int left = findUniquePaths(cr, cc - 1, row, col, dp, matrix[cr][cc], matrix);
+    int down = 1 + findUniquePaths(cr + 1, cc, row, col, dp, matrix[cr][cc], matrix);
+    int right = 1 + findUniquePaths(cr, cc + 1, row, col, dp, matrix[cr][cc], matrix);
+    int up = 1 + findUniquePaths(cr - 1, cc, row, col, dp, matrix[cr][cc], matrix);
+    int left = 1 + findUniquePaths(cr, cc - 1, row, col, dp, matrix[cr][cc], matrix);
 
     // Store the result in dp array
-    dp[cr][cc] = 1 + max({down, right, up, left});
-
-    return dp[cr][cc];
+    return dp[cr][cc] = max({down, right, up, left});
 }
 
 int longestIncreasingPath(vector<vector<int>>& matrix) {
