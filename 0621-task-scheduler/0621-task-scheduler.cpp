@@ -3,7 +3,7 @@ public:
     int leastInterval(vector<char>& tasks, int n) {
         priority_queue<int>pq;
         queue<pair<int,int>>q;
-        int total_time = 0, time = 0;
+        int total_time = 0;
         vector<int>v(26,0);
         for(int i = 0 ; i < tasks.size() ; ++i) v[tasks[i]-'A']++;
         for(int i = 0 ; i < v.size() ; ++i){
