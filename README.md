@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/Jaspreet-10/LeetCode/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/Jaspreet-10/LeetCode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/Jaspreet-10/LeetCode/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/Jaspreet-10/LeetCode/tree/master/0055-jump-game) |
 | [0057-insert-interval](https://github.com/Jaspreet-10/LeetCode/tree/master/0057-insert-interval) |
 | [0066-plus-one](https://github.com/Jaspreet-10/LeetCode/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/Jaspreet-10/LeetCode/tree/master/0073-set-matrix-zeroes) |
@@ -177,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/Jaspreet-10/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/Jaspreet-10/LeetCode/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/Jaspreet-10/LeetCode/tree/master/0055-jump-game) |
 | [0062-unique-paths](https://github.com/Jaspreet-10/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/Jaspreet-10/LeetCode/tree/master/0072-edit-distance) |
@@ -535,6 +537,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/Jaspreet-10/LeetCode/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0045-jump-game-ii) |
+| [0055-jump-game](https://github.com/Jaspreet-10/LeetCode/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0134-gas-station](https://github.com/Jaspreet-10/LeetCode/tree/master/0134-gas-station) |
 | [0135-candy](https://github.com/Jaspreet-10/LeetCode/tree/master/0135-candy) |
