@@ -12,7 +12,6 @@ public:
         for(int i = 0 ; i < s.size() ; ++i){
             if(m[s[i]]>maxi) maxi = m[s[i]];
             str+=s[i];
-            // cout<<str<<"\n";
             if(maxi-1 == i){ 
             maxi = INT_MIN;
             v.push_back(str.length());
