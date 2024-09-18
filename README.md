@@ -88,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1073-number-of-enclaves](https://github.com/Jaspreet-10/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/Jaspreet-10/LeetCode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 | [2165-plates-between-candles](https://github.com/Jaspreet-10/LeetCode/tree/master/2165-plates-between-candles) |
@@ -314,6 +315,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0268-missing-number) |
 | [0368-largest-divisible-subset](https://github.com/Jaspreet-10/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [1014-k-closest-points-to-origin](https://github.com/Jaspreet-10/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Backtracking
 |  |
 | ------- |
@@ -593,6 +595,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0043-multiply-strings](https://github.com/Jaspreet-10/LeetCode/tree/master/0043-multiply-strings) |
 | [0735-asteroid-collision](https://github.com/Jaspreet-10/LeetCode/tree/master/0735-asteroid-collision) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Trie
 |  |
 | ------- |
@@ -610,6 +613,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0225-implement-stack-using-queues](https://github.com/Jaspreet-10/LeetCode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Jaspreet-10/LeetCode/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/Jaspreet-10/LeetCode/tree/master/0239-sliding-window-maximum) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Monotonic Queue
 |  |
 | ------- |
@@ -639,6 +643,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0025-reverse-nodes-in-k-group](https://github.com/Jaspreet-10/LeetCode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0050-powx-n](https://github.com/Jaspreet-10/LeetCode/tree/master/0050-powx-n) |
 | [0206-reverse-linked-list](https://github.com/Jaspreet-10/LeetCode/tree/master/0206-reverse-linked-list) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Merge Sort
 |  |
 | ------- |
