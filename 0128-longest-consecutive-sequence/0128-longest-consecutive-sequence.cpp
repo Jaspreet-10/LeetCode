@@ -3,18 +3,19 @@ public:
     int longestConsecutive(vector<int>& nums) {
         unordered_set<int>s;
         int longestStreak = 0;
-        for(int i = 0 ; i < nums.size() ; ++i)
+        for(int i = 0 ; i <nums.size() ; ++i){
             s.insert(nums[i]);
+        }
         for(int i = 0 ; i < nums.size() ; ++i){
+            int streak = 1;
             if(s.find(nums[i]-1)==s.end()){
-                int currentStreak = 1;
-                int currentNum = nums[i]+1;
-                while(s.find(currentNum)!=s.end()){
-                    currentStreak+=1;
-                    currentNum+=1;
+                int number = nums[i];
+                while(s.find(number+1)!=s.end()){
+                    ++streak;
+                    ++number;
                 }
-                longestStreak = max(longestStreak,currentStreak);
             }
+            longestStreak = max(longestStreak, streak);
         }
         return longestStreak;
     }
