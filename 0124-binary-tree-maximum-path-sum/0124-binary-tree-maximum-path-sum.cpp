@@ -11,24 +11,17 @@
  */
 class Solution {
 public:
-    int maxi = INT_MIN;
-    int maximumPathSum(TreeNode* root){
-        if(!root)
-            return 0;
-        int leftSum = max(0,maximumPathSum(root->left));
-        int rightSum = max(0,maximumPathSum(root->right));
-        if(leftSum+rightSum+root->val>maxi)
-            maxi = leftSum+rightSum+root->val;
-        return root->val+max(leftSum,rightSum);
+    int findMaximumPathSum(TreeNode *root, int& maxi){
+        if(!root) return 0;
+        int leftSum = max(0, findMaximumPathSum(root->left, maxi));
+        int rightSum = max(0, findMaximumPathSum(root->right, maxi));
+        if(leftSum + rightSum + root->val > maxi)
+            maxi = leftSum + rightSum + root->val;
+        return max(leftSum, rightSum) + root->val;
     }
     int maxPathSum(TreeNode* root) {
-        if(!root)
-            return 0;
-        maximumPathSum(root);
+        int maxi = INT_MIN;
+        findMaximumPathSum(root, maxi);
         return maxi;
     }
 };
-
-// Test case: 15,10,20, null, null,-30-15. will never give the right answer
-//  if I will not apply that logic in the max condition.
-//   Because taking negative values will never give me the right answer.
