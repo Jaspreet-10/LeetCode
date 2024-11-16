@@ -155,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/Jaspreet-10/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Jaspreet-10/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/Jaspreet-10/LeetCode/tree/master/0125-valid-palindrome) |
+| [0151-reverse-words-in-a-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Jaspreet-10/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0202-happy-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0202-happy-number) |
 | [0295-find-median-from-data-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0295-find-median-from-data-stream) |
@@ -271,6 +272,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/Jaspreet-10/LeetCode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/Jaspreet-10/LeetCode/tree/master/0127-word-ladder) |
 | [0139-word-break](https://github.com/Jaspreet-10/LeetCode/tree/master/0139-word-break) |
+| [0151-reverse-words-in-a-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Jaspreet-10/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0212-word-search-ii) |
