@@ -13,23 +13,24 @@ public:
     }
 };
 */
+
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
+        unordered_map<Node*, Node*>m;
         Node* temp = new Node(0), *cur = head, *res = temp;
-        unordered_map<Node*,Node*>m;
-        while(head!=NULL){
-            temp->next = new Node(head->val);
-            m[head] = temp->next;
-            head = head->next;
-            temp = temp->next;
+        while(cur!=NULL){
+           temp->next = new Node(cur->val);
+           m[cur] = temp->next;
+           cur = cur->next;
+           temp = temp->next;
         }
-        head = cur;
+        cur = head;
         temp = res->next;
-        while(head!=NULL){
-            temp->random = m[head->random];
-            temp = temp->next;
-            head = head->next;
+        while(cur!=NULL){
+          temp->random = m[cur->random];
+          cur = cur->next;
+          temp = temp->next;
         }
         return res->next;
     }
