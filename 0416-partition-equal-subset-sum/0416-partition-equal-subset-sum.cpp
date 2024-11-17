@@ -17,7 +17,7 @@ public:
         int totSum = 0, n = nums.size();
         for(int i = 0 ; i < n ; ++i) totSum+=nums[i];
         if(totSum%2!=0) return false;
-        vector<vector<int>>dp(n+1,vector<int>(totSum+1,-1));
+        vector<vector<int>>dp(n+1,vector<int>(totSum,-1));
         return findSubsets(totSum/2, 0, n,nums, dp);
     }
 };
