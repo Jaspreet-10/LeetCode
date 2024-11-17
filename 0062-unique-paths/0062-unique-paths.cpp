@@ -1,15 +1,15 @@
 class Solution {
 public:
-    int findUniquePaths(int cr, int cc, int row, int col, vector<vector<int>>&dp){
-        if(cr==row-1 && cc==col-1) return 1;
-        if(cr<0 || cc<0 || cr>=row || cc>=col) return 0;
-        if(dp[cr][cc]!=-1) return dp[cr][cc];
-        int down = findUniquePaths(cr+1,cc,row,col,dp);
-        int right = findUniquePaths(cr,cc+1,row,col,dp);
-        return dp[cr][cc] = down+right;
+    int findWays(int i, int j, int m, int n, vector<vector<int>>&dp){
+        if(i == m-1 && j == n-1) return 1;
+        if(i>=m || j>=n) return 0;
+        if(dp[i][j]!=-1) return dp[i][j];
+        int down = findWays(i+1, j, m, n, dp);
+        int right = findWays(i, j+1, m, n, dp);
+        return dp[i][j] = down+right;
     }
     int uniquePaths(int m, int n) {
-        vector<vector<int>>dp(m,vector<int>(n,-1));
-        return findUniquePaths(0,0,m,n,dp);
+        vector<vector<int>>dp(m, vector<int>(n,-1));
+        return findWays(0,0,m,n,dp);
     }
 };
