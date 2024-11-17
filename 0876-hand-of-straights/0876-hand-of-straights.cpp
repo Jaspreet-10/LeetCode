@@ -19,7 +19,6 @@ public:
                 ++value;
                 ++k;
             }
-            cout<<"\n";
         }
         return true;
     }
