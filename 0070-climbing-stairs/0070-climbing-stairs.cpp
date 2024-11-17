@@ -1,14 +1,15 @@
 class Solution {
 public:
-    int countTheSteps(int index, int n, vector<int>&dp){
+    int climbStairsHelper(int index, int n, unordered_map<int,int>&m){
         if(index == n) return 1;
         if(index>n) return 0;
-        if(dp[index]!=0) return dp[index];
-        dp[index] = countTheSteps(index+1,n,dp) + countTheSteps(index+2,n,dp);
-        return dp[index];
+        if(m[index]>0) return m[index];
+        int oneStep = climbStairsHelper(index+1, n, m);
+        int twoSteps = climbStairsHelper(index+2, n, m);
+        return m[index] = oneStep + twoSteps;
     }
     int climbStairs(int n) {
-        vector<int>dp(n+1);
-        return countTheSteps(0,n,dp);
+        unordered_map<int,int>m;
+        return climbStairsHelper(0,n,m);
     }
 };
