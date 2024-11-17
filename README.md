@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0138-copy-list-with-random-pointer](https://github.com/Jaspreet-10/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0139-word-break](https://github.com/Jaspreet-10/LeetCode/tree/master/0139-word-break) |
 | [0141-linked-list-cycle](https://github.com/Jaspreet-10/LeetCode/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/Jaspreet-10/LeetCode/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/Jaspreet-10/LeetCode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0202-happy-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
@@ -304,6 +305,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/Jaspreet-10/LeetCode/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/Jaspreet-10/LeetCode/tree/master/0155-min-stack) |
 | [0208-implement-trie-prefix-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Jaspreet-10/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
@@ -652,6 +654,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0025-reverse-nodes-in-k-group](https://github.com/Jaspreet-10/LeetCode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0138-copy-list-with-random-pointer](https://github.com/Jaspreet-10/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/Jaspreet-10/LeetCode/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/Jaspreet-10/LeetCode/tree/master/0146-lru-cache) |
 | [0206-reverse-linked-list](https://github.com/Jaspreet-10/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/Jaspreet-10/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 ## Recursion
@@ -695,4 +698,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/Jaspreet-10/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [2165-plates-between-candles](https://github.com/Jaspreet-10/LeetCode/tree/master/2165-plates-between-candles) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/Jaspreet-10/LeetCode/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
