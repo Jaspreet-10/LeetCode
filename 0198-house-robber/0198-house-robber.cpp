@@ -1,15 +1,15 @@
 class Solution {
 public:
-    int robberHelper(int index, vector<int>&nums, int n, vector<int>&dp){
+     int climbStairsHelper(int index, int n, unordered_map<int,int>&m, vector<int>&cost){
         if(index>=n) return 0;
-        if(dp[index]!=-1) return dp[index];
-        int consider = nums[index] + robberHelper(index+2, nums, n, dp);
-        int notConsider = robberHelper(index+1, nums, n, dp);
-        return dp[index] = max(consider, notConsider);
+        if(m.find(index)!=m.end()) return m[index];
+        int oneStep = cost[index] + climbStairsHelper(index+2, n, m, cost);
+        int twoSteps = climbStairsHelper(index+1, n, m, cost);
+        return m[index] = max(oneStep,twoSteps);
     }
     int rob(vector<int>& nums) {
+        unordered_map<int,int>m;
         int n = nums.size();
-        vector<int>dp(n,-1);
-        return robberHelper(0, nums, n, dp);
+        return climbStairsHelper(0,n,m,nums);
     }
 };
