@@ -1,26 +1,27 @@
 class Solution {
 public:
     int countSubstrings(string s) {
-        int n = s.size(), cnt = 0;
-        vector<vector<bool>>dp(n,vector<bool>(n,false));
-        for(int i = 0 ; i < s.size() ; ++i){
+         int n = s.size();
+        int count = 0;
+        vector<vector<bool>>dp(n, vector<bool>(n,false));
+        for(int i = 0 ; i < n ; ++i){
             dp[i][i] = true;
-            ++cnt;
+            ++count;
         }
-        for(int i = 0 ; i < n-1 ; ++i){
+        for(int i = 0 ; i < n ; ++i){
             if(s[i] == s[i+1]){
                 dp[i][i+1] = true;
-                ++cnt;
+                ++count;
             }
         }
-        for(int start = 2 ; start < n ; ++start){
-            for(int end = 0 ; end <= n-start ; ++end){
-                if(s[end] == s[start+end] && dp[end+1][end+start-1]){
-                    dp[end][end+start] = true;
-                    ++cnt;
+        for(int i = 2 ; i < n ; ++i){
+            for(int j = 0 ; j< n-i ; ++j){
+                if(s[j] == s[i+j] && dp[j+1][j+i-1]){
+                    ++count;
+                    dp[j][j+i] = true;
                 }
             }
         }
-        return cnt;
+        return count;
     }
 };
