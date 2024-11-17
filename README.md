@@ -249,6 +249,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0883-car-fleet](https://github.com/Jaspreet-10/LeetCode/tree/master/0883-car-fleet) |
 | [0937-online-stock-span](https://github.com/Jaspreet-10/LeetCode/tree/master/0937-online-stock-span) |
 | [0943-sum-of-subarray-minimums](https://github.com/Jaspreet-10/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
+| [1078-remove-outermost-parentheses](https://github.com/Jaspreet-10/LeetCode/tree/master/1078-remove-outermost-parentheses) |
 | [2227-sum-of-subarray-ranges](https://github.com/Jaspreet-10/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
 ## Monotonic Stack
 |  |
@@ -297,6 +298,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0678-valid-parenthesis-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0768-partition-labels](https://github.com/Jaspreet-10/LeetCode/tree/master/0768-partition-labels) |
 | [0807-custom-sort-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0807-custom-sort-string) |
+| [1078-remove-outermost-parentheses](https://github.com/Jaspreet-10/LeetCode/tree/master/1078-remove-outermost-parentheses) |
 | [1250-longest-common-subsequence](https://github.com/Jaspreet-10/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [2165-plates-between-candles](https://github.com/Jaspreet-10/LeetCode/tree/master/2165-plates-between-candles) |
 ## Sliding Window
