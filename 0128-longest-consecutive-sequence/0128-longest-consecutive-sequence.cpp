@@ -9,8 +9,8 @@ public:
         for(int i = 0 ; i < nums.size() ; ++i){
             int streak = 1;
             if(s.find(nums[i]-1)==s.end()){
-                int number = nums[i];
-                while(s.find(number+1)!=s.end()){
+                int number = nums[i]+1;
+                while(s.find(number)!=s.end()){
                     ++streak;
                     ++number;
                 }
