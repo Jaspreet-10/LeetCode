@@ -1,44 +1,43 @@
 class Solution {
 public:
-    void dfs(vector<vector<int>>& matrix, int i, int j, int prev, vector<vector<bool>>& ocean, int dir[4][2]){
-        if(i < 0 || i >= ocean.size() || j < 0 || j >= ocean[0].size()) return;
-        if(matrix[i][j] < prev || ocean[i][j]) return;
-        ocean[i][j] = true;
-        for(int k = 0; k < 4; k++){
-            dfs(matrix, i + dir[k][0], j + dir[k][1], matrix[i][j], ocean, dir);
+    vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
+        int n = heights.size();
+        int m = heights[0].size();
+        vector<vector<int>> p(n, vector<int>(m, 0));
+        vector<vector<int>> at(n, vector<int>(m, 0));
+        for (int i = 0; i < n; i++) {
+            dfs(i, 0, p, heights);
+            dfs(i, m - 1, at, heights);
         }
-    }
-    vector<vector<int>> pacificAtlantic(vector<vector<int>>& matrix) {
-       vector<vector<int>> res;
-        if(matrix.empty() || matrix[0].empty()) 
-            return res;
-        
-        int row = matrix.size(), col = matrix[0].size();
-        vector<vector<bool>> pacific(row, vector<bool>(col, false));
-        vector<vector<bool>> atlantic(row, vector<bool>(col, false));
-        
-        // Directions array for moving up, down, left, right
-        int dir[4][2] = {{0,1}, {0,-1}, {1,0}, {-1,0}};
-        
-        // DFS for Pacific and Atlantic
-        for(int i = 0; i < col; i++){
-            dfs(matrix, 0, i, INT_MIN, pacific, dir);
-            dfs(matrix, row-1, i, INT_MIN, atlantic, dir);
+        for (int i = 0; i < m; i++) {
+            dfs(0, i, p, heights);
+            dfs(n - 1, i, at, heights);
         }
-        for(int i = 0; i < row; i++){
-            dfs(matrix, i, 0, INT_MIN, pacific, dir);
-            dfs(matrix, i, col-1, INT_MIN, atlantic, dir);
-        }
-        
-        // Preparing the result
-        for(int i = 0; i < row; i++){
-            for(int j = 0; j < col; j++) {
-                if(pacific[i][j] && atlantic[i][j]) {
-                    res.push_back({i, j});
+        vector<vector<int>> ans;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (p[i][j] == 1 && at[i][j] == 1) {
+                    ans.push_back({i, j});
                 }
             }
         }
-        
-        return res;
+        return ans;
+    }
+    vector<int>naa={-1,0,1,0};
+    vector<int>nbb={0,-1,0,1};
+    void dfs(int a, int b, vector<vector<int>>& oc,
+             vector<vector<int>>& heights) {
+        int n = heights.size();
+        int m = heights[0].size();
+        oc[a][b] = 1;
+        for (int i = 0; i < 4; i++) {
+            int na = naa[i] + a;
+            int nb = nbb[i] + b;
+            if (na >= 0 && na < n && nb >= 0 && nb < m && !oc[na][nb] &&
+                heights[na][nb] >= heights[a][b]) {
+                
+                dfs(na, nb, oc, heights);
+            }
+        }
     }
 };
