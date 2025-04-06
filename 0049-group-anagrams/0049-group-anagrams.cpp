@@ -1,8 +1,8 @@
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        map<vector<int>,vector<string>>m;
         vector<vector<string>>res;
+        map<vector<int>, vector<string>>m;
         for(int i = 0 ; i < strs.size() ; ++i){
             vector<int>v(26,0);
             for(int j = 0 ; j < strs[i].size() ; ++j){
