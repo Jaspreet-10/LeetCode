@@ -11,3 +11,7 @@ public:
         return {};
     }
 };
+
+/*
+Ask question, is the array sorted and do they have the negative values in the array(map approach will work with negative values as well)
+First apply brute force apporach which will take - O(N^2), second is sort the array as and apply two pointers, at the end apply the unordered map approach*/
