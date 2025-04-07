@@ -21,4 +21,7 @@ public:
         }
         return count;
     }
-};
+};// Time Complexity: O(n * m)
+// Each cell is visited once.
+// DFS marks connected land '1's as '0' to avoid revisits.
+// Space Complexity: O(n * m) (worst case recursion stack)
