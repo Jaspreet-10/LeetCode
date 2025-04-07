@@ -1,33 +1,31 @@
 class Solution {
 public:
+    bool detectCycle(int node, vector<int>&vis, vector<int>&visPath, 
+    vector<vector<int>>&adjL, int parent){
+        vis[node] = 1;
+        visPath[node] = 1;
+        for(auto it : adjL[node]){
+            if(vis[it] == 0){
+                if(detectCycle(it, vis, visPath, adjL, node)) return true;
+            }
+            else if(visPath[it]!=0) return true;
+        }
+        visPath[node] = 0;
+        return false;
+    }
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        vector<int>inDegree(numCourses,0);
-        vector<int>adjL[numCourses];
-        for(int i = 0 ; i < prerequisites.size() ; ++i){
-            // adjL[prerequisites[i][0]].push_back(prerequisites[i][1]);
+        vector<vector<int>> adjL(numCourses);
+        vector<int>vis(numCourses, 0);
+        vector<int>visPath(numCourses, 0);
+        int n = prerequisites.size();
+        for(int i = 0 ; i < n ; ++i){
             adjL[prerequisites[i][1]].push_back(prerequisites[i][0]);
         }
-        for(int i = 0 ; i < numCourses; ++i){
-            for(auto it:adjL[i]){
-                inDegree[it]++;
-            }
-        }
-        queue<int>q;
         for(int i = 0 ; i < numCourses ; ++i){
-            if(inDegree[i] == 0) q.push(i);
-        }
-        while(!q.empty()){
-            int node = q.front();
-            q.pop();
-            for(auto it : adjL[node]){
-                inDegree[it]--;
-                if(inDegree[it] == 0){
-                    q.push(it);
-                }
+            if(vis[i] == 0){
+                if(detectCycle(i, vis, visPath, adjL, -1)) return false;
             }
         }
-       for(int i = 0 ; i < numCourses ; ++i)
-        if(inDegree[i]!=0) return false;
         return true;
     }
 };
