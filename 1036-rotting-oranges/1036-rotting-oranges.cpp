@@ -1,30 +1,8 @@
 class Solution {
 public:
-    int bfs(vector<vector<int>>& grid, queue<pair<int,pair<int,int>>>&q, int&time){
-        int m = grid.size(), n = grid[0].size();
-        while(!q.empty()){
-            time = q.front().first;
-            pair<int,int>p = q.front().second;
-            q.pop();
-            int row = p.first, col = p.second;
-             int r[4] = {-1, 0, 1, 0};
-            int c[4] = {0, -1, 0, 1};
-           for(int i = 0 ; i < 4 ; ++i){
-                int newRow = r[i]+row;
-                int newCol = c[i]+col;
-                if(newRow>=0 && newCol>=0 && newRow<m && newCol<n && 
-                grid[newRow][newCol] == 1){
-                     grid[newRow][newCol] = -1;
-                    q.push({time+1, {newRow,newCol}});
-                }
-            }
-        }
-        return time;
-    }
     int orangesRotting(vector<vector<int>>& grid) {
-        queue<pair<int,pair<int,int>>>q;
-        int time = 0;
-        vector<vector<int>>vis(grid.size(), vector<int>(grid[0].size(),-1));
+        queue<pair<int, pair<int,int>>>q;
+        int steps = 0;
         for(int i = 0 ; i < grid.size() ; ++i){
             for(int j = 0 ; j < grid[i].size() ; ++j){
                 if(grid[i][j] == 2){
@@ -33,12 +11,28 @@ public:
                 }
             }
         }
-       time = bfs(grid,q,time);
-       for(int i = 0 ; i < grid.size() ; ++i){
-        for(int j = 0 ; j < grid[i].size() ; ++j){
-            if(grid[i][j] == 1) return -1;
+        while(!q.empty()){
+            steps = q.front().first;
+            int row = q.front().second.first;
+            int col = q.front().second.second;
+            q.pop();
+            int rowC[4] = {0,-1,0,1};
+            int colC[4] = {-1,0,1,0};
+            for(int i = 0 ; i < 4 ; ++i){
+                int r = row+rowC[i];
+                int c = col+colC[i];
+            if(r>=0 and c>=0 and r<grid.size() and c<grid[0].size()
+            and grid[r][c] == 1){
+                grid[r][c] = -1;
+                q.push({steps+1, {r,c}});
+            }
+            }
         }
-       }
-        return time;
+        for(int i = 0 ; i < grid.size() ; ++i){
+            for(int j = 0 ; j < grid[i].size() ; ++j){
+                if(grid[i][j] == 1) return -1;
+            }
+        }
+        return steps;
     }
 };
