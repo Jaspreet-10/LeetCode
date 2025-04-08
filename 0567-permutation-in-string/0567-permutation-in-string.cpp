@@ -1,17 +1,19 @@
 class Solution {
 public:
     bool checkInclusion(string s1, string s2) {
-        vector<int>v1(26,0),v2(26,0);
-        int i = 0, j = 0;
-        for(int i = 0 ; i < s1.length() ; ++i) v1[s1[i]-'a']++;
-        while(i<s2.length()){
-            while(i-j>=s1.length()){
-                v2[s2[j]-'a']--;
+        unordered_map<char,int>m;
+        int i = 0, j = 0, n1 = s1.length(), n2 = s2.length();
+        for(int i = 0 ; i < n1 ; ++i) m[s1[i]]++;
+        while(i<n2){
+            m[s2[i]]--;
+            if(m[s2[i]] == 0) m.erase(s2[i]);
+            if(i-j+1 == n1){
+                // cout<<s2.substr(j, i-j+1)<<"\n";
+                if(m.size() == 0) return true;
+                m[s2[j]]++;
+                if(m[s2[j]] == 0) m.erase(s2[j]);
                 ++j;
             }
-            // cout<<s2.substr(j,i-j+1)<<"\n";
-            v2[s2[i]-'a']++;
-            if(v1 == v2) return true;
             ++i;
         }
         return false;
