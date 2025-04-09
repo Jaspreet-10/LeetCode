@@ -11,20 +11,20 @@
  */
 class Solution {
 public:
-    bool checkSubRoot(TreeNode* root, TreeNode* subRoot){
-        if(!root && !subRoot) return true;
+    bool helper(TreeNode* root, TreeNode* subRoot){
+         if(!root && !subRoot) return true;
          if(!root || !subRoot) return false;
-         if(root->val == subRoot->val){
-            return checkSubRoot(root->left, subRoot->left) && 
-                   checkSubRoot(root->right, subRoot->right);
-         }else return false;
-         return true;
+        if(root->val == subRoot->val){
+            return helper(root->left, subRoot->left) && 
+                   helper(root->right, subRoot->right);
+        }else return false;
+        return true;
     }
     bool isSubtree(TreeNode* root, TreeNode* subRoot) {
         if(!root || !subRoot) return false;
         if(root->val == subRoot->val){
-            if(checkSubRoot(root,subRoot)) return true;
+            if(helper(root, subRoot)) return true;
         }
-        return (isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot)); 
+        return isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
     }
 };
