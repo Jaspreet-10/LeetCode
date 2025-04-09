@@ -11,15 +11,17 @@
  */
 class Solution {
 public:
-    bool isSameTree(TreeNode* p, TreeNode* q) {
-        if(!p and !q)
-            return true;
-        if((!p and q) || (!q and p)) return false;
-        if(p && q){
-            if(p->val == q->val)
-            return isSameTree(p->left,q->left) and isSameTree(p->right,q->right);
-            else return false;
+    bool isSameTreeHelper(TreeNode* p, TreeNode* q){
+        if(!p && !q) return true;
+        if(!p || !q) return false;
+
+        if(p->val == q->val){
+            return isSameTreeHelper(p->left, q->left) and 
+            isSameTreeHelper(p->right, q->right);
         }else return false;
         return true;
+    }
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        return isSameTreeHelper(p,q);
     }
 };
