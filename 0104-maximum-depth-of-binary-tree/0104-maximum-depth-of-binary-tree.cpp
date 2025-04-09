@@ -11,21 +11,14 @@
  */
 class Solution {
 public:
+    int findMaxDepth(TreeNode* root){
+        if(!root) return 0;
+        int lh = findMaxDepth(root->left);
+        int rh = findMaxDepth(root->right);
+        return 1+max(lh,rh);
+    }
     int maxDepth(TreeNode* root) {
         if(!root) return 0;
-        int cnt = 0;
-        queue<TreeNode*>q;
-        q.push(root);
-        while(!q.empty()){
-            int size = q.size();
-            for(int i = size-1;i>=0;--i){
-                TreeNode* head = q.front();
-                 q.pop();
-                if(head->left) q.push(head->left);
-                if(head->right) q.push(head->right);
-            }
-            ++cnt;
-        }
-        return cnt;
+        return findMaxDepth(root);
     }
 };
