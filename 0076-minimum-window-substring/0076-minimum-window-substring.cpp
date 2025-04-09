@@ -8,7 +8,6 @@ public:
         }
        while(i<=s.size() && left<s.size()){
             if(required){
-                // if(i == s.size()) break;
                 if(remaining[s[i]]>0) --required;
                 remaining[s[i]]--;
                 ++i;
