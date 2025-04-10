@@ -6,7 +6,6 @@ public:
             pq.push(nums[i]);
             if(pq.size()>k) pq.pop();
         }
-        if(!pq.empty()) return pq.top();
-        return -1;
+        return pq.top();
     }
 };
