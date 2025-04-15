@@ -1,18 +1,19 @@
 class Solution {
 public:
-    int findLengthOfLIS(int index, vector<int>&nums, int n, vector<vector<int>>&dp, int prev){
+    int checkLIS(int index, int prev, int n, vector<int>&nums, vector<vector<int>>&dp){
         if(index>=n) return 0;
         if(dp[index][prev+1]!=-1) return dp[index][prev+1];
+
         int consider = 0;
-        if(prev == -1 || nums[index]>nums[prev]){
-            consider = 1 + findLengthOfLIS(index+1, nums, n, dp, index);
+        if(prev==-1 || nums[index]>nums[prev]){
+            consider = 1+checkLIS(index+1, index, n, nums, dp);
         }
-        int notConsider = findLengthOfLIS(index+1, nums, n, dp, prev);
-        return dp[index][prev+1] = max(consider, notConsider);
+        int notConsider = checkLIS(index+1, prev, n, nums, dp);
+        return dp[index][prev+1] = max(consider,notConsider);
     }
     int lengthOfLIS(vector<int>& nums) {
         int n = nums.size();
-        vector<vector<int>>dp(n,vector<int>(n,-1));
-        return findLengthOfLIS(0, nums, n, dp, -1);
+        vector<vector<int>>dp(n, vector<int>(n, -1));
+        return checkLIS(0, -1, n, nums, dp);
     }
 };
