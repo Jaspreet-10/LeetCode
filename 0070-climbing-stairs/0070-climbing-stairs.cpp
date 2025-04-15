@@ -1,15 +1,15 @@
 class Solution {
 public:
-    int climbStairsHelper(int index, int n, unordered_map<int,int>&m){
-        if(index == n) return 1;
+    int helper(int index, int n, vector<int>&dp){
         if(index>n) return 0;
-        if(m[index]>0) return m[index];
-        int oneStep = climbStairsHelper(index+1, n, m);
-        int twoSteps = climbStairsHelper(index+2, n, m);
-        return m[index] = oneStep + twoSteps;
+        if(index == n) return 1;
+        if(dp[index]!=-1) return dp[index];
+        int oneStep = helper(index+1, n, dp);
+        int twoStep = helper(index+2, n, dp);
+        return dp[index] = oneStep+twoStep;
     }
     int climbStairs(int n) {
-        unordered_map<int,int>m;
-        return climbStairsHelper(0,n,m);
+        vector<int>dp(n,-1);
+        return helper(0, n, dp);
     }
 };
