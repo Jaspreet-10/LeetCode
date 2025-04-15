@@ -1,23 +1,19 @@
 class Solution {
 public:
-    bool findSubsets(int k, int index, int n, vector<int> &arr,
-     vector<vector<int>>&dp){
-    if(k == 0) return true;
-    if(k<0 || index>=n) return false;
-    if(dp[index][k]!=-1) return dp[index][k];
-    bool take = false;
-    if(arr[index]<=k)
-    take =  findSubsets(k-arr[index],index+1, n, arr,dp);
-    if(take) return true;
-    bool notTake = findSubsets(k, index+1, n, arr, dp);
-    dp[index][k] = take or notTake;
-    return take or notTake;
-}
+    bool helper(int index, int n, int sum, vector<int>&nums, vector<vector<int>>&dp){
+        if(sum == 0) return true;
+        if(index>=n || sum<0) return false;
+        if(dp[index][sum]!=-1) return dp[index][sum];
+        bool consider = helper(index+1, n, sum-nums[index], nums, dp);
+        bool notConsider = helper(index+1, n, sum, nums, dp);
+        return dp[index][sum] = consider or notConsider;
+    }
     bool canPartition(vector<int>& nums) {
-        int totSum = 0, n = nums.size();
-        for(int i = 0 ; i < n ; ++i) totSum+=nums[i];
-        if(totSum%2!=0) return false;
-        vector<vector<int>>dp(n,vector<int>(totSum,-1));
-        return findSubsets(totSum/2, 0, n,nums, dp);
+        int sum = 0, n = nums.size();
+        for(int i = 0 ; i < nums.size() ; ++i) sum+=nums[i];
+        if(sum%2 != 0) return false;
+        sum/=2;
+        vector<vector<int>>dp(n, vector<int>(sum+1, -1));
+        return helper(0, n, sum, nums, dp);
     }
 };
