@@ -96,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1073-number-of-enclaves](https://github.com/Jaspreet-10/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
 | [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
+| [1511-count-number-of-teams](https://github.com/Jaspreet-10/LeetCode/tree/master/1511-count-number-of-teams) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/Jaspreet-10/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -243,6 +244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0747-min-cost-climbing-stairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0943-sum-of-subarray-minimums](https://github.com/Jaspreet-10/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [1250-longest-common-subsequence](https://github.com/Jaspreet-10/LeetCode/tree/master/1250-longest-common-subsequence) |
+| [1511-count-number-of-teams](https://github.com/Jaspreet-10/LeetCode/tree/master/1511-count-number-of-teams) |
 ## Stack
 |  |
 | ------- |
@@ -725,10 +727,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0493-reverse-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0493-reverse-pairs) |
+| [1511-count-number-of-teams](https://github.com/Jaspreet-10/LeetCode/tree/master/1511-count-number-of-teams) |
 ## Segment Tree
 |  |
 | ------- |
 | [0493-reverse-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0493-reverse-pairs) |
+| [1511-count-number-of-teams](https://github.com/Jaspreet-10/LeetCode/tree/master/1511-count-number-of-teams) |
 ## Ordered Set
 |  |
 | ------- |
