@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1014-k-closest-points-to-origin](https://github.com/Jaspreet-10/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1036-rotting-oranges](https://github.com/Jaspreet-10/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/Jaspreet-10/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
 | [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/Jaspreet-10/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
@@ -141,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0807-custom-sort-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0807-custom-sort-string) |
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Jaspreet-10/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
@@ -392,6 +394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/Jaspreet-10/LeetCode/tree/master/0883-car-fleet) |
 | [1014-k-closest-points-to-origin](https://github.com/Jaspreet-10/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -415,6 +418,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/Jaspreet-10/LeetCode/tree/master/0621-task-scheduler) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1014-k-closest-points-to-origin](https://github.com/Jaspreet-10/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
 | [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
 ## Bucket Sort
 |  |
