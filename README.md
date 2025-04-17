@@ -149,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Jaspreet-10/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
+| [3474-better-compression-of-string](https://github.com/Jaspreet-10/LeetCode/tree/master/3474-better-compression-of-string) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/Jaspreet-10/LeetCode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 ## Union Find
 |  |
@@ -323,6 +324,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1078-remove-outermost-parentheses](https://github.com/Jaspreet-10/LeetCode/tree/master/1078-remove-outermost-parentheses) |
 | [1250-longest-common-subsequence](https://github.com/Jaspreet-10/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [2165-plates-between-candles](https://github.com/Jaspreet-10/LeetCode/tree/master/2165-plates-between-candles) |
+| [3474-better-compression-of-string](https://github.com/Jaspreet-10/LeetCode/tree/master/3474-better-compression-of-string) |
 ## Sliding Window
 |  |
 | ------- |
@@ -404,6 +406,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0883-car-fleet](https://github.com/Jaspreet-10/LeetCode/tree/master/0883-car-fleet) |
 | [1014-k-closest-points-to-origin](https://github.com/Jaspreet-10/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
+| [3474-better-compression-of-string](https://github.com/Jaspreet-10/LeetCode/tree/master/3474-better-compression-of-string) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -443,6 +446,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/Jaspreet-10/LeetCode/tree/master/0621-task-scheduler) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
+| [3474-better-compression-of-string](https://github.com/Jaspreet-10/LeetCode/tree/master/3474-better-compression-of-string) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/Jaspreet-10/LeetCode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 ## Quickselect
 |  |
