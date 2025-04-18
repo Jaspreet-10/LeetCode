@@ -328,6 +328,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0812-rotate-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0812-rotate-string) |
 | [1078-remove-outermost-parentheses](https://github.com/Jaspreet-10/LeetCode/tree/master/1078-remove-outermost-parentheses) |
 | [1250-longest-common-subsequence](https://github.com/Jaspreet-10/LeetCode/tree/master/1250-longest-common-subsequence) |
+| [1542-consecutive-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1542-consecutive-characters) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/Jaspreet-10/LeetCode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/Jaspreet-10/LeetCode/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2165-plates-between-candles](https://github.com/Jaspreet-10/LeetCode/tree/master/2165-plates-between-candles) |
