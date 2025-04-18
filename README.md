@@ -108,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2227-sum-of-subarray-ranges](https://github.com/Jaspreet-10/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/Jaspreet-10/LeetCode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
+| [3780-permutations-iii](https://github.com/Jaspreet-10/LeetCode/tree/master/3780-permutations-iii) |
 ## Hash Table
 |  |
 | ------- |
@@ -394,6 +395,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0212-word-search-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0212-word-search-ii) |
 | [0494-target-sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0494-target-sum) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/Jaspreet-10/LeetCode/tree/master/2456-construct-smallest-number-from-di-string) |
+| [3780-permutations-iii](https://github.com/Jaspreet-10/LeetCode/tree/master/3780-permutations-iii) |
 ## Sorting
 |  |
 | ------- |
