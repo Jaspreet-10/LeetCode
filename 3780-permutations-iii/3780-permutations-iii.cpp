@@ -1,12 +1,9 @@
 class Solution {
 public:
-    map<vector<int>, int>v;
     void printPermutations(int index, int n, vector<vector<int>>&answer,
      unordered_map<int,int>&m, vector<int>&temp){
         if(index>=(n+1)){
-            // if(v[temp] == 0)
             answer.push_back(temp);
-            // v[temp]++;
             return ;
         }
 
