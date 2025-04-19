@@ -338,6 +338,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/Jaspreet-10/LeetCode/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2165-plates-between-candles](https://github.com/Jaspreet-10/LeetCode/tree/master/2165-plates-between-candles) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/Jaspreet-10/LeetCode/tree/master/2456-construct-smallest-number-from-di-string) |
+| [2828-lexicographically-smallest-string-after-substring-operation](https://github.com/Jaspreet-10/LeetCode/tree/master/2828-lexicographically-smallest-string-after-substring-operation) |
 | [3474-better-compression-of-string](https://github.com/Jaspreet-10/LeetCode/tree/master/3474-better-compression-of-string) |
 ## Sliding Window
 |  |
@@ -658,6 +659,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/Jaspreet-10/LeetCode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/Jaspreet-10/LeetCode/tree/master/2456-construct-smallest-number-from-di-string) |
+| [2828-lexicographically-smallest-string-after-substring-operation](https://github.com/Jaspreet-10/LeetCode/tree/master/2828-lexicographically-smallest-string-after-substring-operation) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 ## String Matching
 |  |
