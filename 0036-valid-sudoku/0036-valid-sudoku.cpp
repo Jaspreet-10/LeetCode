@@ -15,7 +15,6 @@ public:
     bool isColValid(vector<vector<char>>&board,int cr,int cc,int n,char ch){
        for(int j = cc ; j < n ; ++j){
            if(board[cr][j]==ch and j!=cc){
-               cout<<"col\n";
                return false;
            }
        }    
