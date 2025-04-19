@@ -14,7 +14,7 @@ public:
         return false;
     }
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
-        int findRow = 0, col = matrix[0].size();
+        int col = matrix[0].size();
         for(int i = 0 ; i < matrix.size() ; ++i){
             if(matrix[i][col-1]>=target){
                 return findElement(matrix,target,i);
