@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isPalindrome(string s) {
         string str = "";
-        transform(s.begin(), s.end(), s.begin(), ::tolower); 
+        transform(s.begin(), s.end(), s.begin(), ::tolower);
         for(int i = 0 ; i < s.length() ; ++i){
             int ch1 = s[i];
             if((ch1>=97 && ch1<=122) || (ch1>=48 && ch1<=57)){
