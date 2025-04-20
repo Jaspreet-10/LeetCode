@@ -1,35 +1,34 @@
 class Solution {
 public:
     int orangesRotting(vector<vector<int>>& grid) {
-        queue<pair<int, pair<int,int>>>q;
-        int steps = 0;
-        for(int i = 0 ; i < grid.size() ; ++i){
-            for(int j = 0 ; j < grid[i].size() ; ++j){
+        queue<pair<pair<int, int>, int>>q;
+        int m = grid.size(), n = grid[0].size(), steps = 0;
+        for(int i = 0 ; i < m ; ++i){
+            for(int j = 0 ; j < n ; ++j){
                 if(grid[i][j] == 2){
-                    grid[i][j] = -1;
-                    q.push({0,{i,j}});
+                    q.push({{i, j}, 0});
                 }
             }
         }
         while(!q.empty()){
-            steps = q.front().first;
-            int row = q.front().second.first;
-            int col = q.front().second.second;
+            int i = q.front().first.first;
+            int j = q.front().first.second;
+            steps = q.front().second;
             q.pop();
-            int rowC[4] = {0,-1,0,1};
-            int colC[4] = {-1,0,1,0};
-            for(int i = 0 ; i < 4 ; ++i){
-                int r = row+rowC[i];
-                int c = col+colC[i];
-            if(r>=0 and c>=0 and r<grid.size() and c<grid[0].size()
-            and grid[r][c] == 1){
-                grid[r][c] = -1;
-                q.push({steps+1, {r,c}});
-            }
+            int row[4] = {-1, 0, 1, 0};
+            int col[4] = {0, -1, 0, 1};
+            for(int k = 0 ; k < 4 ; ++k){
+                int rc = i+row[k];
+                int cc = j+col[k];
+                if(rc>=0 && cc>=0 && rc<m && cc<n &&
+                grid[rc][cc] == 1){
+                    grid[rc][cc] = -1;
+                    q.push({{rc,cc}, steps+1});
+                }
             }
         }
-        for(int i = 0 ; i < grid.size() ; ++i){
-            for(int j = 0 ; j < grid[i].size() ; ++j){
+        for(int i = 0 ; i < m ; ++i){
+            for(int j = 0 ; j < n ; ++j){
                 if(grid[i][j] == 1) return -1;
             }
         }
