@@ -75,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/Jaspreet-10/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/Jaspreet-10/LeetCode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/Jaspreet-10/LeetCode/tree/master/0455-assign-cookies) |
+| [0465-optimal-account-balancing](https://github.com/Jaspreet-10/LeetCode/tree/master/0465-optimal-account-balancing) |
 | [0493-reverse-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/Jaspreet-10/LeetCode/tree/master/0496-next-greater-element-i) |
@@ -248,6 +249,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0368-largest-divisible-subset](https://github.com/Jaspreet-10/LeetCode/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/Jaspreet-10/LeetCode/tree/master/0435-non-overlapping-intervals) |
+| [0465-optimal-account-balancing](https://github.com/Jaspreet-10/LeetCode/tree/master/0465-optimal-account-balancing) |
 | [0494-target-sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0518-coin-change-ii) |
 | [0542-01-matrix](https://github.com/Jaspreet-10/LeetCode/tree/master/0542-01-matrix) |
@@ -402,6 +404,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/Jaspreet-10/LeetCode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0090-subsets-ii) |
 | [0212-word-search-ii](https://github.com/Jaspreet-10/LeetCode/tree/master/0212-word-search-ii) |
+| [0465-optimal-account-balancing](https://github.com/Jaspreet-10/LeetCode/tree/master/0465-optimal-account-balancing) |
 | [0494-target-sum](https://github.com/Jaspreet-10/LeetCode/tree/master/0494-target-sum) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/Jaspreet-10/LeetCode/tree/master/2456-construct-smallest-number-from-di-string) |
 | [3780-permutations-iii](https://github.com/Jaspreet-10/LeetCode/tree/master/3780-permutations-iii) |
@@ -775,6 +778,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Jaspreet-10/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0338-counting-bits](https://github.com/Jaspreet-10/LeetCode/tree/master/0338-counting-bits) |
+| [0465-optimal-account-balancing](https://github.com/Jaspreet-10/LeetCode/tree/master/0465-optimal-account-balancing) |
 | [0795-k-th-symbol-in-grammar](https://github.com/Jaspreet-10/LeetCode/tree/master/0795-k-th-symbol-in-grammar) |
 | [1568-pseudo-palindromic-paths-in-a-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/1568-pseudo-palindromic-paths-in-a-binary-tree) |
 ## Binary Indexed Tree
@@ -805,4 +809,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/Jaspreet-10/LeetCode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
+## Bitmask
+|  |
+| ------- |
+| [0465-optimal-account-balancing](https://github.com/Jaspreet-10/LeetCode/tree/master/0465-optimal-account-balancing) |
 <!---LeetCode Topics End-->
