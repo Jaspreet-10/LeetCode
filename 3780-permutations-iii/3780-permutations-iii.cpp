@@ -8,15 +8,8 @@ public:
         }
 
         for(int i = 1 ; i<=n ; ++i){
-            if(temp.size() == 0){
-                temp.push_back(i);
-                m[i]++;
-                printPermutations(index+1, n, answer, m, temp);
-                temp.pop_back();
-                m[i] = 0;
-            }
-            else if(m[i] == 0 && ((temp[temp.size()-1]%2 == 0 && i%2!=0) || 
-                (temp[temp.size()-1]%2 != 0 && i%2==0))){
+           if(temp.size()==0 || (m[i] == 0 && ((temp.back()%2 == 0 && i%2!=0) || 
+                (temp.back()%2 != 0 && i%2==0)))){
                 temp.push_back(i);
                 m[i]++;
                 printPermutations(index+1, n, answer, m, temp);
