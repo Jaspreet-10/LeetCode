@@ -1,27 +1,24 @@
 class Solution {
 public:
-    void countIsland(int i, int j, int n, int m, vector<vector<char>>&grid){
-        if(i<0 || j<0 || j>=m || i>=n || grid[i][j] == '0') return ;
+    int dfs(int i, int j, int m, int n, vector<vector<char>>&grid){
+        if(i<0 || j < 0 || i>=m || j>=n || grid[i][j] == '0') return 0;
         grid[i][j] = '0';
-        countIsland(i+1, j, n, m, grid);
-        countIsland(i-1, j, n, m, grid);
-        countIsland(i, j+1, n, m, grid);
-        countIsland(i, j-1, n, m, grid);
-        return ;
+        dfs(i+1, j, m, n, grid);
+        dfs(i-1, j, m, n, grid);
+        dfs(i, j+1, m, n, grid);
+        dfs(i, j-1, m, n, grid);
+        return 0;
     }
     int numIslands(vector<vector<char>>& grid) {
-        int n = grid.size(), m = grid[0].size(), count = 0;
-        for(int i = 0 ; i < n ; ++i){
-            for(int j = 0 ; j < m ; ++j){
+        int count = 0, m = grid.size(), n = grid[0].size();
+        for(int i = 0 ; i < m ; ++i){
+            for(int j = 0 ; j < n ; ++j){
                 if(grid[i][j] == '1'){
                     ++count;
-                    countIsland(i,j,n,m,grid);
+                    dfs(i, j, m, n, grid);
                 }
             }
         }
         return count;
     }
-};// Time Complexity: O(n * m)
-// Each cell is visited once.
-// DFS marks connected land '1's as '0' to avoid revisits.
-// Space Complexity: O(n * m) (worst case recursion stack)
+};
