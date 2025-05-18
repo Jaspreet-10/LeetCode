@@ -1,14 +1,15 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        map<int,int>m; //dictionary
-        int n = nums.size();
+        int count = 1, maxi = nums[0];
         for(int i = 0 ; i < nums.size() ; ++i){
-            m[nums[i]]+=1;
+            if(nums[i]!=maxi) --count;
+            else ++count;
+            if(count == 0){
+                maxi = nums[i];
+                ++count;
+            }
         }
-        for(auto it : m){
-            if(it.second>(n/2)) return it.first;
-        }
-        return 0;
+        return maxi;
     }
 };
