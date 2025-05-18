@@ -111,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 | [2165-plates-between-candles](https://github.com/Jaspreet-10/LeetCode/tree/master/2165-plates-between-candles) |
 | [2227-sum-of-subarray-ranges](https://github.com/Jaspreet-10/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
+| [2432-number-of-zero-filled-subarrays](https://github.com/Jaspreet-10/LeetCode/tree/master/2432-number-of-zero-filled-subarrays) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/Jaspreet-10/LeetCode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3780-permutations-iii](https://github.com/Jaspreet-10/LeetCode/tree/master/3780-permutations-iii) |
@@ -396,6 +397,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0795-k-th-symbol-in-grammar](https://github.com/Jaspreet-10/LeetCode/tree/master/0795-k-th-symbol-in-grammar) |
 | [1014-k-closest-points-to-origin](https://github.com/Jaspreet-10/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2432-number-of-zero-filled-subarrays](https://github.com/Jaspreet-10/LeetCode/tree/master/2432-number-of-zero-filled-subarrays) |
 ## Backtracking
 |  |
 | ------- |
