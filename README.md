@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/Jaspreet-10/LeetCode/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0792-binary-search](https://github.com/Jaspreet-10/LeetCode/tree/master/0792-binary-search) |
+| [0817-design-hashmap](https://github.com/Jaspreet-10/LeetCode/tree/master/0817-design-hashmap) |
 | [0859-design-circular-deque](https://github.com/Jaspreet-10/LeetCode/tree/master/0859-design-circular-deque) |
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/Jaspreet-10/LeetCode/tree/master/0883-car-fleet) |
@@ -154,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Jaspreet-10/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0768-partition-labels](https://github.com/Jaspreet-10/LeetCode/tree/master/0768-partition-labels) |
 | [0807-custom-sort-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0807-custom-sort-string) |
+| [0817-design-hashmap](https://github.com/Jaspreet-10/LeetCode/tree/master/0817-design-hashmap) |
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1023-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/1023-time-based-key-value-store) |
@@ -377,6 +379,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0817-design-hashmap](https://github.com/Jaspreet-10/LeetCode/tree/master/0817-design-hashmap) |
 | [0859-design-circular-deque](https://github.com/Jaspreet-10/LeetCode/tree/master/0859-design-circular-deque) |
 | [0937-online-stock-span](https://github.com/Jaspreet-10/LeetCode/tree/master/0937-online-stock-span) |
 | [1023-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/1023-time-based-key-value-store) |
@@ -695,6 +698,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0572-subtree-of-another-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0572-subtree-of-another-tree) |
+| [0817-design-hashmap](https://github.com/Jaspreet-10/LeetCode/tree/master/0817-design-hashmap) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -768,6 +772,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0141-linked-list-cycle](https://github.com/Jaspreet-10/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/Jaspreet-10/LeetCode/tree/master/0146-lru-cache) |
 | [0206-reverse-linked-list](https://github.com/Jaspreet-10/LeetCode/tree/master/0206-reverse-linked-list) |
+| [0817-design-hashmap](https://github.com/Jaspreet-10/LeetCode/tree/master/0817-design-hashmap) |
 | [0859-design-circular-deque](https://github.com/Jaspreet-10/LeetCode/tree/master/0859-design-circular-deque) |
 | [0908-middle-of-the-linked-list](https://github.com/Jaspreet-10/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 ## Recursion
