@@ -13,15 +13,16 @@ class Solution {
 public:
     TreeNode* helper(TreeNode* root){
         if(!root) return NULL;
-        TreeNode* temp = root->left;
-        root->left = root->right;
-        root->right = temp;
-        helper(root->left);
-        helper(root->right);
+        TreeNode* temp = root->right;
+        root->right = root->left;
+        root->left = temp;
+        if(root->left) helper(root->left);
+        if(root->right) helper(root->right);
         return root;
     }
     TreeNode* invertTree(TreeNode* root) {
         if(!root) return NULL;
-        return helper(root);
+        helper(root);
+        return root;
     }
 };
