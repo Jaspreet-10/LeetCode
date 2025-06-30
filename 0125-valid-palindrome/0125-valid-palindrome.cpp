@@ -1,18 +1,17 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
+        transform(s.begin(), s.end(), s.begin(),::tolower);
         string str = "";
-        transform(s.begin(), s.end(), s.begin(), ::tolower);
-        for(int i = 0 ; i < s.length() ; ++i){
-            int ch1 = s[i];
-            if((ch1>=97 && ch1<=122) || (ch1>=48 && ch1<=57)){
+        for(int i = 0 ; i < s.size() ; ++i){
+            if((s[i]-'0'>=0 and s[i]-'0'<=9) || (s[i]-'a'>=0 and s[i]-'a'<=25)){
                 str+=s[i];
-            }
+            }else continue;
         }
-        int i = 0, j = str.length()-1;
-        while(i<j){
+        int i = 0, j = str.size()-1;
+        while(i<=j){
             if(str[i]!=str[j]) return false;
-            ++i,--j;
+            ++i, --j;
         }
         return true;
     }
