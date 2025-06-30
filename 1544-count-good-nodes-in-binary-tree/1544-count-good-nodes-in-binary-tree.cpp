@@ -12,18 +12,15 @@
 class Solution {
 public:
     int count = 0;
-    int countGoodNodes(TreeNode* root, int maxi){
+    int findGoodNodes(TreeNode* root, int maxi){
         if(!root) return count;
-        if(root->val>=maxi){
-            ++count;
-        }
-        countGoodNodes(root->left, max(root->val, maxi));
-        countGoodNodes(root->right, max(root->val, maxi));
+        if(maxi<=root->val) ++count;
+        findGoodNodes(root->left, max(root->val, maxi));
+        findGoodNodes(root->right, max(root->val, maxi));
         return count;
     }
     int goodNodes(TreeNode* root) {
-        if(!root) return 0;
-        int maxi = INT_MIN;
-        return countGoodNodes(root, maxi);
+        findGoodNodes(root, root->val);
+        return count;
     }
 };
