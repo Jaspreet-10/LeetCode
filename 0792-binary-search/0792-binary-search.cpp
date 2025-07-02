@@ -1,19 +1,17 @@
 class Solution {
 public:
-    int findElement(vector<int>&nums, int target){
-        int low = 0, high = nums.size()-1;
+    int search(vector<int>& nums, int target) {
+        int low = 0, high = nums.size()-1, mid = 0;
         while(low<=high){
-            int mid = (low+high)/2;
+            mid = (low+high)/2;
             if(nums[mid] == target) return mid;
-            else if(nums[mid]>target){
+            if(target<nums[mid]){
                 high = mid-1;
-            }else{
+            }
+            else{
                 low = mid+1;
             }
         }
         return -1;
-    }
-    int search(vector<int>& nums, int target) {
-        return findElement(nums,target);
     }
 };
