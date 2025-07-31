@@ -116,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 | [2165-plates-between-candles](https://github.com/Jaspreet-10/LeetCode/tree/master/2165-plates-between-candles) |
 | [2227-sum-of-subarray-ranges](https://github.com/Jaspreet-10/LeetCode/tree/master/2227-sum-of-subarray-ranges) |
+| [2254-check-if-every-row-and-column-contains-all-numbers](https://github.com/Jaspreet-10/LeetCode/tree/master/2254-check-if-every-row-and-column-contains-all-numbers) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Jaspreet-10/LeetCode/tree/master/2432-number-of-zero-filled-subarrays) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/Jaspreet-10/LeetCode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
@@ -170,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1635-number-of-good-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/1635-number-of-good-pairs) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/Jaspreet-10/LeetCode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
+| [2254-check-if-every-row-and-column-contains-all-numbers](https://github.com/Jaspreet-10/LeetCode/tree/master/2254-check-if-every-row-and-column-contains-all-numbers) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Jaspreet-10/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [3094-minimum-number-of-operations-to-make-array-empty](https://github.com/Jaspreet-10/LeetCode/tree/master/3094-minimum-number-of-operations-to-make-array-empty) |
 | [3474-better-compression-of-string](https://github.com/Jaspreet-10/LeetCode/tree/master/3474-better-compression-of-string) |
@@ -608,6 +610,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/Jaspreet-10/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/Jaspreet-10/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
+| [2254-check-if-every-row-and-column-contains-all-numbers](https://github.com/Jaspreet-10/LeetCode/tree/master/2254-check-if-every-row-and-column-contains-all-numbers) |
 ## Graph
 |  |
 | ------- |
