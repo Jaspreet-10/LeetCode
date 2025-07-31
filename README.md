@@ -104,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/Jaspreet-10/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/Jaspreet-10/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
+| [1112-find-words-that-can-be-formed-by-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
 | [1184-car-pooling](https://github.com/Jaspreet-10/LeetCode/tree/master/1184-car-pooling) |
 | [1511-count-number-of-teams](https://github.com/Jaspreet-10/LeetCode/tree/master/1511-count-number-of-teams) |
@@ -164,6 +165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1023-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
+| [1112-find-words-that-can-be-formed-by-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1297-maximum-number-of-balloons](https://github.com/Jaspreet-10/LeetCode/tree/master/1297-maximum-number-of-balloons) |
 | [1635-number-of-good-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/1635-number-of-good-pairs) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/Jaspreet-10/LeetCode/tree/master/1960-check-if-the-sentence-is-pangram) |
@@ -358,6 +360,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0812-rotate-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0812-rotate-string) |
 | [1023-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1078-remove-outermost-parentheses](https://github.com/Jaspreet-10/LeetCode/tree/master/1078-remove-outermost-parentheses) |
+| [1112-find-words-that-can-be-formed-by-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1250-longest-common-subsequence](https://github.com/Jaspreet-10/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [1297-maximum-number-of-balloons](https://github.com/Jaspreet-10/LeetCode/tree/master/1297-maximum-number-of-balloons) |
 | [1542-consecutive-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1542-consecutive-characters) |
@@ -503,6 +506,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0383-ransom-note](https://github.com/Jaspreet-10/LeetCode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0621-task-scheduler](https://github.com/Jaspreet-10/LeetCode/tree/master/0621-task-scheduler) |
+| [1112-find-words-that-can-be-formed-by-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1297-maximum-number-of-balloons](https://github.com/Jaspreet-10/LeetCode/tree/master/1297-maximum-number-of-balloons) |
 | [1635-number-of-good-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/1635-number-of-good-pairs) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
