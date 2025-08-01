@@ -95,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0747-min-cost-climbing-stairs](https://github.com/Jaspreet-10/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0792-binary-search](https://github.com/Jaspreet-10/LeetCode/tree/master/0792-binary-search) |
 | [0817-design-hashmap](https://github.com/Jaspreet-10/LeetCode/tree/master/0817-design-hashmap) |
+| [0829-subdomain-visit-count](https://github.com/Jaspreet-10/LeetCode/tree/master/0829-subdomain-visit-count) |
 | [0859-design-circular-deque](https://github.com/Jaspreet-10/LeetCode/tree/master/0859-design-circular-deque) |
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/Jaspreet-10/LeetCode/tree/master/0883-car-fleet) |
@@ -162,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/Jaspreet-10/LeetCode/tree/master/0768-partition-labels) |
 | [0807-custom-sort-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0807-custom-sort-string) |
 | [0817-design-hashmap](https://github.com/Jaspreet-10/LeetCode/tree/master/0817-design-hashmap) |
+| [0829-subdomain-visit-count](https://github.com/Jaspreet-10/LeetCode/tree/master/0829-subdomain-visit-count) |
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1023-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/1023-time-based-key-value-store) |
@@ -360,6 +362,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/Jaspreet-10/LeetCode/tree/master/0768-partition-labels) |
 | [0807-custom-sort-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0807-custom-sort-string) |
 | [0812-rotate-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0812-rotate-string) |
+| [0829-subdomain-visit-count](https://github.com/Jaspreet-10/LeetCode/tree/master/0829-subdomain-visit-count) |
 | [1023-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1078-remove-outermost-parentheses](https://github.com/Jaspreet-10/LeetCode/tree/master/1078-remove-outermost-parentheses) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1112-find-words-that-can-be-formed-by-characters) |
@@ -508,6 +511,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0383-ransom-note](https://github.com/Jaspreet-10/LeetCode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0621-task-scheduler](https://github.com/Jaspreet-10/LeetCode/tree/master/0621-task-scheduler) |
+| [0829-subdomain-visit-count](https://github.com/Jaspreet-10/LeetCode/tree/master/0829-subdomain-visit-count) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1297-maximum-number-of-balloons](https://github.com/Jaspreet-10/LeetCode/tree/master/1297-maximum-number-of-balloons) |
 | [1635-number-of-good-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/1635-number-of-good-pairs) |
