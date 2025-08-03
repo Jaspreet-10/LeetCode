@@ -1,15 +1,19 @@
 class Solution {
 public:
-    int lengthOfLIS(vector<int>& nums) {
-    vector<int> sub;
-    for (int num : nums) {
-        auto it = lower_bound(sub.begin(), sub.end(), num);
-        if (it == sub.end()) {
-            sub.push_back(num); // extend the subsequence
-        } else {
-            *it = num; // replace to keep subsequence minimal
+    int checkLIS(int index, int prev, int n, vector<int>&nums, vector<vector<int>>&dp){
+        if(index>=n) return 0;
+        if(dp[index][prev+1]!=-1) return dp[index][prev+1];
+
+        int consider = 0;
+        if(prev==-1 || nums[index]>nums[prev]){
+            consider = 1+checkLIS(index+1, index, n, nums, dp);
         }
+        int notConsider = checkLIS(index+1, prev, n, nums, dp);
+        return dp[index][prev+1] = max(consider,notConsider);
     }
-    return sub.size();
+    int lengthOfLIS(vector<int>& nums) {
+        int n = nums.size();
+        vector<vector<int>>dp(n, vector<int>(n, -1));
+        return checkLIS(0, -1, n, nums, dp);
     }
 };
