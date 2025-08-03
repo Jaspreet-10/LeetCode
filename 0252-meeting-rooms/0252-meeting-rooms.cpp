@@ -9,7 +9,6 @@ public:
         }
         sort(v.begin(),v.end());
         int e = v[0].first;
-        int s = v[0].second;
         for(int i = 1 ; i < intervals.size() ; ++i){
             if(e<=v[i].second){
                 e = v[i].first;
