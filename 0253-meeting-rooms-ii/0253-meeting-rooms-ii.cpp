@@ -3,7 +3,7 @@ public:
     int minMeetingRooms(vector<vector<int>>& intervals) {
       if(intervals.size() == 0) return 0;
         vector<int>start,end;
-        int count = 1, i = 1, j = 0;
+        int count = 0, i = 0, j = 0;
         for(int i = 0 ; i < intervals.size() ; ++i){
            start.push_back(intervals[i][0]);
            end.push_back(intervals[i][1]);
