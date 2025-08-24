@@ -12,19 +12,19 @@
 class Solution {
 public:
     vector<int> rightSideView(TreeNode* root) {
-        if(!root) return {};
-        queue<TreeNode*>q;
-        q.push(root);           
+         if(!root) return {};
         vector<int>v;
+        queue<TreeNode*>q;
+        q.push(root);
         while(!q.empty()){
             int size = q.size()-1;
-            for(int i = 0 ; i <= size ; ++i){
-            TreeNode* head = q.front();
-            if(i == size)
-            v.push_back(head->val);
-            q.pop();
-            if(head->left) q.push(head->left);
-            if(head->right) q.push(head->right);
+            for(int i = size ; i>=0 ; --i){
+                TreeNode* head = q.front();
+                q.pop();
+                if(i == 0)
+                v.push_back(head->val);
+                if(head->left) q.push(head->left);
+                if(head->right) q.push(head->right);
             }
         }
         return v;
