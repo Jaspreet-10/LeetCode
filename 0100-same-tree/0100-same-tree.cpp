@@ -12,16 +12,14 @@
 class Solution {
 public:
     bool helper(TreeNode* p, TreeNode* q){
-        if(!p && !q) return true;
-        if((!p && q) || (!q and p)) return false;
-
+        if(!p and !q) return true;
+        if((!p and q) or (p and !q)) return false;
         if(p->val == q->val){
-            return helper(p->left, q->left) && helper(p->right, q->right);
+            return helper(p->left, q->left) and helper(p->right, q->right);
         }else return false;
-        return false;
+        return true;
     }
     bool isSameTree(TreeNode* p, TreeNode* q) {
-        if((!p && q) || (!q and p)) return false;
-        return helper(p, q);
+        return helper(p,q);
     }
 };
