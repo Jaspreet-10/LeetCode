@@ -20,7 +20,7 @@ public:
         return true;
     }
     bool isSubtree(TreeNode* root, TreeNode* subRoot) {
-        if(!root || !subRoot) return false;
+        if(!root) return false;
         if(subRoot->val == root->val){
             if(helper(root, subRoot)) return true;
         }
