@@ -11,22 +11,18 @@
  */
 class Solution {
 public:
-    bool balancedTree = true;
-    int findMaxDepth(TreeNode* root){
+    int helper(TreeNode* root){
         if(!root) return 0;
-        int leftHeight = findMaxDepth(root->left);
-        if(!balancedTree) return -1;
-        int rightHeight = findMaxDepth(root->right);
-        if(!balancedTree) return -1;
-        if(abs(leftHeight - rightHeight)>1){
-            balancedTree = false;
-            return -1;
-        }
-        return max(leftHeight, rightHeight)+1;
+        int lh = helper(root->left);
+        if(lh == -1) return -1;
+        int rh = helper(root->right);
+        if(rh == -1) return -1;
+        if(abs(lh-rh)>1) return -1;
+        return 1+max(lh, rh);
     }
     bool isBalanced(TreeNode* root) {
         if(!root) return true;
-        if(findMaxDepth(root) == -1) return false;
+        if(helper(root) == -1) return false;
         return true;
     }
 };
