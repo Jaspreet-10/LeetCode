@@ -1,29 +1,25 @@
 class Solution {
 public:
-    int countIsland(int i, int j, int n, int m, vector<vector<int>>&grid, int &count){
-        if(i<0 || j<0 || j>=m || i>=n || grid[i][j] == 0) return count;
+    int dfs(int i, int j, int m, int n, vector<vector<int>>& grid, int &count){
+        if(i<0 || j<0 || i>=m || j>=n || grid[i][j] == 0) return count;
         grid[i][j] = 0;
         ++count;
-        countIsland(i+1, j, n, m, grid, count);
-        countIsland(i-1, j, n, m, grid, count);
-        countIsland(i, j+1, n, m, grid, count);
-        countIsland(i, j-1, n, m, grid, count);
+        dfs(i+1, j, m, n, grid, count);
+        dfs(i-1, j, m, n, grid, count);
+        dfs(i, j+1, m, n, grid, count);
+        dfs(i, j-1, m, n, grid, count);
         return count;
     }
     int maxAreaOfIsland(vector<vector<int>>& grid) {
-        int n = grid.size(), m = grid[0].size(), count = 0, maxArea = 0;
-        for(int i = 0 ; i < n ; ++i){
-            for(int j = 0 ; j < m ; ++j){
+        int m = grid.size(), n = grid[0].size(), area  = 0;
+        for(int i = 0 ; i < m ; ++i){
+            for(int j = 0 ; j < n ; ++j){
                 if(grid[i][j] == 1){
                     int count = 0;
-                    maxArea = max(maxArea, countIsland(i,j,n,m,grid,count));
+                    area = max(area,dfs(i, j, m, n, grid, count));
                 }
             }
         }
-        return maxArea;
+        return area;
     }
 };
-// Time Complexity: O(n * m)
-// Each cell is visited once.
-// DFS marks connected land '1's as '0' to avoid revisits.
-// Space Complexity: O(n * m) (worst case recursion stack)
