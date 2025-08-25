@@ -3,7 +3,7 @@ public:
     void wallsAndGates(vector<vector<int>>& rooms) {
         int m = rooms.size(), n = rooms[0].size();
         queue<pair<pair<int,int>, int>>q;
-        vector<vector<int>>vis(m, vector<int>(n, 0));
+        // vector<vector<int>>vis(m, vector<int>(n, 0));
         for(int i = 0 ; i < m ; ++i){
             for(int j = 0 ; j < n ; ++j){
                 if(rooms[i][j] == 0) q.push({{i, j}, 0});
