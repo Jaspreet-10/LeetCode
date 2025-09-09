@@ -1,11 +1,11 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-
-        sort(nums.begin(), nums.end());//[0,1,2,3] = 4
-        for(int i = 0 ; i < nums.size()-1 ; ++i){
-            if(nums[i] == nums[i+1]) return true;
+        unordered_map<int,int>m;//Dictionary [1,2,3,1]
+        for(int i = 0 ; i < nums.size() ; ++i){
+            if(m[nums[i]]>0) return true; //m[1] > 0
+            m[nums[i]]+=1; //1->1 m[1] = 1, m[2] = 1, m[3] = 1
         }
-        return false;
+    return false;
     }
 };
