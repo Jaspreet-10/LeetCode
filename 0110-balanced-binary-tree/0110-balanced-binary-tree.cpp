@@ -21,7 +21,6 @@ public:
         return 1+max(lh, rh);
     }
     bool isBalanced(TreeNode* root) {
-        if(!root) return true;
         if(helper(root) == -1) return false;
         return true;
     }
