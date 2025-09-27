@@ -11,19 +11,21 @@
  */
 class Solution {
 public:
-    bool helper(TreeNode* p, TreeNode* q){
-        if(!p and !q) return true;
-        if((!p and q) or (p and !q)) return false;
-        if(p->val == q->val){
-            return helper(p->left, q->left) and helper(p->right, q->right);
-        }else return false;
+    bool checkSubTree(TreeNode* root, TreeNode* subRoot){
+        if(!root and !subRoot) return true;
+        if(!root || !subRoot) return false;
+        if(root->val != subRoot->val) return false;
+        if(!checkSubTree(root->left, subRoot->left)) return false;
+        if(!checkSubTree(root->right, subRoot->right)) return false;
         return true;
     }
     bool isSubtree(TreeNode* root, TreeNode* subRoot) {
         if(!root || !subRoot) return false;
-        if(subRoot->val == root->val){
-            if(helper(root, subRoot)) return true;
+        if(root->val == subRoot->val){
+            if(checkSubTree(root, subRoot)) return true;
         }
-        return isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
+        if(isSubtree(root->left, subRoot)) return true;
+        if(isSubtree(root->right, subRoot)) return true;
+        return false;
     }
 };
