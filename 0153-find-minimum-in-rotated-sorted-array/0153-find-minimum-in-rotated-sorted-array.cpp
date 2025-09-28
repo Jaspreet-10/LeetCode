@@ -1,16 +1,12 @@
 class Solution {
 public:
     int findMin(vector<int>& nums) {
-        int left = 0, right = nums.size()-1, mid = 0;
-        while(left<right){
-            int mid = (left + right)/2;//to avoid overflow as right will always
-                                            // be greater than left in terms of indexes
-            if(nums[mid]>nums[right]){
-                left = mid+1;
-            }else{
-                right = mid;
-            }
+        int low = 0, high = nums.size()-1;
+        while(low<high){
+            int mid = (low+high)/2;
+            if(nums[mid]>nums[0] and nums[0]>nums[high]) low = mid+1;
+            else high = mid;
         }
-        return nums[right];
+        return nums[low];
     }
 };
