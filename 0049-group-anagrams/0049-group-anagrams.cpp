@@ -1,20 +1,18 @@
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        vector<vector<string>>res;
+        vector<vector<string>>ans;
         map<vector<int>, vector<string>>m;
         for(int i = 0 ; i < strs.size() ; ++i){
             vector<int>v(26,0);
             for(int j = 0 ; j < strs[i].size() ; ++j){
-                v[strs[i][j] - 'a']++;
+                v[strs[i][j]-'a']++;
             }
             m[v].push_back(strs[i]);
         }
         for(auto it : m){
-            res.push_back(it.second);
+            ans.push_back(it.second);
         }
-        return res;
+        return ans;
     }
-
-    /*TC - O(n * max(strs[i] * n*log n(for map insertion)) + O(n) for map */
 };
