@@ -6,6 +6,6 @@ public:
             if(m.find(target-nums[i])!=m.end()) return {m[target-nums[i]], i};
             m[nums[i]] = i;
         }
-        return {0,0};
+        return {0, 0};
     }
 };
