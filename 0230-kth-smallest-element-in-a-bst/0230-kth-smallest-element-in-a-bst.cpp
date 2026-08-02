@@ -11,16 +11,18 @@
  */
 class Solution {
 public:
-    int findKthElement(TreeNode* root, int&k, int& value){
-        if(!root) return value;
-        findKthElement(root->left, k, value);
+    int preorder(TreeNode* root, int&k, int &ele){
+        if(!root) return 0;
+        preorder(root->left, k, ele);
         --k;
-        if(k == 0) return value = root->val;
-        findKthElement(root->right, k, value);
-        return value;
+        if(k == 0){ ele = root->val; return ele; }
+        preorder(root->right, k, ele);
+        return ele;
     }
     int kthSmallest(TreeNode* root, int k) {
-        int value = 0;
-        return findKthElement(root, k, value);
+        if(!root) return 0;
+        int ele = 0;
+        preorder(root, k, ele);
+        return ele;
     }
 };
