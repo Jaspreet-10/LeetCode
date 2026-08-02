@@ -1,28 +1,36 @@
 class Solution {
 public:
-    bool searchMatrix(vector<vector<int>>& matrix, int target) {
-        int m = matrix[0].size(), row = 0;
-        int low = 0, high = matrix.size()-1;
-        while(low<=high){
-            int mid = (low+high)/2;
-            if(matrix[mid][0]<=target && matrix[mid][m-1]>=target){
-                row = mid;
-                break;
-            }
-            else if(matrix[mid][m-1]>=target)
-                high = mid-1;
-            else 
-                low = mid+1;
-        }
-        low = 0, high = m-1;
+    bool findRowElement(vector<vector<int>>&matrix, int target, int row){
+        int low = 0, high = matrix[row].size()-1;
         while(low<=high){
             int mid = (low+high)/2;
             if(matrix[row][mid] == target) return true;
-            else if(matrix[row][mid]>=target)
+            else if(matrix[row][mid]>target){
                 high = mid-1;
-            else 
+            }else{
                 low = mid+1;
+            }
         }
         return false;
+    }
+
+     bool findColElement(vector<vector<int>>&matrix, int target, int col){
+        int low = 0, high = matrix.size()-1;
+        while(low<=high){
+            int mid = (low+high)/2;
+            if(target>=matrix[mid][0] and target<=matrix[mid][col]) 
+                return findRowElement(matrix, target, mid);
+            else if(matrix[mid][col]>target){
+                high = mid-1;
+            }else{
+                low = mid+1;
+            }
+        }
+        return false;
+    }
+
+    bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        int col = matrix[0].size()-1;
+        return findColElement(matrix, target, col);
     }
 };
