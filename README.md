@@ -110,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0943-sum-of-subarray-minimums](https://github.com/Jaspreet-10/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [1014-k-closest-points-to-origin](https://github.com/Jaspreet-10/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1036-rotting-oranges](https://github.com/Jaspreet-10/LeetCode/tree/master/1036-rotting-oranges) |
+| [1046-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1046-last-stone-weight) |
 | [1073-number-of-enclaves](https://github.com/Jaspreet-10/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1112-find-words-that-can-be-formed-by-characters) |
@@ -516,6 +517,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0703-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Jaspreet-10/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1014-k-closest-points-to-origin](https://github.com/Jaspreet-10/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1046-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1046-last-stone-weight) |
 | [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
 | [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
 | [1184-car-pooling](https://github.com/Jaspreet-10/LeetCode/tree/master/1184-car-pooling) |
