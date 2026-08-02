@@ -11,17 +11,11 @@
  */
 class Solution {
 public:
-    TreeNode* helper(TreeNode*root){
-        if(!root) return NULL;
-        TreeNode* temp = root->left;
-        root->left = root->right;
-        root->right = temp;
-        helper(root->left);
-        helper(root->right);
-        return root;
-    }
     TreeNode* invertTree(TreeNode* root) {
         if(!root) return NULL;
-        return helper(root);
+        swap(root->left, root->right);
+        invertTree(root->left);
+        invertTree(root->right);
+        return root;
     }
 };
