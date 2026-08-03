@@ -6,9 +6,11 @@ public:
             ans.push_back(temp);
             return ans;
         }
+        if(candidates[index]<=target){
         temp.push_back(candidates[index]);
         findTarget(index, candidates, target-candidates[index], temp, ans);
         temp.pop_back();
+        }
         findTarget(index+1, candidates, target,temp, ans);
         return ans;
     }
