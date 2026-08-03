@@ -1,28 +1,28 @@
 class Solution {
 public:
-    int totalWays(int index,vector<int>& candidates,vector<int>&bt,vector<vector<int>>&ans,int target){
-        if(target==0){
-            ans.push_back(bt);
-            return 0;
+    void findTarget(int index, vector<int>& candidates, int n, int target, vector<int>&temp, map<vector<int>, int>&m, vector<vector<int>>&ans){
+        if(target == 0){
+            ans.push_back(temp);
+            return ;
         }
-        if(index>=candidates.size())
-            return 0;
+        if(index>=candidates.size()) return ;
         if(candidates[index]<=target){
-            bt.push_back(candidates[index]);
-            totalWays(index+1,candidates,bt,ans,target-candidates[index]);
-            bt.pop_back();
-            while (index != candidates.size() - 1 && candidates[index] == candidates[index + 1]){
+        temp.push_back(candidates[index]);
+        findTarget(index+1, candidates, n, target-candidates[index], temp, m, ans);
+        temp.pop_back();
+        while (index != candidates.size() - 1 && candidates[index] == candidates[index + 1]){
             index++;
-            }
         }
-        totalWays(index+1,candidates,bt,ans,target);
-        return 0;
+        }
+        findTarget(index+1, candidates, n, target,temp, m, ans);
+        return ;
     }
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
-        vector<int>bt;
         vector<vector<int>>ans;
-        sort(candidates.begin(),candidates.end());
-        totalWays(0,candidates,bt,ans,target);
+        vector<int>temp;
+        map<vector<int>, int>m;
+        sort(candidates.begin(), candidates.end());
+        findTarget(0, candidates, candidates.size(), target, temp, m, ans);
         return ans;
     }
 };
