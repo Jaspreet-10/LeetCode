@@ -1,28 +1,26 @@
 class Solution {
 public:
-    map<vector<int>,int>m;
-    vector<vector<int>>powerSet(vector<int>& nums, vector<vector<int>>&ans,
-    int index, vector<int>v){
-        if(index>=nums.size()){
-            // sort(v.begin(),v.end());
-            // if(m[v] == 0)
-            ans.push_back(v);
-            // m[v]++;
-            return ans;
+    void getSubsets(int index, vector<int>&nums, int n, vector<int>&temp, map<vector<int>, int>&m, vector<vector<int>>&ans){
+        if(index>=n){
+            sort(temp.begin(), temp.end());
+            if(m[temp] == 0){
+            ans.push_back(temp);
+            m[temp]++;
+            }
+            return;
         }
-        v.push_back(nums[index]);
-        powerSet(nums,ans,index+1,v);
-        v.pop_back();
-        while (index != nums.size() - 1 && nums[index] == nums[index + 1])
-            index++;
-        powerSet(nums,ans,index+1,v);
-        return ans;
+        temp.push_back(nums[index]);
+        getSubsets(index+1, nums, n, temp, m, ans);
+        temp.pop_back();
+        getSubsets(index+1, nums, n, temp, m, ans);
+        return;
     }
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
-        vector<int>v;
         vector<vector<int>>ans;
+        vector<int>temp;
+        map<vector<int>, int>m;
         sort(nums.begin(), nums.end());
-        return powerSet(nums,ans,0,v);
-        // return ans;
+        getSubsets(0, nums, nums.size(), temp, m, ans);
+        return ans;
     }
 };
