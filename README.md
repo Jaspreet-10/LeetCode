@@ -907,4 +907,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0465-optimal-account-balancing](https://github.com/Jaspreet-10/LeetCode/tree/master/0465-optimal-account-balancing) |
+## Bracket Sequences
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/Jaspreet-10/LeetCode/tree/master/0022-generate-parentheses) |
 <!---LeetCode Topics End-->
