@@ -1,24 +1,25 @@
 class Solution {
 public:
-    void dfs(int i, int j, int m, int n, vector<vector<char>>& grid){
-        if(i<0 || j<0 || i>=m || j>=n || grid[i][j] == '0') return ;
+    void countIslands(int i, int j, int m, int n, vector<vector<char>>& grid){
+        if(i<0 || j<0 || i>=m || j>=n || grid[i][j] == '0')
+            return;
         grid[i][j] = '0';
-        dfs(i+1, j, m, n, grid);
-        dfs(i-1, j, m, n, grid);
-        dfs(i, j+1, m, n, grid);
-        dfs(i, j-1, m, n, grid);
+        countIslands(i+1, j, m, n, grid);
+        countIslands(i-1, j, m, n, grid);
+        countIslands(i, j+1, m, n, grid);
+        countIslands(i, j-1, m, n, grid);
         return;
     }
     int numIslands(vector<vector<char>>& grid) {
-        int count = 0, m = grid.size(), n = grid[0].size();
+        int m = grid.size(), n = grid[0].size(), counter = 0;
         for(int i = 0 ; i < m ; ++i){
             for(int j = 0 ; j < n ; ++j){
                 if(grid[i][j] == '1'){
-                    ++count;
-                    dfs(i, j, m, n, grid);
+                    ++counter;
+                    countIslands(i, j, m, n, grid);
                 }
             }
         }
-        return count;
+        return counter;
     }
 };
