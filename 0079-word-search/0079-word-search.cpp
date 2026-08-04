@@ -1,25 +1,24 @@
 class Solution {
 public:
-    bool searchWord(int index, int cr, int cc, int m, int n, vector<vector<char>>& board, 
-    string word){
-        if(word.size() == index) return true;
-        if(index>=word.size() || cr<0 || cc<0 || cr>=m ||cc >=n || board[cr][cc] == '.') 
-            return false;
-        if(word[index] == board[cr][cc]){
-            char temp = board[cr][cc];
-            board[cr][cc] = '.';
-            if(searchWord(index+1, cr+1, cc, m, n, board, word)) return true;
-            if(searchWord(index+1, cr-1, cc, m, n, board, word)) return true;
-            if(searchWord(index+1, cr, cc+1, m, n, board, word)) return true;
-            if(searchWord(index+1, cr, cc-1, m, n, board, word)) return true;
-            board[cr][cc] = temp;
+    bool wordSearch(int index, int i, int j, int m, int n, vector<vector<char>>&board, string word){
+        if(index == word.size()) return true;
+        if(index>=word.size() || i>=m || j>=n || i<0 || j<0 || board[i][j]=='.') return false;
+        if(board[i][j] == word[index]){
+        char ch = board[i][j];
+        board[i][j] = '.';
+        if(wordSearch(index+1, i+1, j, m, n, board, word)) return true;
+        if(wordSearch(index+1, i-1, j, m, n, board, word)) return true;
+        if(wordSearch(index+1, i, j+1, m, n, board, word)) return true;
+        if(wordSearch(index+1, i, j-1, m, n, board, word)) return true;
+        board[i][j] = ch;
         }
         return false;
     }
     bool exist(vector<vector<char>>& board, string word) {
-        for(int i = 0 ; i < board.size() ; ++i){
-            for(int j = 0 ; j < board[i].size() ; ++j){
-                if(searchWord(0, i, j, board.size(), board[0].size(), board, word))
+        int m = board.size(), n = board[0].size();
+        for(int i = 0 ; i < m ; ++i){
+            for(int j = 0 ; j < n ; ++j){
+                if(board[i][j] == word[0] && wordSearch(0, i, j, m, n, board, word))
                     return true;
             }
         }
