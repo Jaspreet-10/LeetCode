@@ -911,4 +911,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/Jaspreet-10/LeetCode/tree/master/0022-generate-parentheses) |
+## Union-Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/Jaspreet-10/LeetCode/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
