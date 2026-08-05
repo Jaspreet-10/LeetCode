@@ -123,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1709-alert-using-same-key-card-three-or-more-times-in-a-one-hour-period](https://github.com/Jaspreet-10/LeetCode/tree/master/1709-alert-using-same-key-card-three-or-more-times-in-a-one-hour-period) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/Jaspreet-10/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
+| [1899-merge-triplets-to-form-target-triplet](https://github.com/Jaspreet-10/LeetCode/tree/master/1899-merge-triplets-to-form-target-triplet) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/Jaspreet-10/LeetCode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
@@ -756,6 +757,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0846-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0846-hand-of-straights) |
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
+| [1899-merge-triplets-to-form-target-triplet](https://github.com/Jaspreet-10/LeetCode/tree/master/1899-merge-triplets-to-form-target-triplet) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/Jaspreet-10/LeetCode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/Jaspreet-10/LeetCode/tree/master/2456-construct-smallest-number-from-di-string) |
 | [2828-lexicographically-smallest-string-after-substring-operation](https://github.com/Jaspreet-10/LeetCode/tree/master/2828-lexicographically-smallest-string-after-substring-operation) |
