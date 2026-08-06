@@ -1,17 +1,20 @@
 class Solution {
 public:
     bool isHappy(int n) {
-        unordered_map<int,int>m;
-        while(m[n] == 0){
-            int sum = n;
+        unordered_map<int, int> m;
+        while (m[n] == 0) {
+            int num = n, sum = 0;
             m[n]++;
-            n = 0;
-            while(sum>0){
-                n+=(sum%10)*(sum%10);
-                sum/=10;
+            while (num > 0) {
+                int r = num % 10;
+                sum = sum + (r * r);
+                num /= 10;
             }
+            cout << sum << " ";
+            if (sum == 1)
+                return true;
+            n = sum;
         }
-        if(n == 1) return true;
         return false;
     }
 };
