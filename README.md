@@ -181,6 +181,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0846-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0846-hand-of-straights) |
 | [0876-hand-of-straights](https://github.com/Jaspreet-10/LeetCode/tree/master/0876-hand-of-straights) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/Jaspreet-10/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0981-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1074-high-five](https://github.com/Jaspreet-10/LeetCode/tree/master/1074-high-five) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1112-find-words-that-can-be-formed-by-characters) |
@@ -255,6 +256,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0792-binary-search](https://github.com/Jaspreet-10/LeetCode/tree/master/0792-binary-search) |
 | [0875-koko-eating-bananas](https://github.com/Jaspreet-10/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0907-koko-eating-bananas](https://github.com/Jaspreet-10/LeetCode/tree/master/0907-koko-eating-bananas) |
+| [0981-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [2165-plates-between-candles](https://github.com/Jaspreet-10/LeetCode/tree/master/2165-plates-between-candles) |
 ## Dynamic Programming
@@ -387,6 +389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0807-custom-sort-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0807-custom-sort-string) |
 | [0812-rotate-string](https://github.com/Jaspreet-10/LeetCode/tree/master/0812-rotate-string) |
 | [0829-subdomain-visit-count](https://github.com/Jaspreet-10/LeetCode/tree/master/0829-subdomain-visit-count) |
+| [0981-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1078-remove-outermost-parentheses](https://github.com/Jaspreet-10/LeetCode/tree/master/1078-remove-outermost-parentheses) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Jaspreet-10/LeetCode/tree/master/1112-find-words-that-can-be-formed-by-characters) |
@@ -427,6 +430,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0817-design-hashmap](https://github.com/Jaspreet-10/LeetCode/tree/master/0817-design-hashmap) |
 | [0859-design-circular-deque](https://github.com/Jaspreet-10/LeetCode/tree/master/0859-design-circular-deque) |
 | [0937-online-stock-span](https://github.com/Jaspreet-10/LeetCode/tree/master/0937-online-stock-span) |
+| [0981-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/Jaspreet-10/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [2139-detect-squares](https://github.com/Jaspreet-10/LeetCode/tree/master/2139-detect-squares) |
 ## Math
