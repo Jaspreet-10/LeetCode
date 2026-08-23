@@ -119,6 +119,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1127-last-stone-weight](https://github.com/Jaspreet-10/LeetCode/tree/master/1127-last-stone-weight) |
 | [1184-car-pooling](https://github.com/Jaspreet-10/LeetCode/tree/master/1184-car-pooling) |
 | [1511-count-number-of-teams](https://github.com/Jaspreet-10/LeetCode/tree/master/1511-count-number-of-teams) |
+| [1535-find-the-winner-of-an-array-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1535-find-the-winner-of-an-array-game) |
 | [1635-number-of-good-pairs](https://github.com/Jaspreet-10/LeetCode/tree/master/1635-number-of-good-pairs) |
 | [1709-alert-using-same-key-card-three-or-more-times-in-a-one-hour-period](https://github.com/Jaspreet-10/LeetCode/tree/master/1709-alert-using-same-key-card-three-or-more-times-in-a-one-hour-period) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/Jaspreet-10/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
@@ -817,6 +818,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0412-fizz-buzz](https://github.com/Jaspreet-10/LeetCode/tree/master/0412-fizz-buzz) |
 | [0735-asteroid-collision](https://github.com/Jaspreet-10/LeetCode/tree/master/0735-asteroid-collision) |
 | [1184-car-pooling](https://github.com/Jaspreet-10/LeetCode/tree/master/1184-car-pooling) |
+| [1535-find-the-winner-of-an-array-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1535-find-the-winner-of-an-array-game) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Jaspreet-10/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/Jaspreet-10/LeetCode/tree/master/2021-remove-all-occurrences-of-a-substring) |
 ## Trie
